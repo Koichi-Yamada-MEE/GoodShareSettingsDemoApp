@@ -1,0 +1,73 @@
+.swiper {
+  width: 375px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+}
+
+.swiper-slide_img_holder {
+  position: relative;
+  width: 100%;
+  max-height: 667px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+/* .swiper-slide img {
+      display: block;
+      width: 375px;
+      height: 667px;
+    } */
+
+/* =================================
+  * ページネーション・ナビボタン
+================================= */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: DimGray;
+  opacity: 0.5;
+  padding: 0.5em;
+}
+
+.swiper-pagination {
+  background-color: DimGray;
+  opacity: 0.5;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  left: 50%;
+  /* 左端を50%に設定 */
+  width: 20%;
+  /* 幅を50%に設定 */
+  transform: translateX(-50%);
+  /* 左に50%移動して中央揃え */
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: white;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-pagination {
+  font-size: 1.25em;
+}
+
+.swiper-pagination-fraction {
+  color: white;
+}
+
+.swiper-pagination-current,
+.swiper-pagination-total {
+  color: white;
+}

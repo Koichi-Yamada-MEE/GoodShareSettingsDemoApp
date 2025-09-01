@@ -1,0 +1,50 @@
+/* ハンバーガーアイコン */
+.hamburger-icon {
+  position: absolute;       /* 親 .demo-app-wrap に対して配置 */
+  top: 16px;
+  left: 16px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1000;            /* スライド上に表示 */
+}
+
+/* ドロワーの背景 */
+.drawer-container {
+  position: absolute;        /* 親 .demo-app-wrap 内でスライド */
+  top: 0;
+  left: -250px;              /* 初期は左外 */
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  transition: left 0.3s ease;
+  z-index: 1001;
+  overflow: auto;
+}
+
+/* ドロワーを開いた状態 */
+.drawer-container.open {
+  left: 0;
+  display: block;
+}
+
+/* ドロワー内部 */
+.drawer {
+  padding: 20px;
+}
+
+.close-icon {
+  cursor: pointer;
+  font-size: 20px;
+  text-align: right;
+}
+
+.drawer ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.drawer li {
+  margin-bottom: 16px;
+  cursor: pointer;
+}

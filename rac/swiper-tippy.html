@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <title>エアコン設定｜三菱電機ホームソリューション ［マルチエリア空調］ Good Share！（グッシェア）｜三菱電機</title>
+  <meta name="viewport" content="width=375, user-scalable=no">
+  <!-- demoApp CSS/JS -->
+  <link rel="stylesheet" href="../assets/css/demo-app.css">
+  <link rel="stylesheet" href="../assets/css/demo-app-elements-position.css">
+  <link rel="stylesheet" href="../assets/css/drower-menu.css">
+  <script src="../assets/js/demo-app.js" defer></script>
+  <!-- Swiper CSS/Custom -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../assets/css/swiper-custom.css">
+  <!-- Tippy -->
+  <lin rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+</head>
+
+<body>
+  <div class="demo-app-wrap">
+    <main class="demo-app-wrap--main">
+      <!-- Drower Menu -->
+      <div class="menu">
+        <div class="hamburger-icon">&#x205D;</div>
+        <div class="drawer-container">
+          <div class="drawer">
+            <div class="close-icon">✕</div>
+            <ul>
+              <li>ホーム</li>
+              <li>エアコンの登録</li>
+              <li>環境センサーの登録</li>
+              <li>スマートスイッチの登録</li>
+              <li>よくある質問</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/01.png" alt="STEP-01" />
+              <div id="targetArea01"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/02.png" alt="STEP-02" />
+              <div id="targetArea02"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/03.png" alt="STEP-03" />
+              <div id="targetArea03"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/04.png" alt="STEP-04" />
+              <div id="targetArea04"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/05.png" alt="STEP-05" />
+              <div id="targetArea05"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/06.png" alt="STEP-06" />
+              <div id="targetArea06"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/07.png" alt="STEP-07" />
+              <div id="targetArea07"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/08.png" style="transform: translateY(-100px);" alt="STEP-08" />
+              <div id="targetArea08" style="transform: translateY(-100px);"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/09.png" alt="STEP-09" />
+              <div id="targetArea09"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/10.png" style="transform: translateY(-400px);" alt="STEP-10" />
+              <div id="targetArea10" style="transform: translateY(-400px);"></div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Tippy -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+
+  <!-- <script>
+    const hamburgerIcon = document.querySelector('.hamburger-icon');
+    const drawer = document.querySelector('.drawer');
+    const closeIcon = document.querySelector('.close-icon');
+
+    hamburgerIcon.addEventListener('click', () => {
+      drawer.classList.toggle('open');
+    });
+
+    closeIcon.addEventListener('click', () => {
+      drawer.classList.remove('open');
+    });
+  </script> -->
+
+
+<script>
+  const tooltips = [
+    tippy('#targetArea01', { content: '☰メニューをタップする', trigger: 'manual' })[0],
+    tippy('#targetArea02', { content: '「＋機器登録を」タップする', trigger: 'manual' })[0],
+    tippy('#targetArea03', { content: '「エアコン」をタップする', trigger: 'manual' })[0],
+    tippy('#targetArea04', { content: '「ルームエアコン」をタップする', trigger: 'manual' })[0],
+    tippy('#targetArea05', { content: '『「長押しで無線無効」の文字がある』をタップする', trigger: 'manual' })[0],
+    tippy('#targetArea06', { content: '「リモコンにメニューボタンがない」をタップする', trigger: 'manual' })[0],
+    tippy('#targetArea07', { content: 'エアコンとルーターを接続する方法を選択する<br />ここでは「アクセスポイントモードでの接続」をタップする', trigger: 'manual', allowHTML: true })[0],
+    tippy('#targetArea08', { content: '画面の内容を確認し、「次へ」をタップする', trigger: 'manual' })[0],
+    tippy('#targetArea09', { content: '画面の内容を確認し、「次へ」をタップする', trigger: 'manual' })[0],
+    tippy('#targetArea10', { content: '画面に表示されている操作を行い、「次へ」をタップする', trigger: 'manual' })[0],
+  ];
+
+  // Initialize Swiper
+  const swiper = new Swiper('.swiper', {
+    // pagination
+    pagination: {
+      el: '.swiper-pagination',
+      type: "fraction",
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    on: {
+      init: function () {
+        // 最初のスライドに対応するツールチップを表示
+        tooltips[0].show();
+      }
+    }
+  });
+
+  // スライド遷移後にツールチップを切り替え
+  swiper.on('slideChangeTransitionEnd', () => {
+    // いったん全て非表示
+    tooltips.forEach(tip => tip.hide());
+
+    // 現在のスライド index に対応するツールチップを表示
+    const current = swiper.activeIndex;
+    tooltips[current]?.show();
+  });
+</script>
+</body>
+
+</html>

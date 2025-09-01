@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* =================================
+  * demo-app.css
+  * デモアプリのスタイルシート
+  * 
+  * @version 1.0.0
+  * @date 2025-08-20
+  * @author MEE yamada
+================================= */
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: black; */
+}
+
+.demo-app-wrap {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* .demo-app-wrap--wrap--main {
+  display: flex;
+} */
+
+.demo-app-wrap--main {
+  max-width: 375px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.demo-app-wrap--header,
+.demo-app-wrap--footer,
+.demo-app-wrap--fixed-txt {
+  max-width: 375px;
+  width: 100%;
+  position: fixed;
+}
+
+.demo-app-wrap--main {
+  position: absolute;
+}
+
+.demo-app-wrap--fixed-txt {
+  top: 5px;
+  /* z-index: 100; */
+  text-align: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+  font-family: "メイリオ", "ヒラギノ角ゴ Pro W3", "Lucida Grande", "Hiragino Kaku Gothic Pro", Osaka, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+}
+
+.demo-app-wrap--fixed-txt-inr {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  color: #fff;
+  width: calc(100% - 60px);
+  padding: 6px;
+  font-size: 14px;
+  background: #DD8F74;
+  border-radius: 8px;
+  line-height: 1;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 375px) {
+  .demo-app-wrap--fixed-txt-inr {
+    padding: 6px 5px;
+    font-size: 3.733vw;
+  }
+}
+
+/* .demo-app-wrap--header img,
+.demo-app-wrap--footer img, */
+.demo-app-wrap--main img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* ====================================
+   ウインドウの高さによるスタイル調整
+   ==================================== */
+
+/* ウインドウの高さが668px以上の場合 */
+@media (min-height: 668px) {
+  .demo-app-wrap--footer {
+    top: 608px !important;
+    bottom: auto !important;
+  }
+}
