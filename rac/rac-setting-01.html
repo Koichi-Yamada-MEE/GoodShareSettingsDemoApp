@@ -14,7 +14,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="../assets/css/swiper-custom.css">
   <!-- Tippy -->
-  <lin rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+  <link rel="stylesheet" href="../assets/css/tippy-custom.css" />
+
 </head>
 
 <body>
@@ -103,35 +105,6 @@
               <div id="targetArea10" style="transform: translateY(-400px);"></div>
             </div>
           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
         <!-- pagination -->
         <div class="swiper-pagination"></div>
@@ -176,7 +149,7 @@
 <script>
   const tooltips = [
     tippy('#targetArea01', { content: '☰メニューをタップする', trigger: 'manual' })[0],
-    tippy('#targetArea02', { content: '「＋機器登録を」タップする', trigger: 'manual' })[0],
+    tippy('#targetArea02', { content: '「＋機器登録を」タップする', trigger: 'manual', theme: 'tomato' })[0],
     tippy('#targetArea03', { content: '「エアコン」をタップする', trigger: 'manual' })[0],
     tippy('#targetArea04', { content: '「ルームエアコン」をタップする', trigger: 'manual' })[0],
     tippy('#targetArea05', { content: '『「長押しで無線無効」の文字がある』をタップする', trigger: 'manual' })[0],
@@ -207,7 +180,7 @@
     }
   });
 
-  // スライド遷移後にツールチップを切り替え
+  // // スライド遷移後にツールチップを切り替え
   swiper.on('slideChangeTransitionEnd', () => {
     // いったん全て非表示
     tooltips.forEach(tip => tip.hide());

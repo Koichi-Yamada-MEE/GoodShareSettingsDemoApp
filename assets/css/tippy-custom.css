@@ -1,0 +1,18 @@
+.tippy-content {
+  background-color: rgba(255, 255, 255, 0.9); /* 背景色に透明度を設定 */
+  color: #1FA28D;
+  border-width: 2px; /* ボーダーの幅を設定 */
+  border-style: solid; /* ボーダーのスタイルを設定 */
+  border-image: linear-gradient(to left, #ED701E 0%, #FFC000 33%, #60C4B4 66%, #1E8CE6 100%) 1; /* グラデーションをボーダーに適用 */
+  padding: 0.5em 1.0em; /* 内側の余白を調整 */
+}
+
+
+/* .driver-popover.driverjs-theme {
+  background-color: #f2f0eb;
+  border-top: 8px solid;
+  border-image: linear-gradient(to left, #ED701E 0, #FFC000 33%, #60C4B4 66%, #1E8CE6 100%);
+  border-image-slice: 1;
+  padding-top: 30px;
+  color: #000;
+} */

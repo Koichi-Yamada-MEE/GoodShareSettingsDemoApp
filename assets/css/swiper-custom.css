@@ -1,7 +1,7 @@
 .swiper {
   width: 375px;
+  height: 535px;
 }
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -11,16 +11,15 @@
 .swiper-slide_img_holder {
   position: relative;
   width: 100%;
-  max-height: 667px;
+  max-height: 534px;
   overflow-y: auto;
   scrollbar-width: none;
 }
 
-/* .swiper-slide img {
-      display: block;
-      width: 375px;
-      height: 667px;
-    } */
+.swiper-slide_img_holder img {
+  width: 300px;
+  height: 100%;
+}
 
 /* =================================
   * ページネーション・ナビボタン
@@ -30,6 +29,18 @@
   background-color: DimGray;
   opacity: 0.5;
   padding: 0.5em;
+  top: 0; 
+  height: 100%;
+  margin-top: 0;
+}
+
+/* ボタン領域調整 */
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
 }
 
 .swiper-pagination {
