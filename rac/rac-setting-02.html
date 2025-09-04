@@ -15,7 +15,6 @@
   <!-- Tippy -->
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
   <link rel="stylesheet" href="../assets/css/tippy-custom.css" />
-
 </head>
 
 <body>
@@ -47,27 +46,24 @@
 
     // 画像のsrcとaltの配列
     const images = [
-        { src: '../assets/img/01.png', alt: 'STEP-01' },
-        { src: '../assets/img/02.png', alt: 'STEP-02' },
-        { src: '../assets/img/03.png', alt: 'STEP-03' },
-        { src: '../assets/img/04.png', alt: 'STEP-04' },
-        { src: '../assets/img/05.png', alt: 'STEP-05' },
-        { src: '../assets/img/06.png', alt: 'STEP-06' },
-        { src: '../assets/img/07.png', alt: 'STEP-07' },
-        { src: '../assets/img/08.png', alt: 'STEP-08' },
-        { src: '../assets/img/09.png', alt: 'STEP-09' },
-        { src: '../assets/img/10.png', alt: 'STEP-10' },
-        { src: '../assets/img/11.png', alt: 'STEP-11' },
-        { src: '../assets/img/12.png', alt: 'STEP-12' },
-        { src: '../assets/img/13.png', alt: 'STEP-13' },
-        { src: '../assets/img/14.png', alt: 'STEP-14' },
-
+      { src: '../assets/img/01.png', id: 'targetArea01', alt: 'STEP-01' },
+      { src: '../assets/img/02.png', id: 'targetArea02', alt: 'STEP-02' },
+      { src: '../assets/img/03.png', id: 'targetArea03', alt: 'STEP-03' },
+      { src: '../assets/img/04.png', id: 'targetArea04', alt: 'STEP-04' },
+      { src: '../assets/img/05.png', id: 'targetArea05', alt: 'STEP-05' },
+      { src: '../assets/img/06.png', id: 'targetArea06', alt: 'STEP-06' },
+      { src: '../assets/img/07.png', id: 'targetArea07', alt: 'STEP-07' },
+      { src: '../assets/img/08.png', id: 'targetArea08', alt: 'STEP-08' },
+      { src: '../assets/img/09.png', id: 'targetArea09', alt: 'STEP-09' },
+      { src: '../assets/img/10.png', id: 'targetArea10', alt: 'STEP-10' },
+      { src: '../assets/img/11.png', id: 'targetArea11', alt: 'STEP-11' },
+      { src: '../assets/img/12.png', id: 'targetArea12', alt: 'STEP-12' },
+      { src: '../assets/img/13.png', id: 'targetArea13', alt: 'STEP-13' },
+      { src: '../assets/img/14.png', id: 'targetArea14', alt: 'STEP-14' },
     ];
 
+    // 自動生成処理
     const swiperWrapper = document.getElementById('swiper-wrapper');
-    console.log(swiperWrapper);
-
-    // 画像をループしてスライドを生成
     images.forEach(image => {
       const slide = document.createElement('div');
       slide.classList.add('swiper-slide');
@@ -79,35 +75,32 @@
       img.src = image.src;
       img.alt = image.alt;
 
+      const highlights = document.createElement('div');
+      highlights.id = image.id;
+
       imgHolder.appendChild(img);
+      imgHolder.appendChild(highlights);
       slide.appendChild(imgHolder);
       swiperWrapper.appendChild(slide);
+
     });
 
+    // Swiperの初期化
     const swiper = new Swiper('.swiper', {
-      // pagination
       pagination: {
         el: '.swiper-pagination',
         type: "fraction",
       },
-
-      // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
     });
+
+    tippy('#targetArea01', {
+      content: 'Tooltip',
+    });
+
   </script>
-
-  <script>
-    // function openNav() {
-    //   document.getElementById("mySidenav").style.width = "250px";
-    // }
-
-    // function closeNav() {
-    //   document.getElementById("mySidenav").style.width = "0";
-    // }
-  </script>
-
 </body>
 </html>

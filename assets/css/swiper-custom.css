@@ -1,12 +1,14 @@
 .swiper {
   width: 100%;
-  height: 533.6px;
+  height: 80%;
 }
+
+/* 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 18px; */
   /* background: #444; */
-}
+/* } */
 
 .swiper-slide_img_holder {
   position: relative;
@@ -14,13 +16,13 @@
   height: 100%;
   overflow-y: auto;
   scrollbar-width: none;
+  text-align: center;
 }
 
 .swiper-slide_img_holder img {
-  width: 80%;
-  height: auto;
-  /* text-align: center; */
-}
+  width: 100%;
+  max-width: 80%;
+ }
 
 /* =================================
   * ページネーション・ナビボタン
@@ -47,39 +49,24 @@
 .swiper-pagination {
   background-color: DimGray;
   opacity: 0.5;
+  font-size: 1.25em;
+  color: white;
+  left: 50%;
+  width: 5em;
+  transform: translateX(-50%);
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
+/* .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   left: 50%;
-  /* 左端を50%に設定 */
   width: 20%;
-  /* 幅を50%に設定 */
   transform: translateX(-50%);
-  /* 左に50%移動して中央揃え */
-}
+} */
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
   color: white;
 }
 
-.swiper-button-next.swiper-button-disabled,
-.swiper-button-prev.swiper-button-disabled {
-  display: none;
-}
-
-.swiper-pagination {
-  font-size: 1.25em;
-}
-
-.swiper-pagination-fraction {
-  color: white;
-}
-
-.swiper-pagination-current,
-.swiper-pagination-total {
-  color: white;
-}
