@@ -28,9 +28,9 @@
 }
 
 #targetArea02 {
-  top: calc(104px / 667px * 80%);
-  left: calc(375px * 0.1);
-  width: 300px;
+  top: 15.6%;
+  left: 10%;
+  width: 72.53%;
   height: 47px;
 }
 
