@@ -7,9 +7,9 @@ body {
 
 .demo-app-wrap {
   position: relative;
-  max-width: 375px;
   width: 100%;
-  height: 677px;
+  max-width: 375px;
+  height: 667px;
   margin: 0 auto;
 }
 
@@ -17,8 +17,8 @@ body {
   position: absolute;
   width: 100%;
   max-width: 375px;
-  /* height: 541.6px;
-  max-height: 541.6px; */
+  height: 100%;
+  max-height: 667px;
 }
 
 .demo-app-wrap--footer {
@@ -26,7 +26,8 @@ body {
   top: 533.6px;
   width: 100%;
   max-width: 375px;
-  height: 133.4px;
+  height: 20%;
+  max-height: 133.4px;
   background-color: #87CEFA;
 }
 
@@ -37,10 +38,3 @@ body {
   width: 100%;
   position: fixed;
 } */
-
-/* .demo-app-wrap--header img,
-.demo-app-wrap--footer img, */
-.demo-app-wrap--main img {
-  width: 80%;
-  height: 80%;
-}
