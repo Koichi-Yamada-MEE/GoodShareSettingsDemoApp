@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <!-- <link rel="stylesheet" href="../assets/css/swiper-custom.css"> -->
   <!-- Tippy -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
-  <link rel="stylesheet" href="../assets/css/tippy-custom.css" /> -->
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+  <link rel="stylesheet" href="../assets/css/tippy-custom.css" />
 
   <style>
     body {
@@ -40,6 +40,7 @@
 
     .demo-app-wrap--footer {
       position: fixed;
+      z-index: 100000;
       top: 533.6px;
       width: 100%;
       max-width: 375px;
@@ -53,6 +54,7 @@
       height: 80%;
       overflow: hidden;
     }
+
     .swiper-slide {
       display: flex;
       justify-content: center;
@@ -116,7 +118,6 @@
 <body>
   <div class="demo-app-wrap">
     <main class="demo-app-wrap--main">
-
       <!-- Swiper -->
       <div class="swiper">
         <div class="swiper-wrapper">
@@ -141,7 +142,7 @@
           <div class="swiper-slide">
             <div class="swiper-slide_img_holder">
               <img src="../assets/img/06-01.png" alt="STEP-04" />
-                <div id="targetArea04"></div>
+              <div id="targetArea04"></div>
             </div>
           </div>
           <div class="swiper-slide">
@@ -218,37 +219,7 @@
               <div id="targetArea17"></div>
             </div>
           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- pagination -->
         <div class="swiper-pagination"></div>
         <!-- navigation buttons -->
@@ -268,29 +239,58 @@
   <script src="https://unpkg.com/tippy.js@6"></script>
 
   <script>
+    document.addEventListener('DOMContentLoaded', () => {
 
-    // Initialize Swiper
-    const swiper = new Swiper('.swiper', {
-      // pagination
-      pagination: {
-        el: '.swiper-pagination',
-        type: "fraction",
-      },
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+  // Initialize Swiper
+  const swiper = new Swiper('.swiper', {
+    pagination: {
+      el: '.swiper-pagination',
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 
+  // tippyインスタンスを配列で保持
+  const tooltips = [
+    tippy('#targetArea01', { content: 'これはステップ1の説明です。', trigger: 'manual' })[0],
+    tippy('#targetArea02', { content: 'これはステップ2の説明です。', trigger: 'manual' })[0],
+    tippy('#targetArea03', { content: 'これはステップ3の説明です。', trigger: 'manual' })[0],
+    tippy('#targetArea04', { content: 'これはステップ4の説明です。', trigger: 'manual' })[0],
+    tippy('#targetArea05', { content: 'これはステップ5の説明です。', trigger: 'manual' })[0],
+    tippy('#targetArea06', { content: 'これはステップ6の説明です。', trigger: 'manual' })[0],
+    tippy('#targetArea07', { content: 'これはステップ7の説明です。', trigger: 'manual' })[0],
+    tippy('#targetArea08', { content: 'これはステップ8の説明です。', trigger: 'manual' })[0],
+    tippy('#targetArea09', { content: 'これはステップ9の説明です。', trigger: 'manual' })[0],
+    tippy('#targetArea10', { content: 'これはステップ10の説明です。', trigger: 'manual' })[0],
+    tippy('#targetArea11', { content: 'これはステップ11の説明です。', trigger: 'manual', appendTo: () => document.querySelector('.swiper')})[0],
+    tippy('#targetArea12', { content: 'これはステップ12の説明です。', trigger: 'manual' })[0],
+    tippy('#targetArea13', { content: 'これはステップ13の説明です。', trigger: 'manual' })[0],
+    tippy('#targetArea14', { content: 'これはステップ14の説明です。', trigger: 'manual' })[0],
+    tippy('#targetArea15', { content: 'これはステップ15の説明です。', trigger: 'manual' })[0],
+    tippy('#targetArea16', { content: 'これはステップ16の説明です。', trigger: 'manual' })[0],
+    tippy('#targetArea17', { content: 'これはステップ17の説明です。', trigger: 'manual' })[0],
+  ];
+
+  // 初期表示: 最初のスライドのツールチップを表示
+  tooltips[0]?.show();
+
+  // スライド遷移後のイベント
+  swiper.on('slideChangeTransitionEnd', () => {
+    // 全て非表示
+    tooltips.forEach(tip => tip.hide());
+
+    // 現在のスライドに対応するツールチップを表示
+    const activeTooltip = tooltips[swiper.activeIndex];
+    if (activeTooltip) {
+      activeTooltip.show();
+    }
+  });
+});
 
   </script>
-
-
-
-
-
-
 </body>
 
 </html>
