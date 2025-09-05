@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <title>05エアコン設定｜三菱電機ホームソリューション ［マルチエリア空調］ Good Share！（グッシェア）｜三菱電機</title>
+  <meta name="viewport" content="width=375, user-scalable=no">
+  <!-- demoApp CSS/JS -->
+  <!-- <link rel="stylesheet" href="../assets/css/demo-app.css">-->
+  <link rel="stylesheet" href="../assets/css/demo-app-elements-position.css">
+  <link rel="stylesheet" href="../assets/css/drower-menu.css">
+  <!-- Swiper CSS/Custom -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- <link rel="stylesheet" href="../assets/css/swiper-custom.css"> -->
+  <!-- Tippy -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+  <link rel="stylesheet" href="../assets/css/tippy-custom.css" /> -->
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      /* background-color: black; */
+    }
+
+    .demo-app-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 375px;
+      height: 667px;
+      margin: 0 auto;
+    }
+
+    .demo-app-wrap--main {
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .demo-app-wrap--footer {
+      position: fixed;
+      top: 533.6px;
+      width: 100%;
+      max-width: 375px;
+      height: 20%;
+      max-height: 133.4px;
+      background-color: #87CEFA;
+    }
+
+    /************************************/
+    .swiper {
+      height: 80%;
+      overflow: hidden;
+    }
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .swiper-slide_img_holder {
+      position: relative;
+      width: 80%;
+      height: 100%;
+      overflow-y: auto;
+      -ms-overflow-style: none;
+      /* Internet Explorer and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+
+    .swiper-slide_img_holder img {
+      width: 100%;
+      height: auto;
+      max-height: none;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 10%;
+      background-color: DimGray;
+      opacity: 0.5;
+      top: 0;
+      height: 100%;
+      margin-top: 0;
+    }
+
+    .swiper-button-prev {
+      left: 0;
+    }
+
+    .swiper-button-next {
+      right: 0;
+    }
+
+    .swiper-pagination {
+      background-color: DimGray;
+      opacity: 0.5;
+      font-size: 1.25em;
+      color: white;
+      left: 50%;
+      width: 5em;
+      transform: translateX(-50%);
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="demo-app-wrap">
+    <main class="demo-app-wrap--main">
+
+      <!-- Swiper -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/05-01.png" alt="STEP-01" />
+              <div id="targetArea01"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/05-02.png" alt="STEP-02" />
+              <div id="targetArea02"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/05-03.png" alt="STEP-03" />
+              <div id="targetArea03"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/06-01.png" alt="STEP-04" />
+                <div id="targetArea04"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/06-02.png" alt="STEP-05" />
+              <div id="targetArea05"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/07-01.png" alt="STEP-06" />
+              <div id="targetArea06"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/08-01.png" alt="STEP-07" />
+              <div id="targetArea07"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/09-01.png" alt="STEP-08" />
+              <div id="targetArea08"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/09-02.png" alt="STEP-09" />
+              <div id="targetArea09"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/10-01.png" alt="STEP-10" />
+              <div id="targetArea10"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/11-01.png" alt="STEP-11" />
+              <div id="targetArea11"></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/13-01.png" alt="STEP-12" />
+              <div id="targetArea12"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/13-02.png" alt="STEP-13" />
+              <div id="targetArea13"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/13-02.png" alt="STEP-14" />
+              <div id="targetArea14"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/16-01.png" alt="STEP-15" />
+              <div id="targetArea15"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/17-01.png" alt="STEP-16" />
+              <div id="targetArea16"></div>
+              <div id="targetArea17"></div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </main>
+    <footer class="demo-app-wrap--footer">footer</footer>
+  </div>
+
+  <!-- demoApp -->
+  <script src="../assets/js/demo-app.js"></script>
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Tippy -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+
+  <script>
+
+    // Initialize Swiper
+    const swiper = new Swiper('.swiper', {
+      // pagination
+      pagination: {
+        el: '.swiper-pagination',
+        type: "fraction",
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>

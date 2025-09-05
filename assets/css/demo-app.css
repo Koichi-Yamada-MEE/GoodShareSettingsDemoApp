@@ -15,26 +15,16 @@ body {
 
 .demo-app-wrap--main {
   position: absolute;
-  width: 100%;
-  max-width: 375px;
-  height: 100%;
-  max-height: 667px;
+  width: 100%; /* 親要素に合わせる */
+  height: 100%; /* 親要素に合わせる */
 }
 
 .demo-app-wrap--footer {
-  position: fixed;
-  top: 533.6px;
+  position: absolute;
+  bottom: 0;
   width: 100%;
   max-width: 375px;
   height: 20%;
   max-height: 133.4px;
   background-color: #87CEFA;
 }
-
-/* .demo-app-wrap--header,
-.demo-app-wrap--footer,
-.demo-app-wrap--fixed-txt {
-  max-width: 375px;
-  width: 100%;
-  position: fixed;
-} */
