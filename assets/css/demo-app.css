@@ -26,7 +26,7 @@ body {
   width: 100%;
   max-width: 375px;
   height: 20%;
-  max-height: 133.4px;
+  min-height: 133.4px;
   padding: 0.5em;
   box-sizing: border-box;
   border: 1px solid #1FA28D;
