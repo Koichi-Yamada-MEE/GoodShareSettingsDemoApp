@@ -1,0 +1,83 @@
+.swiper {
+  height: 80%; /* 上部80%の高さ */
+  overflow: hidden; /* スワイパーの内容がはみ出さないようにする */
+  border-bottom: 1px solid #ccc;
+}
+
+.swiper-slide_img_holder {
+  position: relative;
+  width: 100%;
+  height: 100%; /* 親要素に合わせる */
+  overflow-y: auto; /* 縦方向のスクロールを可能にする */
+  display: flex;
+  justify-content: center; /* 中央揃えは無効にする */
+  align-items: flex-start; /* 上部に揃える */
+  -ms-overflow-style: none;  /* Internet Explorer and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* スクロールバーを非表示にする */
+.swiper-slide_img_holder::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.swiper-slide_img_holder img {
+  width: 80%; /* 幅を80%に設定 */
+  height: auto; /* アスペクト比を維持 */
+  max-height: none; /* 高さの制限を解除 */
+  display: block; /* 余白をなくす */
+  margin: 0 auto; /* 中央揃え */
+ }
+
+/* =================================
+  * ページネーション・ナビボタン
+================================= */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 10%;
+  background-color: DimGray;
+  opacity: 0.5;
+  top: 0; 
+  height: 100%;
+  margin-top: 0;
+}
+
+/* ボタン領域調整 */
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-pagination {
+  background-color: DimGray;
+  opacity: 0.5;
+  font-size: 1.25em;
+  color: white;
+  left: 50%;
+  width: 5em;
+  transform: translateX(-50%);
+}
+
+/* .swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  left: 50%;
+  width: 20%;
+  transform: translateX(-50%);
+} */
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: white;
+}
+
+.target-holder {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+}
+

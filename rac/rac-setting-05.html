@@ -6,118 +6,23 @@
   <title>05エアコン設定｜三菱電機ホームソリューション ［マルチエリア空調］ Good Share！（グッシェア）｜三菱電機</title>
   <meta name="viewport" content="width=375, user-scalable=no">
   <!-- demoApp CSS/JS -->
-  <!-- <link rel="stylesheet" href="../assets/css/demo-app.css">-->
+  <link rel="stylesheet" href="../assets/css/demo-app.css">
   <link rel="stylesheet" href="../assets/css/demo-app-elements-position.css">
   <link rel="stylesheet" href="../assets/css/drower-menu.css">
   <!-- Swiper CSS/Custom -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <!-- <link rel="stylesheet" href="../assets/css/swiper-custom.css"> -->
+  <link rel="stylesheet" href="../assets/css/swiper-custom.css">
   <!-- Tippy -->
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
   <link rel="stylesheet" href="../assets/css/tippy-custom.css" />
-
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      /* background-color: black; */
-    }
-
-    .demo-app-wrap {
-      position: relative;
-      width: 100%;
-      max-width: 375px;
-      height: 667px;
-      margin: 0 auto;
-    }
-
-    .demo-app-wrap--main {
-      position: absolute;
-      top: 0px;
-      width: 100%;
-      height: 100%;
-    }
-
-    .demo-app-wrap--footer {
-      position: fixed;
-      z-index: 100000;
-      top: 533.6px;
-      width: 100%;
-      max-width: 375px;
-      height: 20%;
-      max-height: 133.4px;
-      background-color: #87CEFA;
-    }
-
-    /************************************/
-    .swiper {
-      height: 80%;
-      overflow: hidden;
-    }
-
-    .swiper-slide {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-    }
-
-    .swiper-slide_img_holder {
-      position: relative;
-      width: 80%;
-      height: 100%;
-      overflow-y: auto;
-      -ms-overflow-style: none;
-      /* Internet Explorer and Edge */
-      scrollbar-width: none;
-      /* Firefox */
-    }
-
-    .swiper-slide_img_holder img {
-      width: 100%;
-      height: auto;
-      max-height: none;
-      display: block;
-      margin: 0 auto;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-      width: 10%;
-      background-color: DimGray;
-      opacity: 0.5;
-      top: 0;
-      height: 100%;
-      margin-top: 0;
-    }
-
-    .swiper-button-prev {
-      left: 0;
-    }
-
-    .swiper-button-next {
-      right: 0;
-    }
-
-    .swiper-pagination {
-      background-color: DimGray;
-      opacity: 0.5;
-      font-size: 1.25em;
-      color: white;
-      left: 50%;
-      width: 5em;
-      transform: translateX(-50%);
-    }
-
-    .swiper-button-next:after,
-    .swiper-button-prev:after {
-      color: white;
-    }
-  </style>
 </head>
 
 <body>
   <div class="demo-app-wrap">
     <main class="demo-app-wrap--main">
+      <!-- Menu-->
+      <div class="floating-menu-icon">&#x205D;</div>
+
       <!-- Swiper -->
       <div class="swiper">
         <div class="swiper-wrapper">
@@ -227,7 +132,15 @@
         <div class="swiper-button-next"></div>
       </div>
     </main>
-    <footer class="demo-app-wrap--footer">footer</footer>
+    <footer class="demo-app-wrap--footer">
+      <div class="description">
+        <strong class="note">NOTE</strong><br>
+        <ul>
+          <li>注意説明1の文章</li>
+          <li>注意説明2の文章</li>
+        </ul>
+      </div>
+    </footer>
   </div>
 
   <!-- demoApp -->
@@ -241,54 +154,77 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
 
-  // Initialize Swiper
-  const swiper = new Swiper('.swiper', {
-    pagination: {
-      el: '.swiper-pagination',
-      type: "fraction",
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+      // Initialize Swiper
+      const swiper = new Swiper('.swiper', {
+        pagination: {
+          el: '.swiper-pagination',
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
 
-  // tippyインスタンスを配列で保持
-  const tooltips = [
-    tippy('#targetArea01', { content: 'これはステップ1の説明です。', trigger: 'manual' })[0],
-    tippy('#targetArea02', { content: 'これはステップ2の説明です。', trigger: 'manual' })[0],
-    tippy('#targetArea03', { content: 'これはステップ3の説明です。', trigger: 'manual' })[0],
-    tippy('#targetArea04', { content: 'これはステップ4の説明です。', trigger: 'manual' })[0],
-    tippy('#targetArea05', { content: 'これはステップ5の説明です。', trigger: 'manual' })[0],
-    tippy('#targetArea06', { content: 'これはステップ6の説明です。', trigger: 'manual' })[0],
-    tippy('#targetArea07', { content: 'これはステップ7の説明です。', trigger: 'manual' })[0],
-    tippy('#targetArea08', { content: 'これはステップ8の説明です。', trigger: 'manual' })[0],
-    tippy('#targetArea09', { content: 'これはステップ9の説明です。', trigger: 'manual' })[0],
-    tippy('#targetArea10', { content: 'これはステップ10の説明です。', trigger: 'manual' })[0],
-    tippy('#targetArea11', { content: 'これはステップ11の説明です。', trigger: 'manual', appendTo: () => document.querySelector('.swiper')})[0],
-    tippy('#targetArea12', { content: 'これはステップ12の説明です。', trigger: 'manual' })[0],
-    tippy('#targetArea13', { content: 'これはステップ13の説明です。', trigger: 'manual' })[0],
-    tippy('#targetArea14', { content: 'これはステップ14の説明です。', trigger: 'manual' })[0],
-    tippy('#targetArea15', { content: 'これはステップ15の説明です。', trigger: 'manual' })[0],
-    tippy('#targetArea16', { content: 'これはステップ16の説明です。', trigger: 'manual' })[0],
-    tippy('#targetArea17', { content: 'これはステップ17の説明です。', trigger: 'manual' })[0],
-  ];
+      // tippyインスタンスを配列で保持
+      const tooltipsData = [
+        { id: '#targetArea01', content: '☰メニューをタップする' },
+        { id: '#targetArea02', content: '「＋機器登録を」タップする' },
+        { id: '#targetArea03', content: '「エアコン」をタップする' },
+        { id: '#targetArea04', content: '「ルームエアコン」をタップする' },
+        { id: '#targetArea05', content: '『「長押しで無線無効」の文字がある』をタップする' },
+        { id: '#targetArea06', content: '「リモコンにメニューボタンがない」をタップする' },
+        { id: '#targetArea07', content: '「アクセスポイントモードでの接続」をタップする' },
+        { id: '#targetArea08', content: '画面の内容を確認し、「次へ」をタップする' },
+        { id: '#targetArea09', content: '画面の内容を確認し、「次へ」をタップする' },
+        { id: '#targetArea10', content: '画面の内容を確認し、「次へ」をタップする' },
+        { id: '#targetArea11', content: '画面の内容を操作し、「次へ」をタップする' },
+        { id: '#targetArea12', content: '画面の内容を確認し、「次へ」をタップする' },
+        { id: '#targetArea13', content: '「スマートフォンの設定画面へ」をタップしてスマートフォンの設定画面で設定を行う' },
+        { id: '#targetArea14', content: 'MyMUアプリの画面に戻って「次へ」をタップする' },
+        { id: '#targetArea15', content: '画面の内容を確認し、「次へ」をタップする' },
+        { id: '#targetArea16', content: '「SSID」欄をタップし、表示されるSSID選択画面で接続するルーターのSSIDを選択し、「決定」をタップする' },
+        { id: '#targetArea17', content: '「暗号化キー（パスワード）」にルーターの暗号化キーを入力し、「接続する」をタップする' },
+      ];
 
-  // 初期表示: 最初のスライドのツールチップを表示
-  tooltips[0]?.show();
+      const tooltips = tooltipsData.map(({ id, content }) =>
+        tippy(id, { content, trigger: 'manual', hideOnClick: false, theme: 'gradient', appendTo: () => document.querySelector('.swiper') })[0]
+      );
 
-  // スライド遷移後のイベント
-  swiper.on('slideChangeTransitionEnd', () => {
-    // 全て非表示
-    tooltips.forEach(tip => tip.hide());
+      // 初期表示: 最初のスライドのツールチップを表示
+      tooltips[0]?.show();
 
-    // 現在のスライドに対応するツールチップを表示
-    const activeTooltip = tooltips[swiper.activeIndex];
-    if (activeTooltip) {
-      activeTooltip.show();
-    }
-  });
-});
+      // スライド遷移後のイベント
+      swiper.on('slideChangeTransitionEnd', () => {
+        // 全て非表示
+        tooltips.forEach(tip => tip.hide());
+
+        // 現在のスライドに対応するツールチップを表示
+        const activeTooltip = tooltips[swiper.activeIndex];
+        if (activeTooltip) {
+          activeTooltip.show();
+        }
+        // 自動スクロール
+        // 対象インデックスを配列で定義
+        const targetIndexes = [10, 12, 13, 14];
+
+        if (targetIndexes.includes(swiper.activeIndex)) {
+          const activeSlide = swiper.slides[swiper.activeIndex];
+          const scrollableContent = activeSlide.querySelector('.swiper-slide_img_holder'); // スクロール可能なコンテンツを取得
+          scrollableContent.scrollTo({
+            top: scrollableContent.scrollHeight,
+            behavior: 'smooth'
+          });
+        }
+      });
+
+
+
+
+
+
+
+    });
 
   </script>
 </body>
