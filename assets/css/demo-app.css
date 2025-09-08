@@ -20,9 +20,10 @@ body {
 }
 
 .demo-app-wrap--footer {
-  position: fixed;
+  position: absolute;
   z-index: 100000;
-  top: 533.6px;
+  /* top: 533.6px; */
+  bottom: 0;
   width: 100%;
   max-width: 375px;
   height: 20%;
