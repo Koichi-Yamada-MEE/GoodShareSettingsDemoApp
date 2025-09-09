@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <title>06エアコン設定｜三菱電機ホームソリューション ［マルチエリア空調］ Good Share！（グッシェア）｜三菱電機</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- demoApp CSS/JS -->
+  <link rel="stylesheet" href="../assets/css/demo-app.css">
+  <link rel="stylesheet" href="../assets/css/demo-app-elements-position.css">
+  <link rel="stylesheet" href="../assets/css/drower-menu.css">
+  <!-- Swiper CSS/Custom -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../assets/css/swiper-custom.css">
+  <!-- Tippy -->
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+  <link rel="stylesheet" href="../assets/css/tippy-custom.css" />
+</head>
+
+<body>
+  <div class="demo-app-wrap">
+    <main class="demo-app-wrap--main">
+      <!-- menu-->
+      <div class="floating-menu-icon">&#x205D;</div>
+      <!-- swiper -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/05-01.png" alt="STEP-01" />
+              <div id="targetArea01"></div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+        <!-- slides -->
+        <div class="swiper-wrapper" id="swiper-wrapper"></div>
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="demo-app-wrap--footer">
+      <div class="description">
+        <strong class="note">NOTE</strong><br>
+        <div id="footerContent"></div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- demoApp -->
+  <script src="../assets/js/demo-app.js"></script>
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Tippy -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      const createSlides = () => {
+        // slides配列の要素数をカウント
+        const slideCount = getJsonValue("slides").length;
+        const wrapper = document.getElementById('swiper-wrapper');
+
+        // スライドを追加
+        for (let i = 0; i < slideCount; i++) {
+          const slide = document.createElement('div');
+          slide.className = 'swiper-slide';
+          slide.innerHTML = `
+            <div class="swiper-slide_img_holder">
+              <img src="${getJsonValue(`slides.${i}.imagePath`)}" alt="${getJsonValue(`slides.${i}.alt`)}" />
+              <div id="${getJsonValue(`slides.${i}.tooltipTarget`)}"></div>
+            </div>
+          `;
+          wrapper.appendChild(slide);
+        }
+      };
+      // スライドを生成
+      createSlides();
+
+
+      // Initialize Swiper
+      const swiper = new Swiper('.swiper', {
+        pagination: {
+          el: '.swiper-pagination',
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+      // create tippy instances
+
+
+
+      const tooltipsInstances = demoAppJson.slides
+  .filter(slide => slide.tooltipTarget && slide.tooltipDescription) // tooltipTargetとtooltipDescriptionが存在するスライドのみをフィルタリング
+  .map(({ tooltipTarget, tooltipDescription }) =>
+    tippy(`#${tooltipTarget}`, {
+      content: tooltipDescription,
+      trigger: 'manual',
+      hideOnClick: false,
+      theme: 'gradient',
+      appendTo: () => document.querySelector('.swiper'),
+    })
+  );
+
+      const tooltipsData = [
+        { id: '#targetArea01', content: '☰メニューをタップする' },
+        { id: '#targetArea02', content: '「＋機器登録を」タップする' },
+        { id: '#targetArea03', content: '「エアコン」をタップする' },
+        { id: '#targetArea04', content: '「ルームエアコン」をタップする' },
+        { id: '#targetArea05', content: '『「長押しで無線無効」の文字がある』をタップする' },
+        { id: '#targetArea06', content: '「リモコンにメニューボタンがない」をタップする' },
+        { id: '#targetArea07', content: '「アクセスポイントモードでの接続」をタップする' },
+        { id: '#targetArea08', content: '画面の内容を確認し、「次へ」をタップする' },
+        { id: '#targetArea09', content: '画面の内容を確認し、「次へ」をタップする' },
+        { id: '#targetArea10', content: '画面の内容を確認し、「次へ」をタップする' },
+        { id: '#targetArea11', content: '画面の内容を操作し、「次へ」をタップする' },
+        { id: '#targetArea12', content: '画面の内容を確認し、「次へ」をタップする' },
+        { id: '#targetArea13', content: '「スマートフォンの設定画面へ」をタップしてスマートフォンの設定画面で設定を行う' },
+        { id: '#targetArea14', content: 'MyMUアプリの画面に戻って「次へ」をタップする' },
+        { id: '#targetArea15', content: '画面の内容を確認し、「次へ」をタップする' },
+        { id: '#targetArea16', content: '「SSID」欄をタップし、表示されるSSID選択画面で接続するルーターのSSIDを選択し、「決定」をタップする' },
+        { id: '#targetArea17', content: '「暗号化キー（パスワード）」にルーターの暗号化キーを入力し、「接続する」をタップする' },
+      ];
+
+      const tooltips = tooltipsData.map(({ id, content }) =>
+        tippy(id, { content, trigger: 'manual', hideOnClick: false, theme: 'gradient', appendTo: () => document.querySelector('.swiper') })[0]
+      );
+
+      // 初期表示: 最初のスライドのツールチップを表示
+      tooltips[0]?.show();
+
+      // スライド遷移後のイベント
+      swiper.on('slideChangeTransitionEnd', () => {
+
+        const id = 
+        // 全て非表示
+        tooltips.forEach(tip => tip.hide());
+
+        // 現在のスライドに対応するツールチップを表示
+        const activeTooltip = tooltips[swiper.activeIndex];
+        if (activeTooltip) {
+          activeTooltip.show();
+        }
+        // 自動スクロール
+        // 対象インデックスを配列で定義
+        const targetIndexes = [10, 12, 13, 14];
+
+        if (targetIndexes.includes(swiper.activeIndex)) {
+          const activeSlide = swiper.slides[swiper.activeIndex];
+          const scrollableContent = activeSlide.querySelector('.swiper-slide_img_holder'); // スクロール可能なコンテンツを取得
+          scrollableContent.scrollTo({
+            top: scrollableContent.scrollHeight,
+            behavior: 'smooth'
+          });
+        }
+
+
+        // footerの内容を配列で保持
+        // const footerData = [
+        //   { id: '#footerData01', content: '#footerData01<br />ここに詳細説明や追加情報を入れる' },
+        //   { id: '#footerData02', content: '#footerData02<br />ここに詳細説明や追加情報を入れる' },
+        //   { id: '#footerData03', content: '#footerData03<br />ここに詳細説明や追加情報を入れる' },
+        //   { id: '#footerData04', content: '#footerData04<br />ここに詳細説明や追加情報を入れる' },
+        //   { id: '#footerData05', content: '#footerData05<br />ここに詳細説明や追加情報を入れる' },
+        //   { id: '#footerData06', content: '#footerData06<br />ここに詳細説明や追加情報を入れる' },
+        //   { id: '#footerData07', content: '#footerData07<br />ここに詳細説明や追加情報を入れる' },
+        //   { id: '#footerData08', content: '#footerData08<br />ここに詳細説明や追加情報を入れる' },
+        //   { id: '#footerData09', content: '#footerData09<br />ここに詳細説明や追加情報を入れる' },
+        //   { id: '#footerData10', content: '#footerData10<br />ここに詳細説明や追加情報を入れる' },
+        //   { id: '#footerData11', content: '#footerData11<br />ここに詳細説明や追加情報を入れる' },
+        //   { id: '#footerData12', content: '#footerData12<br />ここに詳細説明や追加情報を入れる' },
+        //   { id: '#footerData13', content: '#footerData13<br />ここに詳細説明や追加情報を入れる' },
+        //   { id: '#footerData14', content: '#footerData14<br />ここに詳細説明や追加情報を入れる' },
+        //   { id: '#footerData15', content: '#footerData15<br />ここに詳細説明や追加情報を入れる' },
+        //   { id: '#footerData16', content: '#footerData16<br />ここに詳細説明や追加情報を入れる' },
+        //   { id: '#footerData17', content: '#footerData17<br />ここに詳細説明や追加情報を入れる' },
+        // ];
+
+        // フッターを生成する関数
+        // const createFooterContent = () => {
+        //   const footerContent = document.getElementById('footerContent');
+        //   footerContent.innerHTML = footerData[swiper.activeIndex]?.content || '';
+        // };
+        // スライドを生成
+        // createFooterContent();
+      });
+    });
+
+  </script>
+</body>
+
+</html>

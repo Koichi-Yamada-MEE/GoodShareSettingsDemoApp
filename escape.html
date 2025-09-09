@@ -1,27 +1,116 @@
-      <!-- Swiper -->
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="swiper-slide_img_holder">
-              <img src="../assets/img/05-01.png" alt="STEP-01" />
-              <div id="targetArea01"></div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide_img_holder">
-              <img src="../assets/img/05-02.png" alt="STEP-02" />
-              <div id="targetArea02"></div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide_img_holder">
-              <img src="../assets/img/05-03.png" alt="STEP-03" />
-              <div id="targetArea03"></div>
-            </div>
-          </div>
-        <!-- pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+<!-- Swiper -->
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="swiper-slide_img_holder">
+        <img src="../assets/img/05-01.png" alt="STEP-01" />
+        <div id="targetArea01"></div>
       </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="swiper-slide_img_holder">
+        <img src="../assets/img/05-02.png" alt="STEP-02" />
+        <div id="targetArea02"></div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="swiper-slide_img_holder">
+        <img src="../assets/img/05-03.png" alt="STEP-03" />
+        <div id="targetArea03"></div>
+      </div>
+    </div>
+    <!-- pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+<script>
+  const demoAppJson = {
+    jsonName: "GoodShareSettingsDemoApp",
+    version: "1.0.0",
+    slides: [
+      {
+        Index: 0,
+        imagePath: "../assets/img/05-01.png",
+        tooltipTarget: "targetArea01",
+        tooltipDescription: "☰メニューをタップする",
+        additionalDescription: "dummy",
+        modal: "dummy",
+      },
+      {
+        Index: 1,
+        imagePath: "dummy",
+        tooltipTarget: "dummy",
+        tooltipDescription: "dummy",
+        additionalDescription: "dummy",
+        modal: "dummy",
+      },
+    ],
+  };
+
+
+
+const slideElement = document.createElement('div');
+slideElement.classList.add('swiper-slide');
+
+const imgHolder = document.createElement('div');
+imgHolder.classList.add('swiper-slide_img_holder');
+
+const img = document.createElement('img');
+img.src = getJsonValue(`slides.${i}.imagePath`)
+
+
+const targetArea = document.createElement('div');
+targetArea.id = getJsonValue(`slides.${i}.tooltipTarget`);
+
+imgHolder.append(img, targetArea);
+slideElement.append(imgHolder);
+wrapper.append(slideElement);
+
+
+      // スライドデータ
+      const slidesData = [
+        { imgSrc: '../assets/img/05-01.png', alt: 'STEP-01', targetId: 'targetArea01' },
+        { imgSrc: '../assets/img/05-02.png', alt: 'STEP-02', targetId: 'targetArea02' },
+        { imgSrc: '../assets/img/05-03.png', alt: 'STEP-03', targetId: 'targetArea03' },
+        { imgSrc: '../assets/img/06-01.png', alt: 'STEP-04', targetId: 'targetArea04' },
+        { imgSrc: '../assets/img/06-02.png', alt: 'STEP-05', targetId: 'targetArea05' },
+        { imgSrc: '../assets/img/07-01.png', alt: 'STEP-06', targetId: 'targetArea06' },
+        { imgSrc: '../assets/img/08-01.png', alt: 'STEP-07', targetId: 'targetArea07' },
+        { imgSrc: '../assets/img/09-01.png', alt: 'STEP-08', targetId: 'targetArea08' },
+        { imgSrc: '../assets/img/09-02.png', alt: 'STEP-09', targetId: 'targetArea09' },
+        { imgSrc: '../assets/img/10-01.png', alt: 'STEP-10', targetId: 'targetArea10' },
+
+        { imgSrc: '../assets/img/11-01.png', alt: 'STEP-11', targetId: 'targetArea11' },
+        { imgSrc: '../assets/img/13-01.png', alt: 'STEP-12', targetId: 'targetArea12' },
+        { imgSrc: '../assets/img/13-02.png', alt: 'STEP-13', targetId: 'targetArea13' },
+        { imgSrc: '../assets/img/13-02.png', alt: 'STEP-14', targetId: 'targetArea14' },
+        { imgSrc: '../assets/img/16-01.png', alt: 'STEP-15', targetId: 'targetArea15' },
+        { imgSrc: '../assets/img/17-01.png', alt: 'STEP-16', targetId: 'targetArea16' },
+        { imgSrc: '../assets/img/17-01.png', alt: 'STEP-16', targetId: 'targetArea17' },
+      ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

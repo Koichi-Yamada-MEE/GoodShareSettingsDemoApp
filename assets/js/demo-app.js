@@ -1,3 +1,77 @@
+/******************************************
+ * JSON
+ ******************************************/
+// プロパティの値を取得
+function getJsonValue(path) {
+  const jsonData = sessionStorage.getItem("demoAppJson");
+  const obj = JSON.parse(jsonData);
+  if (!obj) return undefined;
+
+  return path.split('.').reduce((acc, key) => {
+    if (acc && key in acc) {
+      return acc[key];
+    } else {
+      return undefined;
+    }
+  }, obj);
+}
+
+// プロパティの値を設定
+function setJsonValue(path, value) {
+  const jsonData = sessionStorage.getItem("demoAppJson");
+  const obj = JSON.parse(jsonData);
+  if (!obj) {
+    alert("セッションストレージにデータがありません");
+    return false;
+  }
+
+  const keys = path.split('.');
+  let current = obj;
+
+  for (let i = 0; i < keys.length - 1; i++) {
+    if (!(keys[i] in current)) {
+      alert(`"${keys[i]}" が存在しないため更新できません`);
+      return false;
+    }
+    current = current[keys[i]];
+  }
+
+  const lastKey = keys[keys.length - 1];
+  if (!(lastKey in current)) {
+    alert(`"${lastKey}" が存在しないため更新できません`);
+    return false;
+  }
+
+  current[lastKey] = value;
+  sessionStorage.setItem("demoAppJson", JSON.stringify(obj));
+  return true;
+}
+
+
+// document.getElementById('open-modal').addEventListener('click', function() {
+//   document.getElementById('modal').classList.remove('d-none');
+// });
+
+// document.getElementById('close-modal').addEventListener('click', function() {
+//   document.getElementById('modal').classList.add('d-none');
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // function toggleVisibility(targetId) {
   // targetArea内の全ての子要素を取得
   // const targetArea = document.getElementById('targetArea');

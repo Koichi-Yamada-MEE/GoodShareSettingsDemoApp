@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <title>07エアコン設定｜三菱電機ホームソリューション ［マルチエリア空調］ Good Share！（グッシェア）｜三菱電機</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- demoApp CSS/JS -->
+  <link rel="stylesheet" href="../assets/css/demo-app.css">
+  <link rel="stylesheet" href="../assets/css/demo-app-elements-position.css">
+  <link rel="stylesheet" href="../assets/css/drower-menu.css">
+  <!-- Swiper CSS/Custom -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../assets/css/swiper-custom.css">
+  <!-- Tippy -->
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+  <link rel="stylesheet" href="../assets/css/tippy-custom.css" />
+</head>
+
+<body>
+  <div class="demo-app-wrap">
+    <main class="demo-app-wrap--main">
+      <!-- menu-->
+      <div class="floating-menu-icon">&#x205D;</div>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Slider wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <!-- <div class="swiper-slide">
+            <div class="swiper-slide_img_holder">
+              <img src="../assets/img/05-01.png" alt="STEP-01" />
+              <div id="targetArea01"></div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <!-- pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+  </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="demo-app-wrap--footer">
+    <div class="description">
+      <strong class="note">NOTE</strong><br>
+      <div id="footerContent"></div>
+    </div>
+  </footer>
+  </div>
+
+  <!-- demoApp -->
+  <script src="../assets/js/demo-app.js"></script>
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Tippy -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      const createSlides = () => {
+        // Count slides
+        const slideCount = getJsonValue("slides").length;
+        const wrapper = document.getElementsByClassName('swiper-wrapper')[0];
+
+        // Add slides
+        for (let i = 0; i < slideCount; i++) {
+          const slide = document.createElement('div');
+          slide.className = 'swiper-slide';
+          slide.innerHTML = `
+            <div class="swiper-slide_img_holder">
+              <img src="${getJsonValue(`slides.${i}.imagePath`)}" alt="${getJsonValue(`slides.${i}.alt`)}" />
+              <div id="${getJsonValue(`slides.${i}.tooltipTarget`)}"></div>
+            </div>
+          `;
+          wrapper.appendChild(slide);
+        }
+      };
+      // Create slides
+      createSlides();
+
+      // Initialize Swiper
+      const swiper = new Swiper('.swiper', {
+        pagination: {
+          el: '.swiper-pagination',
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+      // create tippy instances
+      const tooltipsInstances = JSON.parse(sessionStorage.getItem("demoAppJson")).slides
+        .filter(slide => slide.tooltipTarget && slide.tooltipDescription)
+        .flatMap(({ tooltipTarget, tooltipDescription }) =>
+          tippy(`#${tooltipTarget}`, {
+            content: tooltipDescription,
+            trigger: 'manual',
+            hideOnClick: false,
+            theme: 'gradient',
+            appendTo: () => document.querySelector('.swiper'),
+          })
+        );
+      // first tooltip show
+      tooltipsInstances[0]?.show();
+
+      // show tooltip
+      swiper.on('slideChangeTransitionEnd', () => {
+        // hide all tooltips on slide change
+        tooltipsInstances.forEach(instance => instance.hide());
+        console.log(`Slide changed to index: ${swiper.activeIndex}`);
+
+        // アクティブスライドに対応するツールチップを表示
+        const activeTooltip = tooltipsInstances[swiper.activeIndex];
+        if (activeTooltip) {
+          activeTooltip.show();
+        }
+      });
+    });
+
+  </script>
+</body>
+
+</html>
