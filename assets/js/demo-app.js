@@ -89,21 +89,23 @@ function setJsonValue(path, value) {
 // }
 
 
-// const hamburgerIcon = document.querySelector('.hamburger-icon');
-// const drawerContainer = document.querySelector('.drawer-container');
-// const closeIcon = document.querySelector('.close-icon');
+const menuIcon = document.querySelector('.floating-menu-icon');
+const drawerMenu = document.querySelector('.drawer-menu');
+const closeIcon = document.querySelector('.close-icon');
 
-// hamburgerIcon.addEventListener('click', () => {
-//   drawerContainer.classList.add('open'); // 表示 + ドローイン
-// });
+// 開く
+menuIcon.addEventListener('click', () => {
+  drawerMenu.classList.add('open');
+});
 
-// closeIcon.addEventListener('click', () => {
-//   drawerContainer.classList.remove('open'); // 非表示 + ドローアウト
-// });
+// 閉じる
+closeIcon.addEventListener('click', () => {
+  drawerMenu.classList.remove('open');
+});
 
-// // ドロワー外をクリックして閉じる場合（任意）
-// document.addEventListener('click', (e) => {
-//   if (!drawerContainer.contains(e.target) && !hamburgerIcon.contains(e.target)) {
-//     drawerContainer.classList.remove('open');
-//   }
-// });
+// 外側クリックで閉じる
+document.addEventListener('click', (e) => {
+  if (!drawerMenu.contains(e.target) && !menuIcon.contains(e.target)) {
+    drawerMenu.classList.remove('open');
+  }
+});

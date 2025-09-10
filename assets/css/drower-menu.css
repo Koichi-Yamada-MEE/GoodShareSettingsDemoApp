@@ -1,39 +1,41 @@
 /* ハンバーガーアイコン */
 .hamburger-icon {
-  position: absolute;       /* 親 .demo-app-wrap に対して配置 */
+  position: absolute;
   top: 16px;
   left: 16px;
   font-size: 28px;
   cursor: pointer;
   background-color: DimGray;
   color: white;
-  opacity: 0.5;
+  opacity: 0.7;
   padding: 0.25em;
-  z-index: 1000;            /* スライド上に表示 */
+  z-index: 1000;
 }
 
-/* ドロワーの背景 */
-.drawer-container {
-  position: absolute;        /* 親 .demo-app-wrap 内でスライド */
+/* ドロワーメニュー */
+.drawer-menu {
+  position: absolute;
   top: 0;
-  left: -250px;              /* 初期は左外 */
+  left: 0;
   width: 250px;
   height: 100%;
-  background-color: #fff;
-  transition: left 0.3s ease;
-  z-index: 1001;
-  overflow: auto;
+  background-color: #fffff0;
+  transform: translateX(-100%); /* 初期は非表示（左に隠す） */
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 999;
 }
 
-/* ドロワーを開いた状態 */
-.drawer-container.open {
-  left: 0;
-  display: block;
+/* 開いた状態 */
+.drawer-menu.open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
 }
 
-/* ドロワー内部 */
-.drawer {
-  padding: 20px;
+.drawer-container {
+  padding: 1em;
 }
 
 .close-icon {
@@ -42,14 +44,13 @@
   text-align: right;
 }
 
-.drawer ul {
+.drawer-container ul {
   list-style: none;
   padding: 0;
   margin-top: 20px;
 }
 
-.drawer li {
+.drawer-container li {
   margin-bottom: 16px;
   cursor: pointer;
 }
-
