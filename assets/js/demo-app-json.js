@@ -9,7 +9,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea01",
       tooltipDescription: "☰メニューをタップする",
       additionalDescription: "dummy",
-      modal: "dummy",
+      modal: "AddDesc01",
     },
     {
       index: 1,
@@ -18,7 +18,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea02",
       tooltipDescription: "「＋機器登録を」タップする",
       additionalDescription: "dummy",
-      modal: "dummy",
+      modal: "AddDesc02",
     },
     {
       index: 2,
@@ -27,7 +27,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea03",
       tooltipDescription: "「エアコン」をタップする",
       additionalDescription: "dummy",
-      modal: "dummy",
+      modal: "AddDesc03",
     },
     {
       index: 3,
@@ -36,7 +36,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea04",
       tooltipDescription: "「ルームエアコン」をタップする",
       additionalDescription: "dummy",
-      modal: "dummy",
+      modal: "AddDesc04",
     },
     {
       index: 4,
@@ -45,7 +45,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea05",
       tooltipDescription: "『「長押しで無線無効」の文字がある』をタップする",
       additionalDescription: "dummy",
-      modal: "dummy",
+      modal: "AddDesc05",
     },
     {
       index: 5,
@@ -54,7 +54,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea06",
       tooltipDescription: "「リモコンにメニューボタンがない」をタップする",
       additionalDescription: "dummy",
-      modal: "dummy",
+      modal: "AddDesc06",
     },
     {
       index: 6,
@@ -63,7 +63,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea07",
       tooltipDescription: "「アクセスポイントモードでの接続」をタップする",
       additionalDescription: "dummy",
-      modal: "dummy",
+      modal: "AddDesc07",
     },
     {
       index: 7,
@@ -72,7 +72,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea08",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       additionalDescription: "dummy",
-      modal: "dummy",
+      modal: "AddDesc08",
     },
     {
       index: 8,
@@ -81,7 +81,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea09",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       additionalDescription: "dummy",
-      modal: "dummy",
+      modal: "AddDesc09",
     },
     {
       index: 9,
@@ -90,7 +90,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea10",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       additionalDescription: "dummy",
-      modal: "dummy",
+      modal: "AddDesc10",
     },
     {
       index: 10,
@@ -99,7 +99,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea11",
       tooltipDescription: "画面の内容を操作し、「次へ」をタップする",
       additionalDescription: "dummy",
-      modal: "dummy",
+      modal: "AddDesc11",
     },
     {
       index: 11,
@@ -108,7 +108,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea12",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       additionalDescription: "dummy",
-      modal: "dummy",
+      modal: "AddDesc12",
     },
     {
       index: 12,
@@ -117,7 +117,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea13",
       tooltipDescription: "「スマートフォンの設定画面へ」をタップしてスマートフォンの設定画面で設定を行う",
       additionalDescription: "dummy",
-      modal: "dummy",
+      modal: "AddDesc13",
     },
     {
       index: 13,
@@ -126,7 +126,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea14",
       tooltipDescription: "MyMUアプリの画面に戻って「次へ」をタップする",
       additionalDescription: "dummy",
-      modal: "dummy",
+      modal: "AddDesc14",
     },
     {
       index: 14,
@@ -135,7 +135,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea15",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       additionalDescription: "dummy",
-      modal: "dummy",
+      modal: "AddDesc15",
     },
     {
       index: 15,
@@ -144,29 +144,74 @@ const demoAppJson = {
       tooltipTarget: "targetArea16",
       tooltipDescription: "「SSID」欄をタップし、表示されるSSID選択画面で接続するルーターのSSIDを選択し、「決定」をタップする",
       additionalDescription: "dummy",
-      modal: "dummy",
+      modal: "AddDesc16",
     },
     {
       index: 16,
-      imagePath: "../assets/img/17-01.png",
+      imagePath: "../assets/img/17-02.png",
       alt: "STEP-17",
       tooltipTarget: "targetArea17",
       tooltipDescription: "「暗号化キー（パスワード）」にルーターの暗号化キーを入力し、「接続する」をタップする",
       additionalDescription: "dummy",
-      modal: "dummy",
+      modal: "AddDesc17",
+    },
+    {
+      index: 17,
+      imagePath: "../assets/img/19-01.png",
+      alt: "STEP-18",
+      tooltipTarget: "targetArea18",
+      tooltipDescription: "エアコンの登録が終わるまでそのまま2〜3分程度待つ",
+      additionalDescription: "dummy",
+      modal: "AddDesc18",
+    },
+    {
+      index: 18,
+      imagePath: "../assets/img/21-01.png",
+      alt: "STEP-19",
+      tooltipTarget: "targetArea19",
+      tooltipDescription: "登録完了のメッセージが表示されたら、続けて「エアコン初期設定へ」をタップする",
+      additionalDescription: "dummy",
+      modal: "AddDesc19",
+    },
+    {
+      index: 19,
+      imagePath: "../assets/img/21-02.png",
+      alt: "STEP-20",
+      tooltipTarget: "targetArea20",
+      tooltipDescription: "「宅外操作」のスイッチをONにし「次へ」をタップする",
+      additionalDescription: "dummy",
+      modal: "AddDesc20",
+    },
+    {
+      index: 20,
+      imagePath: "../assets/img/22-01.png",
+      alt: "STEP-21",
+      tooltipTarget: "targetArea21",
+      tooltipDescription: "エアコンの登録と初期設定が完了しました。「 アプリを起動する」をタップすると、霧ヶ峰アプリが起動します。",
+      additionalDescription: "dummy",
+      modal: "AddDesc21",
+    },
+    {
+      index: 21,
+      imagePath: "../assets/img/22-02.png",
+      alt: "STEP-22",
+      tooltipTarget: "targetArea22",
+      tooltipDescription: "登録が完了しました。「 ホームに戻る」をタップしてホーム画面に移動します。",
+      additionalDescription: "dummy",
+      modal: "AddDesc22",
     },
   ],
 };
 
-function storeJsonData() {
-  try {
-    sessionStorage.setItem("demoAppJson", JSON.stringify(demoAppJson));
-    // リダイレクト先に移動
-    window.location.href = "./rac/rac-setting-07.html";
-  } catch (error) {
-    showAlert("JSONデータの保存に失敗しました。", "error");
-  }
-}
+// function storeJsonData() {
+//   try {
+//     sessionStorage.setItem("demoAppJson", JSON.stringify(demoAppJson));
+//     // リダイレクト先に移動
+//     window.location.href = "./rac/rac-setting-07.html";
+//   } catch (error) {
+//     showAlert("JSONデータの保存に失敗しました。", "error");
+//   }
+// }
 
-storeJsonData();
+// storeJsonData();
 

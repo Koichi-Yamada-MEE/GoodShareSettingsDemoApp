@@ -5,7 +5,8 @@
   <meta charset="utf-8" />
   <title>07エアコン設定｜三菱電機ホームソリューション ［マルチエリア空調］ Good Share！（グッシェア）｜三菱電機</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <!-- demoApp CSS/JS -->
+  <!-- demoApp CSS/JS/JSON -->
+  <script src="../assets/js/demo-app-json.js"></script>
   <link rel="stylesheet" href="../assets/css/demo-app.css">
   <link rel="stylesheet" href="../assets/css/demo-app-elements-position.css">
   <link rel="stylesheet" href="../assets/css/drower-menu.css">
@@ -28,29 +29,74 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <!-- <div class="swiper-slide">
-            <div class="swiper-slide_img_holder">
-              <img src="../assets/img/05-01.png" alt="STEP-01" />
-              <div id="targetArea01"></div>
-            </div>
-          </div> -->
+                <div class="swiper-slide_img_holder">
+                  <img src="../assets/img/05-01.png" alt="STEP-01" />
+                  <div id="targetArea01"></div>
+                </div>
+              </div> -->
+        </div>
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="demo-app-wrap--footer">
+      <div class="description">
+        <strong class="note">NOTE</strong><br>
+        <div id="footerContent">
+          <a href="#" class="modal-trigger">エアコンをアクセスポイントモード（APモード）にする</a>
         </div>
       </div>
-      <!-- pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+    </footer>
   </div>
-  </main>
 
-  <!-- footer -->
-  <footer class="demo-app-wrap--footer">
-    <div class="description">
-      <strong class="note">NOTE</strong><br>
-      <div id="footerContent"></div>
+  <!-- modal -->
+  <div id="modal" class="modal-overlay">
+    <div id="AddDesc17" class="modal-container d-none">
+      <span class="close">&times;</span>
+      <h3>エアコンをアクセスポイントモード（APモード）にする</h3>
+      <img src="../assets/img/12-11.png" width="150px" height="auto" alt="">
+      <ol>
+        <li>リモコンの「停止」ボタンを押して運転を停止します。</li>
+        <li>「温度▲」ボタンを「ー0」が表示されるまで５秒以上長押しします。</li>
+        <li>「温度▲」ボタンまたは「温度▼」ボタンで「ー1」を選択して、エアコンに向けて「停止」ボタンを押すと、エアコンが「APモード」に設定されます。
+          <ul>
+            <li>再度「APモード」を設定、または「WPSモード」を続けて設定すると“ピピピッ”と音が鳴り、操作を受け付けないことがあります。</li>
+            <li>詳しくは各エアコンの取扱説明書をご確認ください。</li>
+          </ul>
+        </li>
+        <li>室内機のランプが約5秒間隔で1回点滅しながら“ピッ”と音が鳴ることを確認してください。
+          <ul>
+            <!-- <li>ランプは以下の状態を繰り返します。</li> -->
+            <li>この状態は10分で終了します。10分以上経過した場合は1からやり直してください。</li>
+          </ul>
+        </li>
+      </ol>
+      <img src="../assets/img/12-12.png" width="100px" height="auto" alt=""><br />
+      <!-- <img src="../assets/img/12-13.png" width="150px" height="auto" alt=""> -->
+      <button class="close-button" id="closeModal">閉じる</button>
     </div>
-  </footer>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- demoApp -->
   <script src="../assets/js/demo-app.js"></script>
@@ -62,26 +108,26 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-
+      // Create slides based on JSON data
       const createSlides = () => {
         // Count slides
-        const slideCount = getJsonValue("slides").length;
+        const slideCount = demoAppJson.slides.length;
+        // Get the first element
         const wrapper = document.getElementsByClassName('swiper-wrapper')[0];
-
         // Add slides
         for (let i = 0; i < slideCount; i++) {
           const slide = document.createElement('div');
           slide.className = 'swiper-slide';
           slide.innerHTML = `
             <div class="swiper-slide_img_holder">
-              <img src="${getJsonValue(`slides.${i}.imagePath`)}" alt="${getJsonValue(`slides.${i}.alt`)}" />
-              <div id="${getJsonValue(`slides.${i}.tooltipTarget`)}"></div>
+              <img src="${demoAppJson.slides[i].imagePath}" alt="${demoAppJson.slides[i].alt}" />
+              <div id="${demoAppJson.slides[i].tooltipTarget}"></div>
             </div>
           `;
           wrapper.appendChild(slide);
         }
       };
-      // Create slides
+      // Create slides elements
       createSlides();
 
       // Initialize Swiper
@@ -97,7 +143,7 @@
       });
 
       // create tippy instances
-      const tooltipsInstances = JSON.parse(sessionStorage.getItem("demoAppJson")).slides
+      const tooltipsInstances = demoAppJson.slides
         .filter(slide => slide.tooltipTarget && slide.tooltipDescription)
         .flatMap(({ tooltipTarget, tooltipDescription }) =>
           tippy(`#${tooltipTarget}`, {
@@ -117,14 +163,53 @@
         tooltipsInstances.forEach(instance => instance.hide());
         console.log(`Slide changed to index: ${swiper.activeIndex}`);
 
-        // アクティブスライドに対応するツールチップを表示
+        // active slide tooltip show
         const activeTooltip = tooltipsInstances[swiper.activeIndex];
         if (activeTooltip) {
           activeTooltip.show();
         }
+
+        // automatic scroll for specific slides
+        // indexes of slides that need automatic scroll
+        const targetIndexes = [7, 10, 12, 13, 14];
+
+        if (targetIndexes.includes(swiper.activeIndex)) {
+          const activeSlide = swiper.slides[swiper.activeIndex];
+          const scrollableContent = activeSlide.querySelector('.swiper-slide_img_holder'); // スクロール可能なコンテンツを取得
+          scrollableContent.scrollTo({
+            top: scrollableContent.scrollHeight,
+            behavior: 'smooth'
+          });
+        }
       });
     });
 
+
+    // モーダルを開くボタン
+const trigger = document.querySelector('.modal-trigger');
+  const modal = document.getElementById('modal');
+  const closeBtn = document.getElementById('closeModal');
+  const closeX = modal.querySelector('.close');
+
+  // モーダルを開く
+  trigger.addEventListener('click', (e) => {
+    e.preventDefault();
+    modal.classList.remove('d-none');
+  });
+
+  // モーダルを閉じる（閉じるボタン・×）
+  [closeBtn, closeX].forEach(btn => {
+    btn.addEventListener('click', () => {
+      modal.classList.add('d-none');
+    });
+  });
+
+  // オーバーレイクリックで閉じる
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.add('d-none');
+    }
+  });
   </script>
 </body>
 
