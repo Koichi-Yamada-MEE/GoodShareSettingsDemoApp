@@ -56,22 +56,6 @@ function setJsonValue(path, value) {
 //   document.getElementById('modal').classList.add('d-none');
 // });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // function toggleVisibility(targetId) {
   // targetArea内の全ての子要素を取得
   // const targetArea = document.getElementById('targetArea');
@@ -109,3 +93,32 @@ document.addEventListener('click', (e) => {
     drawerMenu.classList.remove('open');
   }
 });
+
+
+// モーダルウインドウ
+const trigger = document.querySelector('.modal-trigger');
+const modal = document.getElementById('modalRac017');
+const modalHeader = modal.querySelector('.modal-header');
+const modalFooter = modal.querySelector('.modal-footer');
+const closeX = modalHeader.querySelector('.modal-close-btn');
+const closeBtn = modalFooter.querySelector('.modal-close-btn');
+
+// モーダルを開く
+trigger.addEventListener('click', (e) => {
+  e.preventDefault();
+  modal.classList.remove('d-none');
+});
+
+// モーダルを閉じる（閉じるボタン・×）
+[closeBtn, closeX].forEach(btn => {
+  btn.addEventListener('click', () => {
+    modal.classList.add('d-none');
+  });
+});
+
+// オーバーレイクリックで閉じる
+// modal.addEventListener('click', (e) => {
+//   if (e.target === modal) {
+//     modal.classList.add('d-none');
+//   }
+// });

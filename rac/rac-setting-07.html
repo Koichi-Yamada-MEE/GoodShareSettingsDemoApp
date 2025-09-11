@@ -69,33 +69,37 @@
   </div>
 
   <!-- modal -->
-  <div id="modal" class="modal-overlay d-none">
-    <div id="AddDesc17" class="modal-container">
-      <span class="close">&times;</span>
-      <h3>エアコンをアクセスポイントモード（APモード）にする</h3>
-      <img src="../assets/img/12-11.png" width="150px" height="auto" alt="">
-      <ol>
-        <li>リモコンの「停止」ボタンを押して運転を停止します。</li>
-        <li>「温度▲」ボタンを「ー0」が表示されるまで５秒以上長押しします。</li>
-        <li>「温度▲」ボタンまたは「温度▼」ボタンで「ー1」を選択して、エアコンに向けて「停止」ボタンを押すと、エアコンが「APモード」に設定されます。
-          <ul>
-            <li>再度「APモード」を設定、または「WPSモード」を続けて設定すると“ピピピッ”と音が鳴り、操作を受け付けないことがあります。</li>
-            <li>詳しくは各エアコンの取扱説明書をご確認ください。</li>
-          </ul>
-        </li>
-        <li>室内機のランプが約5秒間隔で1回点滅しながら“ピッ”と音が鳴ることを確認してください。
-          <ul>
-            <!-- <li>ランプは以下の状態を繰り返します。</li> -->
-            <li>この状態は10分で終了します。10分以上経過した場合は1からやり直してください。</li>
-          </ul>
-        </li>
-      </ol>
-      <img src="../assets/img/12-12.png" width="100px" height="auto" alt=""><br />
-      <!-- <img src="../assets/img/12-13.png" width="150px" height="auto" alt=""> -->
-      <button class="close-button" id="closeModal">閉じる</button>
+  <div id="modalRac017" class="modal-overlay d-none">
+    <div class="modal-container d-none">
+      <div class="modal-header">
+        <h3 class="modal-title">エアコンをアクセスポイントモード（APモード）にする</h3>
+        <button type="button" class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img src="../assets/img/12-11.png" alt="">
+        <ol>
+          <li>リモコンの「停止」ボタンを押して運転を停止します。</li>
+          <li>「温度▲」ボタンを「ー0」が表示されるまで５秒以上長押しします。</li>
+          <li>「温度▲」ボタンまたは「温度▼」ボタンで「ー1」を選択して、エアコンに向けて「停止」ボタンを押すと、エアコンが「APモード」に設定されます。
+            <ul>
+              <li>再度「APモード」を設定、または「WPSモード」を続けて設定すると“ピピピッ”と音が鳴り、操作を受け付けないことがあります。</li>
+              <li>詳しくは各エアコンの取扱説明書をご確認ください。</li>
+            </ul>
+          </li>
+          <li>室内機のランプが約5秒間隔で1回点滅しながら“ピッ”と音が鳴ることを確認してください。
+            <ul>
+              <!-- <li>ランプは以下の状態を繰り返します。</li> -->
+              <li>この状態は10分で終了します。10分以上経過した場合は1からやり直してください。</li>
+            </ul>
+          </li>
+        </ol>
+        <img src="../assets/img/12-12.png" width="100px" height="auto" alt=""><br />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="modal-close-btn">閉じる</button>
+      </div>
     </div>
   </div>
-
 
 
 
@@ -199,31 +203,6 @@
     });
 
 
-    // モーダルを開くボタン
-const trigger = document.querySelector('.modal-trigger');
-  const modal = document.getElementById('modal');
-  const closeBtn = document.getElementById('closeModal');
-  const closeX = modal.querySelector('.close');
-
-  // モーダルを開く
-  trigger.addEventListener('click', (e) => {
-    e.preventDefault();
-    modal.classList.remove('d-none');
-  });
-
-  // モーダルを閉じる（閉じるボタン・×）
-  [closeBtn, closeX].forEach(btn => {
-    btn.addEventListener('click', () => {
-      modal.classList.add('d-none');
-    });
-  });
-
-  // オーバーレイクリックで閉じる
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.classList.add('d-none');
-    }
-  });
   </script>
 </body>
 
