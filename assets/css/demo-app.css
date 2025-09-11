@@ -41,6 +41,7 @@ body {
   padding: 0.5em;
   box-sizing: border-box;
   border: 1px solid #1FA28D;
+  background-color: #fff;
 }
 
 .demo-app-wrap--footer .description .note {
