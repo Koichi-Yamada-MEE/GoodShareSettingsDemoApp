@@ -483,16 +483,9 @@
 
         // フッターの処理
         const activeIndex = String(swiper.activeIndex).padStart(3, '0');
-        // console.log(`modalRac${activeIndex}番目のスライドに移動しました`);
         const footerContent = document.getElementById('footerContent');
         footerContent.classList.remove('d-none');
         footerContent.innerHTML = demoAppJson.slides[swiper.activeIndex].footerContent || '';
-
-        // modalOverlay.classList.remove('d-none');
-// console.log(swiper.activeIndex);
-// document.querySelectorAll('.modal-overlay')[0].classList.remove('d-none');
-// document.getElementById('modalRac000').classList.remove('d-none');
-
 
       });
     });
