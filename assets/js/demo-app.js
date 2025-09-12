@@ -94,28 +94,29 @@ document.addEventListener('click', (e) => {
   }
 });
 
-
 // モーダルウインドウ
-const trigger = document.querySelector('.modal-trigger');
-const modal = document.getElementById('modalRac017');
-const modalHeader = modal.querySelector('.modal-header');
-const modalFooter = modal.querySelector('.modal-footer');
-const closeX = modalHeader.querySelector('.modal-close-btn');
-const closeBtn = modalFooter.querySelector('.modal-close-btn');
+function showModal(modalId) {
+  
+  // const trigger = document.querySelector('.modal-trigger');
+  const modalOverlay = document.getElementById('modalOverlay');
+  const modalContainer = document.getElementById(modalId);
+  const modalHeader = modalContainer.querySelector('.modal-header');
+  const modalFooter = modalContainer.querySelector('.modal-footer');
+  // const footerLink = document.getElementById('footerContent').querySelector('.footer-link');
+  const closeX = modalHeader.querySelector('.modal-close-btn');
+  const closeBtn = modalFooter.querySelector('.modal-close-btn');
 
-// モーダルを開く
-trigger.addEventListener('click', (e) => {
-  e.preventDefault();
-  modal.classList.remove('d-none');
-});
+  modalOverlay.classList.remove('d-none');
+  modalContainer.classList.remove('d-none');
 
-// モーダルを閉じる（閉じるボタン・×）
-[closeBtn, closeX].forEach(btn => {
-  btn.addEventListener('click', () => {
-    modal.classList.add('d-none');
+  // モーダルを閉じる（閉じるボタン・×）
+  [closeBtn, closeX].forEach(btn => {
+    btn.addEventListener('click', () => {
+      modalOverlay.classList.add('d-none');
+      modalContainer.classList.add('d-none');
+    });
   });
-});
-
+};
 // オーバーレイクリックで閉じる
 // modal.addEventListener('click', (e) => {
 //   if (e.target === modal) {

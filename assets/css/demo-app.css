@@ -7,14 +7,6 @@ body {
   font-family: "メイリオ", "ヒラギノ角ゴ Pro W3", "Lucida Grande", "Hiragino Kaku Gothic Pro", Osaka, Verdana, "ＭＳ Ｐゴシック", sans-serif
 }
 
-.d-block {
-  display: block;
-}
-
-.modal-overlay.d-none {
-  display: none;
-}
-
 .demo-app-wrap {
   position: relative;
   width: 100%;
@@ -177,4 +169,17 @@ body {
 
 .modal-footer .modal-close-btn:hover {
   background-color: #d32f2f;
+}
+
+.footer-link {
+  cursor: pointer;
+}
+
+/* 上書きするため最後に設定 */
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
 }
