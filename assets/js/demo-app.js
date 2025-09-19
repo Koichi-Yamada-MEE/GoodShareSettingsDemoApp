@@ -47,44 +47,31 @@ function setJsonValue(path, value) {
   return true;
 }
 
+/******************************************
+ * ドロワーメニュー
+ ******************************************/
+fetch("../partials/drawer-menu.html")
+  .then(response => response.text())
+  .then(html => {
+    document.querySelector(".drawer-menu").innerHTML = html;
 
-// document.getElementById('open-modal').addEventListener('click', function() {
-//   document.getElementById('modal').classList.remove('d-none');
-// });
+    // HTMLが挿入された後にcloseIconを取得
+    const closeIcon = document.querySelector('.close-icon');
+    console.log(closeIcon);
 
-// document.getElementById('close-modal').addEventListener('click', function() {
-//   document.getElementById('modal').classList.add('d-none');
-// });
+    // 閉じるイベントリスナーを設定
+    closeIcon.addEventListener('click', () => {
+      drawerMenu.classList.remove('open');
+    });
+  });
 
-// function toggleVisibility(targetId) {
-  // targetArea内の全ての子要素を取得
-  // const targetArea = document.getElementById('targetArea');
-  // const children = targetArea.children;
-
-  // 各子要素をループして表示/非表示を切り替え
-//   for (let i = 0; i < children.length; i++) {
-//     const child = children[i];
-//     if (child.id === targetId) {
-//       child.style.display = 'block'; // 指定されたIDの要素を表示
-//     } else {
-//       child.style.display = 'none'; // 他の要素を非表示
-//     }
-//   }
-// }
-
-
+// メニューアイコンの取得
 const menuIcon = document.querySelector('.floating-menu-icon');
 const drawerMenu = document.querySelector('.drawer-menu');
-const closeIcon = document.querySelector('.close-icon');
 
 // 開く
 menuIcon.addEventListener('click', () => {
   drawerMenu.classList.add('open');
-});
-
-// 閉じる
-closeIcon.addEventListener('click', () => {
-  drawerMenu.classList.remove('open');
 });
 
 // 外側クリックで閉じる
@@ -94,7 +81,11 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// モーダルウインドウ
+
+/******************************************
+ * モーダルウインドウ
+ ******************************************/
+
 function showModal(modalId) {
   
   // const trigger = document.querySelector('.modal-trigger');
@@ -123,3 +114,4 @@ function showModal(modalId) {
 //     modal.classList.add('d-none');
 //   }
 // });
+

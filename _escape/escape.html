@@ -26,6 +26,15 @@
     <div class="swiper-button-next"></div>
   </div>
 
+
+<meta name="viewport" content="width=375, user-scalable=no">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+
+
+
+
 <script>
   const demoAppJson = {
     jsonName: "GoodShareSettingsDemoApp",
@@ -92,8 +101,6 @@ wrapper.append(slideElement);
         { imgSrc: '../assets/img/17-01.png', alt: 'STEP-16', targetId: 'targetArea17' },
       ];
 
-<meta name="viewport" content="width=375, user-scalable=no">
-<meta name="viewport" content="width=device-width,initial-scale=1">
 
 
 
@@ -104,6 +111,12 @@ wrapper.append(slideElement);
 
 
 
+// モーダル ハンバーガーメニューの読み込み
+fetch("../partials/drawer-menu.html")
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById("drawer-menu").innerHTML = html;
+  });
 
 
 
