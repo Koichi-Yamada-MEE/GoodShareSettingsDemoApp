@@ -57,7 +57,6 @@ fetch("../partials/drawer-menu.html")
 
     // HTMLが挿入された後にcloseIconを取得
     const closeIcon = document.querySelector('.close-icon');
-    console.log(closeIcon);
 
     // 閉じるイベントリスナーを設定
     closeIcon.addEventListener('click', () => {

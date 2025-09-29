@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <title>環境センサー設定｜三菱電機ホームソリューション ［マルチエリア空調］ Good Share！（グッシェア）｜三菱電機</title>
+  <meta name="viewport" content="width=375, user-scalable=no">
+  <!-- demoApp CSS/JS/JSON -->
+  <!-- <script src="../assets/js/demo-app-json-rac.js"></script> -->
+  <script src="../assets/js/demo-app-json-sensor.js"></script>
+  <!-- <script src="../assets/js/demo-app-json-switch.js"></script> -->
+  <link rel="stylesheet" href="../assets/css/demo-app.css">
+  <link rel="stylesheet" href="../assets/css/demo-app-elements-position.css">
+  <link rel="stylesheet" href="../assets/css/drawer-menu.css">
+  <!-- Swiper CSS/Custom -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../assets/css/swiper-custom.css">
+  <!-- Tippy -->
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+  <link rel="stylesheet" href="../assets/css/tippy-custom.css" />
+</head>
+
+<body>
+  <div class="demo-app-wrap">
+      <!-- Drawer menu icon -->
+      <div class="floating-menu-icon">&#x205D;</div>
+      <!-- Drawer menu -->
+      <div class="drawer-menu"></div>
+
+    <main class="demo-app-wrap--main">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Slider wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides(create slides) -->
+        </div>
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="demo-app-wrap--footer">
+      <div class="description">
+        <strong class="note">NOTE</strong><br>
+        <!-- create footer content -->
+        <div id="footerContent" class="d-none"></div>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- demoApp -->
+  <script src="../assets/js/demo-app.js"></script>
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Tippy -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Create slides based on JSON data
+      const createSlides = () => {
+        // Count slides
+        const slideCount = demoAppJson.slides.length;
+        // Get the first element
+        const wrapper = document.getElementsByClassName('swiper-wrapper')[0];
+        // Add slides
+        for (let i = 0; i < slideCount; i++) {
+          const slide = document.createElement('div');
+          slide.className = 'swiper-slide';
+          slide.innerHTML = `
+            <div class="swiper-slide_img_holder">
+              <img src="${demoAppJson.slides[i].imagePath}" alt="${demoAppJson.slides[i].alt}" />
+              <div id="${demoAppJson.slides[i].tooltipTarget}"></div>
+            </div>
+          `;
+          wrapper.appendChild(slide);
+        }
+      };
+      // Create slides elements
+      createSlides();
+
+      // Initialize Swiper
+      const swiper = new Swiper('.swiper', {
+        pagination: {
+          el: '.swiper-pagination',
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+      // create tippy instances
+      const tooltipsInstances = demoAppJson.slides
+        .filter(slide => slide.tooltipTarget && slide.tooltipDescription)
+        .flatMap(({ tooltipTarget, tooltipDescription }) =>
+          tippy(`#${tooltipTarget}`, {
+            content: tooltipDescription,
+            trigger: 'manual',
+            hideOnClick: false,
+            theme: 'gradient',
+            appendTo: () => document.querySelector('.swiper'),
+          })
+        );
+      // show first tooltip
+      tooltipsInstances[0]?.show();
+      const footerContent = document.getElementById('footerContent');
+      footerContent.classList.remove('d-none');
+      footerContent.innerHTML = demoAppJson.slides[swiper.activeIndex].footerContent || '';
+
+      // show tooltips on slide change
+      swiper.on('slideChangeTransitionEnd', () => {
+        // hide all tooltips on slide change
+        tooltipsInstances.forEach(instance => instance.hide());
+
+        // active slide tooltip show
+        const activeTooltip = tooltipsInstances[swiper.activeIndex];
+        activeTooltip?.show();
+
+        // automatic scroll for specific slides
+        // indexes of slides that need automatic scroll
+        const targetIndexes = [7, 10, 12, 13, 14];
+
+        if (targetIndexes.includes(swiper.activeIndex)) {
+          const activeSlide = swiper.slides[swiper.activeIndex];
+          const scrollableContent = activeSlide.querySelector('.swiper-slide_img_holder'); // スクロール可能なコンテンツを取得
+          scrollableContent.scrollTo({
+            top: scrollableContent.scrollHeight,
+            behavior: 'smooth'
+          });
+        }
+
+        // フッターの処理
+        const activeIndex = String(swiper.activeIndex).padStart(3, '0');
+        const footerContent = document.getElementById('footerContent');
+        footerContent.classList.remove('d-none');
+        footerContent.innerHTML = demoAppJson.slides[swiper.activeIndex].footerContent || '';
+
+      });
+    });
+  </script>
+</body>
+
+</html>
