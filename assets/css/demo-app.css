@@ -184,6 +184,10 @@ body {
   cursor: pointer;
 }
 
+.demo-app-wrap--footer .description {
+  overflow-y: auto;
+}
+
 /* 上書きするため最後に設定 */
 .d-block {
   display: block;
