@@ -92,7 +92,7 @@ body {
 .modal-body img {
   display: block;
   margin: 0 auto;
-  max-width: 150px;
+  max-width: 200px;
   height: auto;
 }
 
@@ -186,6 +186,7 @@ body {
 
 .demo-app-wrap--footer .description {
   overflow-y: auto;
+  max-height: 100%;
 }
 
 /* 上書きするため最後に設定 */

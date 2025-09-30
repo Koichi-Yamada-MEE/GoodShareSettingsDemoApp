@@ -9,7 +9,7 @@ const demoAppJson = {
       tooltipTarget: "tooltipsSen01",
       tooltipDescription: "☰メニューをタップする",
       footerContent: "",
-      modal: "modalSensor001",
+      modal: "modalSen001",
     },
     {
       index: 1,
@@ -18,7 +18,7 @@ const demoAppJson = {
       tooltipTarget: "tooltipsSen02",
       tooltipDescription: "「＋機器登録を」タップする",
       footerContent: "",
-      modal: "modalSensor002",
+      modal: "modalSen002",
     },
     {
       index: 2,
@@ -27,7 +27,7 @@ const demoAppJson = {
       tooltipTarget: "tooltipsSen03",
       tooltipDescription: "「環境センサー」をタップする",
       footerContent: "",
-      modal: "modalSensor003",
+      modal: "modalSen003",
     },
     {
       index: 3,
@@ -36,7 +36,7 @@ const demoAppJson = {
       tooltipTarget: "tooltipsSen04",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent: "",
-      modal: "modalSensor004",
+      modal: "modalSen004",
     },
     {
       index: 4,
@@ -45,8 +45,8 @@ const demoAppJson = {
       alt: "STEP-05",
       tooltipTarget: "tooltipsSen05",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
-      footerContent: "",
-      modal: "modalSensor005",
+      footerContent: "事前に以下の準備・確認をしてください。<ul><li>接続したいルーターのSSID（2.4GHz）</li><li>ルーターに接続する暗号化キー（パスワード）</li></ul>本アプリでは、ルーターのSSIDに使用できる文字として<span class=\"footer-link\" onclick=\"showModal('modalSen005')\">半角英数字、半角記号、半角スペース</span>に対応しています。",
+      modal: "modalSen005",
     },
     {
       index: 5,
@@ -54,8 +54,8 @@ const demoAppJson = {
       alt: "STEP-06",
       tooltipTarget: "tooltipsSen06",
       tooltipDescription: "「QRコード🄬を読み取る」をタップし、スマートフォンのカメラで環境センサーのQRコード（MACアドレス）を読み取る",
-      footerContent: "QRコード読み取り時に「\"MyMU\"がカメラへのアクセスを求めています」といったカメラへのアクセスを求めるメッセージが表示されたときは「OK」や「許可」をタップしてください。",
-      modal: "modalSensor006",
+      footerContent: "QRコード読み取り時に「<span class=\"footer-link\" onclick=\"showModal('modalSen006')\">\"MyMU\"がカメラへのアクセスを求めています</span>」といったカメラへのアクセスを求めるメッセージが表示されたときは「OK」や「許可」をタップしてください。",
+      modal: "modalSen006",
     },
     {
       index: 6,
@@ -64,7 +64,7 @@ const demoAppJson = {
       tooltipTarget: "tooltipsSen07",
       tooltipDescription: "MACアドレスが表示されているのを確認し、「次へ」をタップする",
       footerContent: "",
-      modal: "modalSensor007",
+      modal: "modalSen007",
     },
     {
       index: 7,
@@ -72,8 +72,8 @@ const demoAppJson = {
       alt: "STEP-08",
       tooltipTarget: "tooltipsSen08",
       tooltipDescription: "環境センサー本体の電源ポートに電源を繋いだUSBケーブルを挿して環境センサーの電源を入れ、LED が緑色にゆっくり（1秒間隔）点滅するのを確認したら「環境センサーに接続する」をタップする",
-      footerContent: "<ul><li>5分以内に環境センサーの登録を行う必要があるため、あらかじめ環境センサーを接続するルーターのSSID・パスワードを確認しておいてください。</li><li>LEDが緑色で点滅しない場合やルーターを変更したなどで再登録する場合は環境センサーを初期化してください。初期化方法は「環境センサーの初期化方法」をタップして確認してください。</li></ul>",
-      modal: "modalSensor008",
+      footerContent: "<ul><li>5分以内に環境センサーの登録を行う必要があるため、あらかじめ環境センサーを接続するルーターのSSID・パスワードを確認しておいてください。</li><li>LEDが緑色で点滅しない場合やルーターを変更したなどで再登録する場合は<span class=\"footer-link\" onclick=\"showModal('modalSen008')\">環境センサーを初期化</span>してください。初期化方法は「環境センサーの初期化方法」をタップして確認してください。</li></ul>",
+      modal: "modalSen008",
     },
     {
       index: 8,
@@ -81,8 +81,8 @@ const demoAppJson = {
       alt: "STEP-09",
       tooltipTarget: "tooltipsSen09",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
-      footerContent: "",
-      modal: "modalSensor009",
+      footerContent: "<ul><li>ルーターのSSID（2.4GHz）と暗号化キー（パスワード）をお手元に準備してください。次の画面で使用します。</li></ul>",
+      modal: "modalSen009",
     },
     {
       index: 9,
@@ -91,7 +91,7 @@ const demoAppJson = {
       tooltipTarget: "tooltipsSen10",
       tooltipDescription: "「SSID」欄をタップし、表示されるSSID選択画面で接続するルーターのSSIDを選択し、「決定」をタップする",
       footerContent: "",
-      modal: "modalSensor010",
+      modal: "modalSen010",
     },
     {
       index: 10,
@@ -99,8 +99,8 @@ const demoAppJson = {
       alt: "STEP-11",
       tooltipTarget: "tooltipsSen11",
       tooltipDescription: "環境センサーの登録が終わるまでそのまま1～2分程度待つ",
-      footerContent: "",
-      modal: "modalSensor011",
+      footerContent: "<ul><li>登録に失敗した場合は登録失敗のメッセージが表示されます。「閉じる」をタップすると対処方法を説明する画面が表示されます。詳しくは次ページをご確認ください。</li></ul>",
+      modal: "modalSen011",
     },
     {
       index: 11,
@@ -108,8 +108,8 @@ const demoAppJson = {
       alt: "STEP-12",
       tooltipTarget: "tooltipsSen12",
       tooltipDescription: "環境センサーの登録が完了しました",
-      footerContent: "",
-      modal: "modalSensor012",
+      footerContent: "「 アプリを起動する」をタップすると、換気REMOTEアプリが起動します。換気REMOTEアプリの使い方については、換気REMOTEアプリの取扱説明書をご確認ください。以下のURLからご覧ください。https://www.MitsubishiElectric.co.jp/ldg/ja/air/products/ventilationfan/lossnaycentral/IB/pdf/kankiremote_mymu.pdf",
+      modal: "modalSen012",
     },
   ],
 };
