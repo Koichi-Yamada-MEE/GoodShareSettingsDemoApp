@@ -11,7 +11,8 @@
 #tooltipsSen09,
 #tooltipsSen10,
 #tooltipsSen11,
-#tooltipsSen12
+#tooltipsSen12,
+#tooltipsSen13
 {
   position: absolute;
   /* box-sizing: border-box; */
@@ -92,13 +93,20 @@
 }
 
 #tooltipsSen11 {
+  top: 462px;
+  left: 0;
+  width: 300px;
+  height: 40px;
+}
+
+#tooltipsSen12 {
   top: 132px;
   left: 0;
   width: 300px;
   height: 36px;
 }
 
-#tooltipsSen12 {
+#tooltipsSen13 {
   top: 443px;
   left: 0;
   width: 300px;

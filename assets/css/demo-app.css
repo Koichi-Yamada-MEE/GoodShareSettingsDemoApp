@@ -152,7 +152,6 @@ body {
   justify-content: center; /* 水平方向に中央寄せ */
 }
 
-
 .modal-footer .modal-close-btn {
   background-color: #CE0037;
   color: white;
@@ -188,6 +187,12 @@ body {
   overflow-y: auto;
   max-height: 100%;
 }
+
+span.footer-link {
+  color: #1FA28D;
+  text-decoration: underline;
+}
+
 
 /* 上書きするため最後に設定 */
 .d-block {

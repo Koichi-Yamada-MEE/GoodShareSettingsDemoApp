@@ -117,7 +117,33 @@
       </div>
     </div>
 
+    <!-- modalSen010 -->
+    <div id="modalSen010" class="modal-container d-none">
+      <div class="modal-header">
+        <h3 class="modal-title"></h3>
+        <button type="button" class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img src="../assets/img/sen/465-S01.png" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="modal-close-btn">閉じる</button>
+      </div>
+    </div>
 
+    <!-- modalSen011 -->
+    <div id="modalSen011" class="modal-container d-none">
+      <div class="modal-header">
+        <h3 class="modal-title"></h3>
+        <button type="button" class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img src="../assets/img/sen/466-S01.png" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="modal-close-btn">閉じる</button>
+      </div>
+    </div>
 
 
 
@@ -201,7 +227,9 @@
         .flatMap(({ tooltipTarget, tooltipDescription }) =>
           tippy(`#${tooltipTarget}`, {
             content: tooltipDescription,
+            allowHTML: true,
             trigger: 'manual',
+            placement: 'bottom',
             hideOnClick: false,
             theme: 'gradient',
             appendTo: () => document.querySelector('.swiper'),
