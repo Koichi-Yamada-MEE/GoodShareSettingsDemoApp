@@ -98,7 +98,7 @@ const demoAppJson = {
       alt: "STEP-11",
       tooltipTarget: "tooltipsSen11",
       tooltipDescription: "「暗号化キー（パスワード）」にルーターの暗号化キーを入力し、「接続する」をタップする",
-      footerContent: "<span class=\"footer-link\" onclick=\"showModal('modalSen011')\">「暗号化キーを表示する」</span>を選択すると、前回使用した暗号化キーを自動で入力できます。",
+      footerContent: "<ul><li><span class=\"footer-link\" onclick=\"showModal('modalSen011-1')\">「暗号化キーを表示する」</span>を選択すると、前回使用した暗号化キーを自動入力できます。</li><li><span class=\"footer-link\" onclick=\"showModal('modalSen011-2')\">SSIDは手動でも入力できます。</span></li></ul>",
       modal: "modalSen011",
     },
     {
@@ -107,7 +107,7 @@ const demoAppJson = {
       alt: "STEP-12",
       tooltipTarget: "tooltipsSen12",
       tooltipDescription: "環境センサーの登録が終わるまでそのまま1～2分程度待つ",
-      footerContent: "<ul><li>登録に失敗した場合は登録失敗のメッセージが表示されます。「閉じる」をタップすると対処方法を説明する画面が表示されます。詳しくは次ページをご確認ください。</li></ul>",
+      footerContent: "<ul><li>登録に失敗した場合は登録失敗のメッセージが表示されます。「閉じる」をタップすると対処方法を説明する画面が表示されます。</li></ul>",
       modal: "modalSen012",
     },
     {
