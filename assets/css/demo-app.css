@@ -94,9 +94,9 @@ body {
 
 .modal-body img {
   display: block;
+  margin: 1.0em auto;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin: 1.0em 0;
   max-width: 200px;
   height: auto;
 }
@@ -190,7 +190,8 @@ body {
 }
 
 .demo-app-wrap--footer .description ul {
-  margin: 0
+  margin: 0;
+  padding-left: 1.2em;
 }
 
 .footer-link {
@@ -202,11 +203,11 @@ body {
   max-height: 100%;
 }
 
-span.footer-link {
+.demo-app-wrap--footer a,
+.demo-app-wrap--footer .footer-link {
   color: #1FA28D;
   text-decoration: underline;
 }
-
 
 /* 上書きするため最後に設定 */
 .d-block {

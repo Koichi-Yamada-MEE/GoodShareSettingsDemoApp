@@ -44,7 +44,7 @@ const demoAppJson = {
       alt: "STEP-05",
       tooltipTarget: "tooltipsSen05",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
-      footerContent: "事前に以下の準備・確認をしてください。<ul><li>接続したいルーターのSSID（2.4GHz）</li><li>ルーターに接続する暗号化キー（パスワード）</li></ul>本アプリでは、ルーターのSSIDに使用できる文字として<span class=\"footer-link\" onclick=\"showModal('modalSen005')\">半角英数字、半角記号、半角スペース</span>に対応しています。",
+      footerContent: "事前に以下を準備してください。<ul><li>接続したいルーターのSSID（2.4GHz）</li><li>ルーターに接続する暗号化キー（パスワード）</li></ul>本アプリでルーターのSSIDに使用できる文字は<span class=\"footer-link\" onclick=\"showModal('modalSen005')\">半角英数字、半角記号、半角スペース</span>です。",
       modal: "modalSen005",
     },
     {
@@ -71,7 +71,7 @@ const demoAppJson = {
       alt: "STEP-08",
       tooltipTarget: "tooltipsSen08",
       tooltipDescription: "環境センサー本体の電源ポートに電源を繋いだUSBケーブルを挿して環境センサーの電源を入れ、LED が緑色にゆっくり（1秒間隔）点滅するのを確認したら「環境センサーに接続する」をタップする",
-      footerContent: "<ul><li>5分以内に環境センサーの登録を行う必要があるため、あらかじめ環境センサーを接続するルーターのSSID・パスワードを確認しておいてください。</li><li>LEDが緑色で点滅しない場合やルーターを変更したなどで再登録する場合は<span class=\"footer-link\" onclick=\"showModal('modalSen008')\">環境センサーを初期化</span>してください。初期化方法は「環境センサーの初期化方法」をタップして確認してください。</li></ul>",
+      footerContent: "<ul><li>5分以内に環境センサーの登録が」必要です。環境センサーを接続するルーターのSSID・パスワードをあらかじめご準備ください。</li><li>LEDが緑色で点滅しない場合やルーターを変更したなどで再登録する場合は<span class=\"footer-link\" onclick=\"showModal('modalSen008')\">「環境センサーを初期化」</span>をタップして初期化してください。</li></ul>",
       modal: "modalSen008",
     },
     {
@@ -80,7 +80,7 @@ const demoAppJson = {
       alt: "STEP-09",
       tooltipTarget: "tooltipsSen09",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
-      footerContent: "<ul><li>ルーターのSSID（2.4GHz）と暗号化キー（パスワード）をお手元に準備してください。次の画面で使用します。</li></ul>",
+      footerContent: "<ul><li>ルーターのSSID（2.4GHz）と暗号化キー（パスワード）をお手元に準備してください。次の操作で使用します。</li></ul>",
       modal: "modalSen009",
     },
     {
@@ -107,7 +107,7 @@ const demoAppJson = {
       alt: "STEP-12",
       tooltipTarget: "tooltipsSen12",
       tooltipDescription: "環境センサーの登録が終わるまでそのまま1～2分程度待つ",
-      footerContent: "<ul><li>登録に失敗した場合</li><li>環境センサーが別のユーザーに登録されている場合</li></ul>",
+      footerContent: "<ul><li><span class=\"footer-link\" onclick=\"showModal('modalSen012')\">環境センサーの登録に失敗した場合</span></li><li><span class=\"footer-link\" onclick=\"showModal('modalSen012-2')\">環境センサーが別のユーザーに登録されている場合</span></li></ul>",
       modal: "modalSen012",
     },
     {
@@ -115,8 +115,8 @@ const demoAppJson = {
       imagePath: "../assets/img/sen/468-02.png",
       alt: "STEP-13",
       tooltipTarget: "tooltipsSen13",
-      tooltipDescription: "環境センサーの登録が完了しました",
-      footerContent: "「 アプリを起動する」をタップすると、換気REMOTEアプリが起動します。換気REMOTEアプリの使い方については、換気REMOTEアプリの取扱説明書をご確認ください。以下のURLからご覧ください。https://www.MitsubishiElectric.co.jp/ldg/ja/air/products/ventilationfan/lossnaycentral/IB/pdf/kankiremote_mymu.pdf",
+      tooltipDescription: "環境センサーの登録が完了しました。「 アプリを起動する」をタップすると、換気REMOTEアプリが起動します。",
+      footerContent: "換気REMOTEアプリの使い方については、<a href=\"https://www.MitsubishiElectric.co.jp/ldg/ja/air/products/ventilationfan/lossnaycentral/IB/pdf/kankiremote_mymu.pdf\" target=\"_blank\">換気REMOTEアプリの取扱説明書</a>をご確認ください。",
       modal: "modalSen013",
     },
   ],

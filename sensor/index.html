@@ -51,36 +51,18 @@
       </div>
     </footer>
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    <!-- modal -->
+  <!-- modal -->
   <!-- modalOverlay -->
   <div id="modalOverlay" class="modal-overlay d-none">
 
     <!-- modalSen005 -->
     <div id="modalSen005" class="modal-container d-none">
       <div class="modal-header">
-        <h3 class="modal-title"></h3>
+        <h3 class="modal-title">使用できる文字</h3>
         <button type="button" class="modal-close-btn">&times;</button>
       </div>
       <div class="modal-body">
-        <p>半角記号は !#$%&'()*+-./:;<=>?@[]^_`{¦}~ に対応しています。ダブルクォーテーション（"）、カンマ（,）、バックスラッシュ（＼）、￥マークには対応していません。※ 詳しくはルーターの取扱説明書をご確認ください。</p>
+        <p>半角記号は !#$%&'()*+-./:;<=>?@[]^_`{¦}~ に対応しています。ダブルクォーテーション（"）、カンマ（,）、バックスラッシュ（＼）、￥マークには対応していません。</p>
         <img src="" alt="">
       </div>
       <div class="modal-footer">
@@ -106,11 +88,29 @@
     <!-- modalSen008 -->
     <div id="modalSen008" class="modal-container d-none">
       <div class="modal-header">
-        <h3 class="modal-title"></h3>
+        <h3 class="modal-title">環境センサーの初期化方法</h3>
         <button type="button" class="modal-close-btn">&times;</button>
       </div>
       <div class="modal-body">
-        <img src="../assets/img/sen/462-S01.png" alt="">
+        <ol>
+          <li>初期化方法は「環境センサーの初期化方法」の画面で確認できます。
+            <img src="../assets/img/sen/462-S01.png" alt="">
+          </li>
+          <li>以下のメッセージが表示されたら「接続」をタップしてください。「キャンセル」をタップすると接続に失敗します。
+              <img src="../assets/img/sen/463-S01.png" alt="">
+              <img src="../assets/img/sen/463-S02.png" alt="">
+          </li>
+          <li>しばらくすると位置情報の使用許可を求めるメッセージが表示されます。「1度だけ許可」「Appの使用中は許可」あるいは「アプリの使用時のみ」「今回のみ」をタップしてください。「許可しない」をタップすると接続に失敗します。
+              <img src="../assets/img/sen/463-S03.png" alt="">
+              <img src="../assets/img/sen/463-S04.png" alt="">
+          </li>
+          <li>iOS搭載のスマートフォンでは、右のメッセージが表示されることがあります。その場合は「OK」をタップしてください。「OK」をタップしないと接続に失敗します。「許可しない」をタップした場合は、iOSのローカルネットワークの設定を変更してください。
+              <img src="../assets/img/sen/464-S01.png" alt="">
+          </li>
+          <li>接続に失敗した場合は右のメッセージが表示されます。「閉じる」をタップして画面を閉じ手順7からやり直してください。
+              <img src="../assets/img/sen/464-S02.png" alt="">
+          </li>
+        </ol>
       </div>
       <div class="modal-footer">
         <button type="button" class="modal-close-btn">閉じる</button>
@@ -120,7 +120,7 @@
     <!-- modalSen010 -->
     <div id="modalSen010" class="modal-container d-none">
       <div class="modal-header">
-        <h3 class="modal-title"></h3>
+        <h3 class="modal-title">SSID選択画面</h3>
         <button type="button" class="modal-close-btn">&times;</button>
       </div>
       <div class="modal-body">
@@ -134,7 +134,7 @@
     <!-- modalSen011-1 -->
     <div id="modalSen011-1" class="modal-container d-none">
       <div class="modal-header">
-        <h3 class="modal-title"></h3>
+        <h3 class="modal-title">暗号化キーを表示する</h3>
         <button type="button" class="modal-close-btn">&times;</button>
       </div>
       <div class="modal-body">
@@ -166,7 +166,44 @@
       </div>
     </div>
 
+    <!-- modalSen012 -->
+    <div id="modalSen012" class="modal-container d-none">
+      <div class="modal-header">
+        <h3 class="modal-title">環境センサーの登録に失敗した場合</h3>
+        <button type="button" class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <ol>
+          <li>登録に失敗した場合は登録失敗のメッセージが表示されます。「閉じる」をタップすると対処方法を説明する画面が表示されます。
+            <img src="../assets/img/sen/467-S01.png" alt="">
+          </li>
+          <li>登録失敗のメッセージの「閉じる」をタップすると次の画面が表示されます。内容を確認して、再度登録手順を実施してください。「戻る」をタップすることで、接続手順の確認画面に戻ります。
+              <img src="../assets/img/sen/468-S01.png" alt="">
+          </li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="modal-close-btn">閉じる</button>
+      </div>
+    </div>
 
+    <!-- modalSen012-2 -->
+    <div id="modalSen012-2" class="modal-container d-none">
+      <div class="modal-header">
+        <h3 class="modal-title">環境センサーが別のユーザーに登録されている場合</h3>
+        <button type="button" class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <ol>
+          <li>環境センサーが別のユーザーに登録されている場合は次のメッセージが表示されます。「登録を続ける」をタップすることで、本環境センサーの登録が行われ、別のユーザーからは環境センサーの登録が削除されます。登録しない場合は「キャンセル」をタップします。
+            <img src="../assets/img/sen/467-S02.png" alt="">
+          </li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="modal-close-btn">閉じる</button>
+      </div>
+    </div>
 
 
 
