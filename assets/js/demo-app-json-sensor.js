@@ -107,7 +107,7 @@ const demoAppJson = {
       alt: "STEP-12",
       tooltipTarget: "tooltipsSen12",
       tooltipDescription: "環境センサーの登録が終わるまでそのまま1～2分程度待つ",
-      footerContent: "<ul><li>登録に失敗した場合は登録失敗のメッセージが表示されます。「閉じる」をタップすると対処方法を説明する画面が表示されます。</li></ul>",
+      footerContent: "<ul><li>登録に失敗した場合</li><li>環境センサーが別のユーザーに登録されている場合</li></ul>",
       modal: "modalSen012",
     },
     {
