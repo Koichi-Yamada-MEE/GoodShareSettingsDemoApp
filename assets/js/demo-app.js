@@ -54,32 +54,7 @@ fetch("../partials/drawer-menu.html")
   .then(response => response.text())
   .then(html => {
     document.querySelector(".drawer-menu").innerHTML = html;
-
-    // HTMLが挿入された後にcloseIconを取得
-    const closeIcon = document.querySelector('.close-icon');
-
-    // 閉じるイベントリスナーを設定
-    closeIcon.addEventListener('click', () => {
-      drawerMenu.classList.remove('open');
-    });
   });
-
-// メニューアイコンの取得
-const menuIcon = document.querySelector('.floating-menu-icon');
-const drawerMenu = document.querySelector('.drawer-menu');
-
-// 開く
-menuIcon.addEventListener('click', () => {
-  drawerMenu.classList.add('open');
-});
-
-// 外側クリックで閉じる
-document.addEventListener('click', (e) => {
-  if (!drawerMenu.contains(e.target) && !menuIcon.contains(e.target)) {
-    drawerMenu.classList.remove('open');
-  }
-});
-
 
 /******************************************
  * モーダルウインドウ
