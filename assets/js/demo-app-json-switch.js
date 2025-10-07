@@ -1,0 +1,142 @@
+const demoAppJson = {
+  jsonName: "GoodShareSettingsDemoAppSensor",
+  version: "1.0.0",
+  slides: [
+    {
+      index: 0,
+      imagePath: "../assets/img/rac/05-01.png",
+      alt: "STEP-01",
+      tooltipTarget: "tooltipsSwitch01",
+      tooltipDescription: "☰メニューをタップする",
+      footerContent: "",
+      modal: "modalSwitch001",
+    },
+    {
+      index: 1,
+      imagePath: "../assets/img/rac/05-02.png",
+      alt: "STEP-02",
+      tooltipTarget: "tooltipsSwitch02",
+      tooltipDescription: "「＋機器登録を」タップする",
+      footerContent: "",
+      modal: "modalSwitch002",
+    },
+    {
+      index: 2,
+      imagePath: "../assets/img/switch/397-03.png",
+      alt: "STEP-03",
+      tooltipTarget: "tooltipsSwitch03",
+      tooltipDescription: "「ファン」をタップする",
+      footerContent: "",
+      modal: "modalSwitch003",
+    },
+    {
+      index: 3,
+      imagePath: "../assets/img/switch/398-01.png",
+      alt: "STEP-04",
+      tooltipTarget: "tooltipsSwitch04",
+      tooltipDescription: "ここでは「アクセスポイントモードでの接続」を選択する",
+      footerContent: "",
+      modal: "modalSwitch004",
+    },
+    {
+      index: 4,
+      imagePath: "../assets/img/switch/399-01.png",
+      alt: "STEP-05",
+      tooltipTarget: "tooltipsSwitch05",
+      tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
+      footerContent: "",
+      modal: "modalSwitch005",
+    },
+    {
+      index: 5,
+      imagePath: "../assets/img/switch/399-02.png",
+      alt: "STEP-06",
+      tooltipTarget: "tooltipsSwitch06",
+      tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
+      footerContent: "",
+      modal: "modalSwitch006",
+    },
+    {
+      index: 6,
+      imagePath: "../assets/img/switch/400-01.png",
+      alt: "STEP-07",
+      tooltipTarget: "tooltipsSwitch07",
+      tooltipDescription: "「QRコード🄬を読み取る」をタップし、スマートフォンのカメラで設定情報シールのQRコードを読み取る",
+      footerContent: "",
+      modal: "modalSwitch007",
+    },
+    {
+      index: 7,
+      imagePath: "../assets/img/switch/400-01.png",
+      alt: "STEP-07",
+      tooltipTarget: "tooltipsSwitch07-2",
+      tooltipDescription: "読み取り後、「次へ」をタップする",
+      footerContent: "",
+      modal: "modalSwitch007",
+    },
+    {
+      index: 8,
+      imagePath: "../assets/img/switch/401-01.png",
+      alt: "STEP-09",
+      tooltipTarget: "tooltipsSwitch09",
+      tooltipDescription: "機器をアクセスポイントモードに設定する",
+      footerContent: "",
+      modal: "modalSwitch008",
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+      index: 8,
+      imagePath: "../assets/img/switch/465-01.png",
+      alt: "STEP-09",
+      tooltipTarget: "tooltipsSwitch09",
+      tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
+      footerContent: "<ul><li>ルーターのSSID（2.4GHz）と暗号化キー（パスワード）をお手元に準備してください。次の操作で使用します。</li></ul>",
+      modal: "modalSwitch009",
+    },
+    {
+      index: 9,
+      imagePath: "../assets/img/switch/465-02.png",
+      alt: "STEP-10",
+      tooltipTarget: "tooltipsSwitch10",
+      tooltipDescription: "「SSID」欄をタップし、接続するルーターのSSIDを選択し、「決定」をタップする",
+      footerContent: "SSID欄をタップすると<span class=\"footer-link\" onclick=\"showModal('modalSen010')\">SSID選択画面</span>が表示されます。",
+      modal: "modalSwitch010",
+    },
+    {
+      index: 10,
+      imagePath: "../assets/img/switch/466-01.png",
+      alt: "STEP-11",
+      tooltipTarget: "tooltipsSwitch11",
+      tooltipDescription: "「暗号化キー（パスワード）」にルーターの暗号化キーを入力し、「接続する」をタップする",
+      footerContent: "<ul><li><span class=\"footer-link\" onclick=\"showModal('modalSen011-1')\">「暗号化キーを表示する」</span>を選択すると、前回使用した暗号化キーを自動入力できます。</li><li><span class=\"footer-link\" onclick=\"showModal('modalSen011-2')\">SSIDは手動でも入力できます。</span></li></ul>",
+      modal: "modalSwitch011",
+    },
+    {
+      index: 11,
+      imagePath: "../assets/img/switch/467-01.png",
+      alt: "STEP-12",
+      tooltipTarget: "tooltipsSwitch12",
+      tooltipDescription: "環境センサーの登録が終わるまでそのまま1～2分程度待つ",
+      footerContent: "<ul><li><span class=\"footer-link\" onclick=\"showModal('modalSen012')\">環境センサーの登録に失敗した場合</span></li><li><span class=\"footer-link\" onclick=\"showModal('modalSen012-2')\">環境センサーが別のユーザーに登録されている場合</span></li></ul>",
+      modal: "modalSwitch012",
+    },
+    {
+      index: 12,
+      imagePath: "../assets/img/switch/468-02.png",
+      alt: "STEP-13",
+      tooltipTarget: "tooltipsSwitch13",
+      tooltipDescription: "環境センサーの登録が完了しました。「 アプリを起動する」をタップすると、換気REMOTEアプリが起動します。",
+      footerContent: "換気REMOTEアプリの使い方については、<a href=\"https://www.MitsubishiElectric.co.jp/ldg/ja/air/products/ventilationfan/lossnaycentral/IB/pdf/kankiremote_mymu.pdf\" target=\"_blank\">換気REMOTEアプリの取扱説明書</a>をご確認ください。",
+      modal: "modalSwitch013",
+    },
+  ],
+};
