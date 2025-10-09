@@ -35,7 +35,7 @@ const demoAppJson = {
       alt: "STEP-04",
       tooltipTarget: "tooltipsSwitch04",
       tooltipDescription: "「アクセスポイントモードでの接続」を選択する",
-      footerContent: "<ul><li>選択した接続方法の説明に進んでください。</li><li>機器とルーターを接続済みの場合は「機器とルーターを接続済み」をタップしてください。</li></ul>",
+      footerContent: "<ul><li>選択した接続方法の説明に進んでください。</li><li>機器とルーターを接続済みの場合は画面下部の「機器とルーターを接続済み」をタップしてください。</li></ul>",
       modal: "modalSwitch004",
     },
     {
@@ -53,7 +53,7 @@ const demoAppJson = {
       alt: "STEP-06",
       tooltipTarget: "tooltipsSwitch06",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
-      footerContent: "事前に以下を準備してください。<ul><li>接続したいルーターのSSID（2.4GHz）</li><li>ルーターに接続する暗号化キー（パスワード）</li></ul>本アプリでルーターのSSIDに使用できる文字は<span class=\"footer-link\" onclick=\"showModal('modalSen005')\">半角英数字、半角記号、半角スペース</span>です。",
+      footerContent: "事前に以下を準備してください。<ul><li>接続したいルーターのSSID（2.4GHz）</li><li>ルーターに接続する暗号化キー（パスワード）</li></ul>本アプリでルーターのSSIDに使用できる文字は<span class=\"footer-link\" onclick=\"showModal('modalSwitch006')\">半角英数字、半角記号、半角スペース</span>です。",
       modal: "modalSwitch006",
     },
     {
