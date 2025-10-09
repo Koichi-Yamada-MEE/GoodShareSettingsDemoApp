@@ -65,15 +65,40 @@
     <!-- modalOverlay -->
     <div id="modalOverlay" class="modal-overlay d-none">
 
-      <!-- modalSen005 -->
-      <div id="modalSen005" class="modal-container d-none">
+      <!-- modalSwitch009 -->
+      <div id="modalSwitch009" class="modal-container d-none">
         <div class="modal-header">
-          <h3 class="modal-title">使用できる文字</h3>
+          <h3 class="modal-title">スマートスイッチをアクセスポイントモードにする</h3>
           <button type="button" class="modal-close-btn">&times;</button>
         </div>
         <div class="modal-body">
-          <p>半角記号は !#$%&'()*+-./:;<=>?@[]^_`{¦}~ に対応しています。ダブルクォーテーション（"）、カンマ（,）、バックスラッシュ（＼）、￥マークには対応していません。</p>
-          <img src="" alt="">
+          <ol>
+            <li>ブレーカーを「ON」にします。
+              <img src="../assets/img/sen/467-S01.png" alt="">
+              <ul class="list-group">
+                <li>すでにブレーカーが「ON」になっている場合は手順2へ進んでください。</li>
+                <li>電源をONにしてもスマートスイッチのWi-Fiランプは消灯状態です。</li>
+                <li>ブレーカーを入れて約5秒間はスイッチ操作ができません（P-04SWRCの場合、強/弱ランプが点灯）。</li>
+              </ul>
+        
+            </li>
+            <li>スマートスイッチに電源が入っていることを確認します。
+              <img src="../assets/img/sen/468-S01.png" alt="">
+              <ul>
+                <li>電源スイッチを押して、電源スイッチのON/OFFランプが点灯し、ロスナイやファンといった接続負荷機器が動作することを確認してください。</li>
+              </ul>
+        
+            </li>
+            <li>スマートスイッチの「WPS」ボタンをWi-Fiランプの点滅間隔が短くなるまで（約5秒間）先の細いもので押して離します。
+              <img src="../assets/img/sen/467-S01.png" alt="">
+              <ul>
+                <li>Wi-Fiランプが5秒間に2回点滅します。</li>
+                <li>電源をONにしてもスマートスイッチのWi-Fiランプは消灯状態です。</li>
+                <li>この状態は約10分間で終了します。機器登録が完了する前に10分経過したときはWi-Fiランプの状態を確認し、再度APモードにしてください。</li>
+              </ul>
+        
+            </li>
+          </ol>
         </div>
         <div class="modal-footer">
           <button type="button" class="modal-close-btn">閉じる</button>
@@ -175,7 +200,7 @@
 
         // automatic scroll for specific slides
         // indexes of slides that need automatic scroll
-        const targetIndexes = [6, 7];
+        const targetIndexes = [6, 7, 9, 10];
 
         if (targetIndexes.includes(swiper.activeIndex)) {
           const activeSlide = swiper.slides[swiper.activeIndex];

@@ -76,12 +76,12 @@ function showModal(modalId) {
   modalContainer.classList.remove('d-none');
 
   // モーダルを閉じる（閉じるボタン・×）
-  [closeBtn, closeX].forEach(btn => {
-    btn.addEventListener('click', () => {
-      modalOverlay.classList.add('d-none');
-      modalContainer.classList.add('d-none');
-    });
-  });
+  // [closeBtn, closeX].forEach(btn => {
+  //   btn.addEventListener('click', () => {
+  //     modalOverlay.classList.add('d-none');
+  //     modalContainer.classList.add('d-none');
+  //   });
+  // });
 };
 // オーバーレイクリックで閉じる
 // modal.addEventListener('click', (e) => {
