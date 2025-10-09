@@ -89,7 +89,7 @@ const demoAppJson = {
       alt: "STEP-10",
       tooltipTarget: "tooltipsSwitch10",
       tooltipDescription: "機器をアクセスポイントモードに設定後、「次へ」をタップする",
-      footerContent: "",
+      footerContent: "「次へ」をタップした後の操作は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch010\">こちら</a>",
       modal: "modalSwitch010",
     },
     {
