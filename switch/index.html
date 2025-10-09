@@ -62,72 +62,100 @@
     </footer>
 
     <!-- modal -->
-    <!-- modalOverlay -->
-    <div id="modalOverlay" class="modal-overlay d-none">
-
-
-      <!-- modalSwitch006 -->
-      <div id="modalSwitch006" class="modal-container d-none">
-        <div class="modal-header">
-          <h3 class="modal-title">使用できる文字</h3>
-          <button type="button" class="modal-close-btn">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p>半角記号は !#$%&'()*+-./:;<=>?@[]^_`{¦}~ に対応しています。ダブルクォーテーション（"）、カンマ（,）、バックスラッシュ（＼）、￥マークには対応していません。</p>
-          <img src="" alt="">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="modal-close-btn">閉じる</button>
+    <!-- modalSwitch006 -->
+    <div class="modal fade" id="modalSwitch006" tabindex="-1" aria-labelledby="ModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" style="width: 280px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-6" id="exampleModalLongTitle">ルーターのSSIDに使用できる文字</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>半角記号は !#$%&'()*+-./:;<=>?@[]^_`{¦}~ に対応しています。ダブルクォーテーション（"）、カンマ（,）、バックスラッシュ（＼）、￥マークには対応していません。</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
-
-
-
-
-
-      <!-- modalSwitch009 -->
-      <div id="_modalSwitch009" class="modal-container d-none">
-        <div class="modal-header">
-          <h3 class="modal-title">スマートスイッチをアクセスポイントモードにする</h3>
-          <button type="button" class="modal-close-btn">&times;</button>
-        </div>
-        <div class="modal-body">
-          <ol>
-            <li>ブレーカーを「ON」にします。
-              <img src="../assets/img/sen/467-S01.png" alt="">
-              <ul class="list-group">
-                <li>すでにブレーカーが「ON」になっている場合は手順2へ進んでください。</li>
-                <li>電源をONにしてもスマートスイッチのWi-Fiランプは消灯状態です。</li>
-                <li>ブレーカーを入れて約5秒間はスイッチ操作ができません（P-04SWRCの場合、強/弱ランプが点灯）。</li>
-              </ul>
-        
-            </li>
-            <li>スマートスイッチに電源が入っていることを確認します。
-              <img src="../assets/img/sen/468-S01.png" alt="">
-              <ul>
-                <li>電源スイッチを押して、電源スイッチのON/OFFランプが点灯し、ロスナイやファンといった接続負荷機器が動作することを確認してください。</li>
-              </ul>
-        
-            </li>
-            <li>スマートスイッチの「WPS」ボタンをWi-Fiランプの点滅間隔が短くなるまで（約5秒間）先の細いもので押して離します。
-              <img src="../assets/img/sen/467-S01.png" alt="">
-              <ul>
-                <li>Wi-Fiランプが5秒間に2回点滅します。</li>
-                <li>電源をONにしてもスマートスイッチのWi-Fiランプは消灯状態です。</li>
-                <li>この状態は約10分間で終了します。機器登録が完了する前に10分経過したときはWi-Fiランプの状態を確認し、再度APモードにしてください。</li>
-              </ul>
-        
-            </li>
-          </ol>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="modal-close-btn">閉じる</button>
-        </div>
-      </div>
-
-
-
     </div>
+
+    <!-- modalSwitch007 -->
+    <div class="modal fade" id="modalSwitch007" tabindex="-1" aria-labelledby="ModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" style="width: 280px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-6" id="exampleModalLongTitle">設定情報シール貼付位置</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>スマートスイッチを取り付けた際に施工業者が貼り付けた設定情報シールで確認してください。</p>
+            <img src="../assets/img/switch/400-S01.png">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modalSwitch009 -->
+    <div class="modal fade" id="modalSwitch009" tabindex="-1" aria-labelledby="ModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" style="width: 280px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-6" id="exampleModalLongTitle">アクセスポイントモードにする</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item mt-2 p-0 border-0">ブレーカーを「ON」にします。
+                <ul class="list-group ms-4">
+                  <li class="m-0">すでにブレーカーが「ON」になっている場合は手順2へ進んでください。</li>
+                  <li class="m-0">電源をONにしてもスマートスイッチのWi-Fiランプは消灯状態です。</li>
+                  <li class="m-0">ブレーカーを入れて約5秒間はスイッチ操作ができません（P-04SWRCの場合、強/弱ランプが点灯）。</li>
+                </ul>
+              </li>
+              <li class="list-group-item mt-2 p-0 border-0">スマートスイッチに電源が入っていることを確認します。
+                <img class="border-0" src="../assets/img/switch/402-S01.png">
+                <ul class="list-group ms-4">
+                  <li class="m-0">電源スイッチを押して、電源スイッチのON/OFFランプが点灯し、ロスナイやファンといった接続負荷機器が動作することを確認してください。</li>
+                </ul>
+              </li>
+              <li class="list-group-item mt-2 p-0 border-0">スマートスイッチの「WPS」ボタンをWi-Fiランプの点滅間隔が短くなるまで（約5秒間）先の細いもので押して離します。
+              <img class="border-0" src="../assets/img/switch/402-S02.png">
+                <ul class="list-group ms-4">
+                  <li class="m-0">Wi-Fiランプが5秒間に2回点滅します。</li>
+                  <li class="m-0">この状態は約10分間で終了します。機器登録が完了する前に10分経過したときはWi-Fiランプの状態を確認し、再度APモードにしてください。</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- create drawer menu -->
         <div class="drawer-menu"></div>

@@ -53,7 +53,7 @@ const demoAppJson = {
       alt: "STEP-06",
       tooltipTarget: "tooltipsSwitch06",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
-      footerContent: "事前に以下を準備してください。<ul><li>接続したいルーターのSSID（2.4GHz）</li><li>ルーターに接続する暗号化キー（パスワード）</li></ul>本アプリでルーターのSSIDに使用できる文字は<span class=\"footer-link\" onclick=\"showModal('modalSwitch006')\">半角英数字、半角記号、半角スペース</span>です。",
+      footerContent: "事前に以下を準備してください。<ul><li>接続したいルーターのSSID（2.4GHz）</li><li>ルーターに接続する暗号化キー（パスワード）</li></ul>本アプリでルーターのSSIDに使用できる文字は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch006\">半角英数字、半角記号、半角スペース</a>です。",
       modal: "modalSwitch006",
     },
     {
@@ -62,7 +62,7 @@ const demoAppJson = {
       alt: "STEP-07",
       tooltipTarget: "tooltipsSwitch07",
       tooltipDescription: "「QRコード🄬を読み取る」をタップし、スマートフォンのカメラで設定情報シールのQRコードを読み取る",
-      footerContent: "<ul><li>QRコードを読み取るとSSIDとKEYが表示されます。</li><li>スマートスイッチの設定情報シール貼付位置</li></ul>",
+      footerContent: "<ul><li>QRコードを読み取るとSSIDとKEYが表示されます。</li><li>スマートスイッチの設定情報シール貼付位置は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch007\">こちら</a></li></ul>",
       modal: "modalSwitch007",
     },
     {
@@ -80,7 +80,7 @@ const demoAppJson = {
       alt: "STEP-09",
       tooltipTarget: "tooltipsSwitch09",
       tooltipDescription: "機器をアクセスポイントモードに設定する",
-      footerContent: "<ul><li>アクセスポイントモードは約10分で終了するため、ルーターのSSID（2.4GHz）、ルーターの暗号化キー（パスワード）をお手元に準備してください。詳しくはルーターの取扱説明書をご確認ください。</li><li>機器をアクセスポイントモードにする手順は<span class=\"footer-link\" onclick=\"showModal('modalSwitch009')\">こちら</span>。</li></ul>",
+      footerContent: "<ul><li>機器をアクセスポイントモードにする手順は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch009\">こちら</a></li><li>アクセスポイントモードは約10分で終了するため、ルーターのSSID（2.4GHz）、ルーターの暗号化キー（パスワード）をお手元に準備してください。詳しくはルーターの取扱説明書をご確認ください。</li></ul>",
       modal: "modalSwitch009",
     },
     {
