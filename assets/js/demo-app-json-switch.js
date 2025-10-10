@@ -9,16 +9,15 @@ const demoAppJson = {
       tooltipTarget: "tooltipsSwitch01",
       tooltipDescription: "☰メニューをタップする",
       footerContent: "",
-      modal: "modalSwitch001",
     },
     {
       index: 1,
       imagePath: "../assets/img/rac/05-02.png",
       alt: "STEP-02",
       tooltipTarget: "tooltipsSwitch02",
+      // tooltipDescription: "「＋機器登録を」タップする<br /><a href=\"https://www.google.com/\" class=\"btn btn-danger btn-sm mt-2\">スマートスイッチの各部名称を表示する</a>",
       tooltipDescription: "「＋機器登録を」タップする",
       footerContent: "",
-      modal: "modalSwitch002",
     },
     {
       index: 2,
@@ -27,7 +26,6 @@ const demoAppJson = {
       tooltipTarget: "tooltipsSwitch03",
       tooltipDescription: "「ファン」をタップする",
       footerContent: "",
-      modal: "modalSwitch003",
     },
     {
       index: 3,
@@ -35,8 +33,7 @@ const demoAppJson = {
       alt: "STEP-04",
       tooltipTarget: "tooltipsSwitch04",
       tooltipDescription: "「アクセスポイントモードでの接続」を選択する",
-      footerContent: "<ul><li>選択した接続方法の説明に進んでください。</li><li>機器とルーターを接続済みの場合は画面下部の「<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch004\">機器とルーターを接続済み</a>」をタップしてください。</li></ul>",
-      modal: "modalSwitch004",
+      footerContent: "<ul><li>選択した接続方法の説明に進んでください。</li><li>機器とルーターを接続済みの場合は画面下部の「<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon001\">機器とルーターを接続済み</a>」をタップしてください。</li></ul>",
     },
     {
       index: 4,
@@ -45,7 +42,6 @@ const demoAppJson = {
       tooltipTarget: "tooltipsSwitch05",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent: "",
-      modal: "modalSwitch005",
     },
     {
       index: 5,
@@ -53,8 +49,7 @@ const demoAppJson = {
       alt: "STEP-06",
       tooltipTarget: "tooltipsSwitch06",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
-      footerContent: "事前に以下を準備してください。<ul><li>接続したいルーターのSSID（2.4GHz）</li><li>ルーターに接続する暗号化キー（パスワード）</li></ul>本アプリでルーターのSSIDに使用できる文字は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch006\">半角英数字、半角記号、半角スペース</a>です。",
-      modal: "modalSwitch006",
+      footerContent: "事前に以下を準備してください。<ul><li>接続したいルーターのSSID（2.4GHz）</li><li>ルーターに接続する暗号化キー（パスワード）</li></ul>本アプリでルーターのSSIDに使用できる文字は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon002\">半角英数字、半角記号、半角スペース</a>です。",
     },
     {
       index: 6,
@@ -63,7 +58,6 @@ const demoAppJson = {
       tooltipTarget: "tooltipsSwitch07",
       tooltipDescription: "「QRコード&#174;を読み取る」をタップし、スマートフォンのカメラで設定情報シールのQRコードを読み取る",
       footerContent: "<ul><li>QRコードを読み取るとSSIDとKEYが表示されます。</li><li>スマートスイッチの設定情報シール貼付位置は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch007\">こちら</a></li></ul>",
-      modal: "modalSwitch007",
     },
     {
       index: 7,
@@ -72,7 +66,6 @@ const demoAppJson = {
       tooltipTarget: "tooltipsSwitch08",
       tooltipDescription: "QRコードを読み取り後、「次へ」をタップする",
       footerContent: "",
-      modal: "modalSwitch008",
     },
     {
       index: 8,
@@ -81,7 +74,6 @@ const demoAppJson = {
       tooltipTarget: "tooltipsSwitch09",
       tooltipDescription: "機器をアクセスポイントモードに設定する",
       footerContent: "<ul><li>機器をアクセスポイントモードにする手順は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch009\">こちら</a></li><li>アクセスポイントモードは約10分で終了するため、ルーターのSSID（2.4GHz）、ルーターの暗号化キー（パスワード）をお手元に準備してください。詳しくはルーターの取扱説明書をご確認ください。</li></ul>",
-      modal: "modalSwitch009",
     },
     {
       index: 9,
@@ -90,7 +82,6 @@ const demoAppJson = {
       tooltipTarget: "tooltipsSwitch10",
       tooltipDescription: "機器をアクセスポイントモードに設定後、「次へ」をタップする",
       footerContent: "「次へ」をタップした後の操作は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch010\">こちら</a>",
-      modal: "modalSwitch010",
     },
     {
       index: 10,
@@ -99,7 +90,6 @@ const demoAppJson = {
       tooltipTarget: "tooltipsSwitch11",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent: "",
-      modal: "modalSwitch011",
     },
     {
       index: 11,
@@ -108,7 +98,6 @@ const demoAppJson = {
       tooltipTarget: "tooltipsSwitch12",
       tooltipDescription: "「SSID」欄をタップし、接続するルーターのSSIDを選択し、「決定」をタップする",
       footerContent: "",
-      modal: "modalSwitch012",
     },
     {
       index: 12,
@@ -117,7 +106,6 @@ const demoAppJson = {
       tooltipTarget: "tooltipsSwitch13",
       tooltipDescription: "「暗号化キー（パスワード）」にルーターの暗号化キーを入力し、「接続する」をタップする",
       footerContent: "",
-      modal: "modalSwitch013",
     },
     {
       index: 13,
@@ -126,7 +114,6 @@ const demoAppJson = {
       tooltipTarget: "tooltipsSwitch14",
       tooltipDescription: "機器の登録が終わるまでそのまま1～2分程度待つ",
       footerContent: "<ul><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch014-2\">機器の登録に失敗した場合</a></li><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch014-1\">「機器の登録確認」が表示された場合</a></li></ul>",
-      modal: "modalSwitch014",
     },
     {
       index: 14,
@@ -135,7 +122,6 @@ const demoAppJson = {
       tooltipTarget: "tooltipsSwitch15",
       tooltipDescription: "スマートスイッチ（ファン用）の登録が完了しました。「 アプリを起動する」をタップすると、換気REMOTEアプリが起動します。",
       footerContent: "",
-      modal: "modalSwitch015",
     },
   ],
 };

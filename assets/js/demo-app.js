@@ -51,11 +51,18 @@ function setJsonValue(path, value) {
 /******************************************
  * ドロワーメニュー
  ******************************************/
-fetch("../partials/drawer-menu.html")
-  .then(response => response.text())
-  .then(html => {
-    document.querySelector(".drawer-menu").innerHTML = html;
+Promise.all([
+  fetch("../partials/drawer-menu.html").then((r) => r.text()),
+  fetch("../partials/common-modal.html").then((r) => r.text()),
+])
+  .then(([drawerHtml, modalHtml]) => {
+    document.querySelector(".drawer-menu").innerHTML = drawerHtml;
+    document.querySelector(".common-modal").innerHTML = modalHtml;
+  })
+  .catch((err) => {
+    console.error("Failed to load partials:", err);
   });
+
 
 /******************************************
  * モーダルウインドウ
