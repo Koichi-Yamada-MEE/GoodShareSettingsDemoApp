@@ -35,7 +35,7 @@ const demoAppJson = {
       alt: "STEP-04",
       tooltipTarget: "tooltipsSwitch04",
       tooltipDescription: "「アクセスポイントモードでの接続」を選択する",
-      footerContent: "<ul><li>選択した接続方法の説明に進んでください。</li><li>機器とルーターを接続済みの場合は画面下部の「機器とルーターを接続済み」をタップしてください。</li></ul>",
+      footerContent: "<ul><li>選択した接続方法の説明に進んでください。</li><li>機器とルーターを接続済みの場合は画面下部の「<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch004\">機器とルーターを接続済み</a>」をタップしてください。</li></ul>",
       modal: "modalSwitch004",
     },
     {
@@ -61,7 +61,7 @@ const demoAppJson = {
       imagePath: "../assets/img/switch/400-01.png",
       alt: "STEP-07",
       tooltipTarget: "tooltipsSwitch07",
-      tooltipDescription: "「QRコード🄬を読み取る」をタップし、スマートフォンのカメラで設定情報シールのQRコードを読み取る",
+      tooltipDescription: "「QRコード&#174;を読み取る」をタップし、スマートフォンのカメラで設定情報シールのQRコードを読み取る",
       footerContent: "<ul><li>QRコードを読み取るとSSIDとKEYが表示されます。</li><li>スマートスイッチの設定情報シール貼付位置は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch007\">こちら</a></li></ul>",
       modal: "modalSwitch007",
     },
