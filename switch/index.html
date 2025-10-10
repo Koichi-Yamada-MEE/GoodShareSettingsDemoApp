@@ -80,7 +80,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- modalSwitch006 -->
     <div class="modal fade" id="modalSwitch006" tabindex="-1" aria-labelledby="ModalLongTitle" aria-hidden="true">
       <div class="modal-dialog mx-auto d-block" style="width: 280px">
@@ -142,7 +142,7 @@
                 </ul>
               </li>
               <li class="list-group-item mt-2 p-0 border-0">スマートスイッチの「WPS」ボタンをWi-Fiランプの点滅間隔が短くなるまで（約5秒間）先の細いもので押して離します。
-              <img class="border-0" src="../assets/img/switch/402-S02.png">
+                <img class="border-0" src="../assets/img/switch/402-S02.png">
                 <ul class="list-group ms-4">
                   <li class="m-0">Wi-Fiランプが5秒間に2回点滅します。</li>
                   <li class="m-0">この状態は約10分間で終了します。機器登録が完了する前に10分経過したときはWi-Fiランプの状態を確認し、再度APモードにしてください。</li>
@@ -166,22 +166,71 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-              <li class="list-group-item mt-2 p-0 border-0">ブレーカーを「ON」にします。
-                <ul class="list-group px-3">
-                  <li class="mt-0">「 次へ」をタップ後、以下のメッセージが表示されたら「接続」をタップしてください。「キャンセル」をタップすると接続に失敗します。
-                    <img class="border-0" src="../assets/img/sen/463-S01.png">
-                    <img class="border-0" src="../assets/img/sen/463-S02.png">
-                  </li>
-                  <li class="mt-0">「 次へ」をタップすると位置情報の使用許可を求めるメッセージが表示されます。「1度だけ許可」「Appの使用中は許可」あるいは「アプリの使用時のみ」「今回のみ」をタップしてください。「許可しない」をタップすると接続に失敗します。
-                    <img class="border-0" src="../assets/img/sen/463-S03.png">
-                    <img class="border-0" src="../assets/img/sen/463-S04.png">
-                  </li>
-                  <li class="mt-0">オートメーション機能で位置情報を使用する場合は、位置情報の許可を求める画面で「Appの使用中は許可」「アプリの使用時のみ」をタップし、「正確な位置情報」を「オン」にしてください。オートメーション機能については取扱説明書をご確認ください。</li>
-                  <li class="mt-0">接続に失敗した場合は右のメッセージが表示されます。「閉じる」をタップして画面を閉じ手順4からやり直してください。
-                    <img class="border-0" src="../assets/img/switch/406-S03.png">
-                  </li>
-                </ul>
+            <li class="list-group-item mt-2 p-0 border-0">ブレーカーを「ON」にします。
+              <ul class="list-group px-3">
+                <li class="mt-0">「 次へ」をタップ後、以下のメッセージが表示されたら「接続」をタップしてください。「キャンセル」をタップすると接続に失敗します。
+                  <img class="border-0" src="../assets/img/sen/463-S01.png">
+                  <img class="border-0" src="../assets/img/sen/463-S02.png">
+                </li>
+                <li class="mt-0">
+                  「次へ」をタップすると位置情報の使用許可を求めるメッセージが表示されます。「1度だけ許可」「Appの使用中は許可」あるいは「アプリの使用時のみ」「今回のみ」をタップしてください。「許可しない」をタップすると接続に失敗します。
+                  <img class="border-0" src="../assets/img/sen/463-S03.png">
+                  <img class="border-0" src="../assets/img/sen/463-S04.png">
+                </li>
+              </ul>
+            </li>
+            <p class="mt-0  alert alert-info" role="alert">
+              オートメーション機能で位置情報を使用する場合は、位置情報の許可を求める画面で「Appの使用中は許可」「アプリの使用時のみ」をタップし、「正確な位置情報」を「オン」にしてください。オートメーション機能については取扱説明書をご確認ください。
+            </p>
+            <ul class="list-group px-3">
+              <li class="mt-0">接続に失敗した場合は右のメッセージが表示されます。「閉じる」をタップして画面を閉じ手順4からやり直してください。
+                <img class="border-0" src="../assets/img/switch/406-S03.png">
               </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modalSwitch014-1 -->
+    <div class="modal fade" id="modalSwitch014-1" tabindex="-1" aria-labelledby="ModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog mx-auto d-block" style="width: 280px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-6" id="exampleModalLongTitle">機器登録に失敗した場合</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group px-3">
+              <li class="mt-0">登録に失敗した場合は登録失敗のメッセージが表示されます。「閉じる」をタップして、表示される画面の内容をご確認ください。
+                <img class="border-0" src="../assets/img/switch/409-S01.png">
+              </li>
+              <li class="mt-0">「閉じる」をタップすると次の画面が表示されます。内容を確認して、再度登録手順を実施してください。「戻る」をタップすると接続方法の選択画面に戻ります。
+                <img class="border-0" src="../assets/img/switch/410-S01.png">
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modalSwitch014-2 -->
+    <div class="modal fade" id="modalSwitch014-2" tabindex="-1" aria-labelledby="ModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog mx-auto d-block" style="width: 280px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-6" id="exampleModalLongTitle">機器の登録に失敗した場合</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>機器が別のユーザーに登録されている場合は、次のメッセージが表示されます。「登録を続ける」をタップすることで、本機器の登録が行われ、別のユーザーからは機器の登録が削除されます。登録しない場合は「キャンセル」をタップします。</p>
+            <img src="../assets/img/switch/409-S02.png">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -204,12 +253,8 @@
 
 
 
-
-
-
-
-<!-- create drawer menu -->
-        <div class="drawer-menu"></div>
+    <!-- create drawer menu -->
+    <div class="drawer-menu"></div>
   </div>
 
   <!-- Bootstrap -->
@@ -320,7 +365,7 @@
       });
     });
   </script>
-  
+
 </body>
 
 </html>

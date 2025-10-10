@@ -125,7 +125,7 @@ const demoAppJson = {
       alt: "STEP-14",
       tooltipTarget: "tooltipsSwitch14",
       tooltipDescription: "機器の登録が終わるまでそのまま1～2分程度待つ",
-      footerContent: "",
+      footerContent: "<ul><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch014-2\">機器の登録に失敗した場合</a></li><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch014-1\">「機器の登録確認」が表示された場合</a></li></ul>",
       modal: "modalSwitch014",
     },
     {
