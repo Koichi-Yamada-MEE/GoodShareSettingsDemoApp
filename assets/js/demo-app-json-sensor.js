@@ -44,8 +44,8 @@ const demoAppJson = {
       alt: "STEP-05",
       tooltipTarget: "tooltipsSen05",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
-      footerContent: "事前に以下を準備してください。<ul><li>接続したいルーターのSSID（2.4GHz）</li><li>ルーターに接続する暗号化キー（パスワード）</li></ul>本アプリでルーターのSSIDに使用できる文字は<span class=\"footer-link\" onclick=\"showModal('modalSen005')\">半角英数字、半角記号、半角スペース</span>です。",
-      modal: "modalSen005",
+      footerContent: "<ul><li>事前に次を準備してください。<i class=\"bi bi-1-circle\"></i>接続したいルーターのSSID（2.4GHz）、<i class=\"bi bi-2-circle\"></i>ルーターに接続する暗号化キー（パスワード）</li><li>本アプリでルーターのSSIDに使用できる文字は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon002\">半角英数字、半角記号、半角スペース</a>です。</li></ul>",
+      modal: "modalCommon002",
     },
     {
       index: 5,
@@ -53,7 +53,7 @@ const demoAppJson = {
       alt: "STEP-06",
       tooltipTarget: "tooltipsSen06",
       tooltipDescription: "「QRコード🄬を読み取る」をタップし、スマートフォンのカメラで環境センサーのQRコード（MACアドレス）を読み取る",
-      footerContent: "QRコード読み取り時に「<span class=\"footer-link\" onclick=\"showModal('modalSen006')\">\"MyMU\"がカメラへのアクセスを求めています</span>」といったカメラへのアクセスを求めるメッセージが表示されたときは「OK」や「許可」をタップしてください。",
+      footerContent: "QRコード読み取り時に「<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSen006\">\"MyMU\"がカメラへのアクセスを求めています</a>」といったメッセージが表示されたときは「OK」や「許可」をタップしてください。",
       modal: "modalSen006",
     },
     {
@@ -71,7 +71,7 @@ const demoAppJson = {
       alt: "STEP-08",
       tooltipTarget: "tooltipsSen08",
       tooltipDescription: "環境センサー本体の電源ポートに電源を繋いだUSBケーブルを挿して環境センサーの電源を入れ、LED が緑色にゆっくり（1秒間隔）点滅するのを確認したら「環境センサーに接続する」をタップする",
-      footerContent: "<ul><li>5分以内に環境センサーの登録が」必要です。環境センサーを接続するルーターのSSID・パスワードをあらかじめご準備ください。</li><li>LEDが緑色で点滅しない場合やルーターを変更したなどで再登録する場合は<span class=\"footer-link\" onclick=\"showModal('modalSen008')\">「環境センサーを初期化」</span>をタップして初期化してください。</li></ul>",
+      footerContent: "<ul><li>接続するルーターのSSID・パスワードをあらかじめ準備して、<span class=\"text-danger\">5分以内</span>に環境センサーを登録してください。</li><li>LEDが点滅しない、ルーターを変更したなどで再登録する場合は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSen008\">「環境センサーを初期化」</a>をタップして初期化してください。</li></ul>",
       modal: "modalSen008",
     },
     {
@@ -89,7 +89,7 @@ const demoAppJson = {
       alt: "STEP-10",
       tooltipTarget: "tooltipsSen10",
       tooltipDescription: "「SSID」欄をタップし、接続するルーターのSSIDを選択し、「決定」をタップする",
-      footerContent: "SSID欄をタップすると<span class=\"footer-link\" onclick=\"showModal('modalSen010')\">SSID選択画面</span>が表示されます。",
+      footerContent: "SSID欄をタップすると<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSen010\">SSID選択画面</a>が表示されます。",
       modal: "modalSen010",
     },
     {
@@ -98,7 +98,7 @@ const demoAppJson = {
       alt: "STEP-11",
       tooltipTarget: "tooltipsSen11",
       tooltipDescription: "「暗号化キー（パスワード）」にルーターの暗号化キーを入力し、「接続する」をタップする",
-      footerContent: "<ul><li><span class=\"footer-link\" onclick=\"showModal('modalSen011-1')\">「暗号化キーを表示する」</span>を選択すると、前回使用した暗号化キーを自動入力できます。</li><li><span class=\"footer-link\" onclick=\"showModal('modalSen011-2')\">SSIDは手動でも入力できます。</span></li></ul>",
+      footerContent: "<ul><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSen011-1\">「暗号化キーを表示する」</a>を選択すると、前回使用した暗号化キーを自動入力できます。</li><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSen011-2\">SSIDは手動でも入力できます。</a></li></ul>",
       modal: "modalSen011",
     },
     {
@@ -107,7 +107,7 @@ const demoAppJson = {
       alt: "STEP-12",
       tooltipTarget: "tooltipsSen12",
       tooltipDescription: "環境センサーの登録が終わるまでそのまま1～2分程度待つ",
-      footerContent: "<ul><li><span class=\"footer-link\" onclick=\"showModal('modalSen012')\">環境センサーの登録に失敗した場合</span></li><li><span class=\"footer-link\" onclick=\"showModal('modalSen012-2')\">環境センサーが別のユーザーに登録されている場合</span></li></ul>",
+      footerContent: "<ul><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSen012\">環境センサーの登録に失敗した場合</a></li><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSen012-2\">環境センサーが別のユーザーに登録されている場合</a></li></ul>",
       modal: "modalSen012",
     },
     {

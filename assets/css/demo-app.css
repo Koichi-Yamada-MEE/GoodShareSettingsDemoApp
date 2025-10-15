@@ -53,127 +53,6 @@ body {
   z-index: 1000;
 }
 
-
-/* モーダルウインドウ */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 100000;
-}
-
-.modal-container {
-  display: flex;
-  flex-direction: column;
-  padding: 1.0em;
-  border-radius: 5px;
-  background-color: white;
-  width: 280px;
-  max-height: 480px; /* 最大高さを480pxに設定 */
-  height: auto;      /* コンテンツに合わせて高さを自動調整 */
-  overflow-y: auto;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  font-size: 0.7em;
-}
-
-.modal-body img {
-  display: block;
-  margin: 1.0em auto;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  max-width: 200px;
-  height: auto;
-}
-
-.modal-container ol,
-.modal-container ul {
-  padding: 0.25em 0 0.25em 1.5em;
-}
-
-.modal-container ul {
-  list-style-type: disc;
-}
-
-.modal-container li {
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.modal-body li:nth-child(n+2) {
-    margin-top: 2.0em;
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* .modal-header .modal-close-btn {
-  border: none;
-  text-align: right;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.25em;
-  margin-top: 10px;
-  cursor: pointer;
-} */
-
-.modal-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.modal-header .modal-close-btn {
-  background: none;
-  border: none;
-  font-size: 24px;
-  color: #696966;
-  cursor: pointer;
-}
-
-.modal-header h3 {
-  font-size: 1.25em;
-}
-
-.modal-footer {
-  display: flex;
-  justify-content: center;
-}
-
-.modal-footer .modal-close-btn {
-  background-color: #CE0037;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.25em;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-.modal-footer .modal-close-btn:hover {
-  background-color: #d32f2f;
-}
-
 /* フッターコンテンツ */
 .demo-app-wrap--footer {
   font-size: 0.85em;
@@ -209,11 +88,25 @@ body {
 }
 
 
-
-
 /* Bootstrap customize */
-ul {
-  list-style-type: disc;       /* 黒丸 ● */
-  list-style-position: outside; /* マーカーを外側に */
-  padding-left: 1.5rem;        /* 左インデント復元 */
+.modal-body ul,
+.modal-body ol {
+  list-style-type: revert;
+  padding-left: 1rem;
+  margin-left: revert;
+}
+
+.modal-body img {
+  max-width: 100%;  /* 親の幅を超えない */
+  height: auto;     /* 縦横比を維持 */
+  display: block;   /* 必要に応じて余白調整 */
+}
+
+.img-border-rounded {
+  border: 1px solid #dee2e6;
+  border-radius: 0.625rem;
+}
+
+li > img:first-child {
+  margin-top: 1rem; /* mt-3 相当（Bootstrapのmt-3は1rem） */
 }
