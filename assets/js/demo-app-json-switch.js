@@ -49,7 +49,7 @@ const demoAppJson = {
       alt: "STEP-06",
       tooltipTarget: "tooltipsSwitch06",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
-      footerContent: "事前に以下を準備してください。<ul><li>接続したいルーターのSSID（2.4GHz）</li><li>ルーターに接続する暗号化キー（パスワード）</li></ul>本アプリでルーターのSSIDに使用できる文字は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon002\">半角英数字、半角記号、半角スペース</a>です。",
+      footerContent: "<ul><li>事前に次を準備してください。<i class=\"bi bi-1-circle\"></i>接続したいルーターのSSID（2.4GHz）、<i class=\"bi bi-2-circle\"></i>ルーターに接続する暗号化キー（パスワード）</li><li>本アプリでルーターのSSIDに使用できる文字は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon002\">半角英数字、半角記号、半角スペース</a>です。</li></ul>",
     },
     {
       index: 6,
@@ -72,15 +72,15 @@ const demoAppJson = {
       imagePath: "../assets/img/switch/401-01.png",
       alt: "STEP-09",
       tooltipTarget: "tooltipsSwitch09",
-      tooltipDescription: "機器をアクセスポイントモードに設定する",
-      footerContent: "<ul><li>機器をアクセスポイントモードにする手順は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch009\">こちら</a></li><li>アクセスポイントモードは約10分で終了するため、ルーターのSSID（2.4GHz）、ルーターの暗号化キー（パスワード）をお手元に準備してください。詳しくはルーターの取扱説明書をご確認ください。</li></ul>",
+      tooltipDescription: "<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch009\">設定方法をみる<i class=\"bi bi-link-45deg\"></i></a>をタップし<br />機器をアクセスポイントモードに設定する",
+      footerContent: "<ul><li>アクセスポイントモードは約10分で終了するため、ルーターのSSID（2.4GHz）、ルーターの暗号化キー（パスワード）をお手元に準備してください。詳しくはルーターの取扱説明書をご確認ください。</li></ul>",
     },
     {
       index: 9,
       imagePath: "../assets/img/switch/401-01.png",
       alt: "STEP-10",
       tooltipTarget: "tooltipsSwitch10",
-      tooltipDescription: "機器をアクセスポイントモードに設定後、「次へ」をタップする",
+      tooltipDescription: "アクセスポイントモードに設定後、「次へ」をタップする",
       footerContent: "「次へ」をタップした後の操作は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch010\">こちら</a>",
     },
     {
@@ -96,8 +96,8 @@ const demoAppJson = {
       imagePath: "../assets/img/sen/465-02.png",
       alt: "STEP-12",
       tooltipTarget: "tooltipsSwitch12",
-      tooltipDescription: "「SSID」欄をタップし、接続するルーターのSSIDを選択し、「決定」をタップする",
-      footerContent: "",
+      tooltipDescription: "タップして<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon003\">画面<i class=\"bi bi-link-45deg\"></i></a>を表示させ、接続するSSIDを選択する",
+      footerContent: "SSID欄をタップすると<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSen010\">SSID選択画面</a>が表示されます。",
     },
     {
       index: 12,
