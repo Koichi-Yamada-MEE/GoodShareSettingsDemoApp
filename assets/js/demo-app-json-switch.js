@@ -96,7 +96,7 @@ const demoAppJson = {
       imagePath: "../assets/img/sen/465-02.png",
       alt: "STEP-12",
       tooltipTarget: "tooltipsSwitch12",
-      tooltipDescription: "タップして<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon003\">画面<i class=\"bi bi-link-45deg\"></i></a>を表示させ、接続するSSIDを選択する",
+      tooltipDescription: "タップして<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon003\">画面を表示させ、<i class=\"bi bi-link-45deg\"></i></a>接続するSSIDを選択する",
       footerContent: "SSID欄をタップすると<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSen010\">SSID選択画面</a>が表示されます。",
     },
     {
@@ -105,7 +105,7 @@ const demoAppJson = {
       alt: "STEP-13",
       tooltipTarget: "tooltipsSwitch13",
       tooltipDescription: "「暗号化キー（パスワード）」にルーターの暗号化キーを入力し、「接続する」をタップする",
-      footerContent: "",
+      footerContent: "<ul><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSen011-1\">「暗号化キーを表示する」</a>を選択すると、前回使用した暗号化キーを自動入力できます。</li><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon004\">SSIDは手動でも入力できます。</a></li></ul>",
     },
     {
       index: 13,
