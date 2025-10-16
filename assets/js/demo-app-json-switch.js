@@ -73,7 +73,7 @@ const demoAppJson = {
       alt: "STEP-09",
       tooltipTarget: "tooltipsSwitch09",
       tooltipDescription: "<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch009\">設定方法をみる<i class=\"bi bi-link-45deg\"></i></a>をタップし<br />機器をアクセスポイントモードに設定する",
-      footerContent: "<ul><li>アクセスポイントモードは約10分で終了するため、それまでに設定を終えてください。詳しくはルーターの取扱説明書をご確認ください。</li><li>スマートスイッチの各部名称とWi-Fiランプ状態の説明は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon007\">こちら。</a></li></ul>",
+      footerContent: "<ul><li>スマートスイッチの各部名称は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon008\">こちら。</a></li><li>スマートスイッチのWi-Fiランプ状態の説明は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon007\">こちら。</a></li><li>アクセスポイントモードは約10分で終了します、それまでに設定してください。詳しくはルーターの取扱説明書をご確認ください。</li></ul>",
     },
     {
       index: 9,
