@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.jp/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>Bootstrap Example</title>
+  <style>
+    .table {
+      font-size: 0.75em;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="">
+
+
+<ul class="list-group" style="width: 300px">
+  <li class="list-group-item">
+    <div class="ms-2 d-flex justify-content-start align-items-center">
+      <div><img class="me-2 w-75" src="../assets/img/common/404-S01.png" alt="" srcset=""></div>
+      <div><span class="fw-bold">0.5秒間隔で点滅</span></div>
+    </div>
+    <div class="pt-2"><span>WPSモードで動作しています（Wi-Fiを探している）。</span></div>  
+  </li>
+
+  <li class="list-group-item">
+    <div class="ms-2 d-flex justify-content-start align-items-center">
+      <div><img class="me-2" src="../assets/img/common/404-S02.png" alt="" srcset=""></div>
+      <div><span class="fw-bold align-middle">点灯</span></div>
+    </div>
+    <div class="pt-2"><span>Wi-Fi接続有効。</span></div>  
+  </li>
+
+  <li class="list-group-item">
+    <div class="ms-2 d-flex justify-content-start align-items-center">
+      <div><img class="me-2" src="../assets/img/common/404-S03.png" alt="" srcset=""></div>
+      <div><span class="fw-bold align-middle">消灯</span></div>
+    </div>
+    <div class="pt-2"><span>インターネット接続がありません。スマートスイッチとサーバー間で通信異常が発生しています。</span></div>  
+  </li>
+
+  <li class="list-group-item">
+    <div class="ms-2 d-flex justify-content-start align-items-center">
+      <div><img class="me-2" src="../assets/img/common/404-S01.png" alt="" srcset=""></div>
+      <div><span class="fw-bold align-middle">1秒間隔で点滅</span></div>
+    </div>
+    <div class="pt-2"><span>遠隔操作無効中です。アプリ操作を有効とする場合は、スマートスイッチ本体操作にて遠隔操作無効状態を解除してください（電源スイッチを5秒以上長押しで遠隔操作の有効/無効を切替）。</span></div>  
+  </li>
+
+  <li class="list-group-item">
+    <div class="ms-2 d-flex justify-content-start align-items-center">
+      <div><img class="me-2" src="../assets/img/common/404-S01.png" alt="" srcset=""></div>
+      <div><span class="fw-bold align-middle">2秒間隔で点滅</span></div>
+    </div>
+    <div class="pt-2"><span>初期通信送受信中です。しばらくしてから操作してください。しばらくしても継続する場合はインターネットとの接続に異常が発生しています。インターネットの接続状態をご確認ください。</span></div>  
+  </li>
+
+  <li class="list-group-item">
+    <div class="ms-2 d-flex justify-content-start align-items-center">
+      <div><img class="me-2" src="../assets/img/common/404-S01.png" alt="" srcset=""></div>
+      <div><span class="fw-bold align-middle">5秒間に0.5秒間隔で2回点滅</span></div>
+    </div>
+    <div class="pt-2"><span>アクセスポイントモード（APモード）で動作しています。</span></div>  
+  </li>
+</ul>
+
+
+
+
+
+
+  <div class="mx-auto d-block">
+    <!-- Example Code -->
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col" class="w-25">Wi-Fiランプ</th>
+          <th scope="col" class="w-75">状態</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="align-middle">
+            <div class="d-flex align-items-center">
+              <div class="me-2">
+                <img src="../assets/img/common/imgDummy30.svg" alt="">
+              </div>
+              <div>0.5秒間隔で点滅</div>
+            </div>
+          </td>
+          <td class="align-middle">
+            WPSモードで動作しています（Wi-Fiを探している）。
+          </td>
+        </tr>
+
+        <tr>
+          <td class="align-middle">
+            <div class="d-flex align-items-center">
+              <div class="me-2">
+                <img src="../assets/img/common/imgDummy30.svg" alt="">
+              </div>
+              <div>点灯</div>
+            </div>
+          </td>
+          <td class="align-middle">
+            Wi-Fi接続有効
+          </td>
+        </tr>
+
+        <tr>
+          <td class="align-middle">
+            <div class="d-flex align-items-center">
+              <div class="me-2">
+                <img src="../assets/img/common/imgDummy30.svg" alt="">
+              </div>
+              <div>消灯</div>
+            </div>
+          </td>
+          <td class="align-middle">
+            インターネット接続がありません。スマートスイッチとサーバー間で通信異常が発生しています。
+          </td>
+        </tr>
+
+        <tr>
+          <td class="align-middle">
+            <div class="d-flex align-items-center">
+              <div class="me-2">
+                <img src="../assets/img/common/imgDummy30.svg" alt="">
+              </div>
+              <div>1秒間隔で点滅</div>
+            </div>
+          </td>
+          <td class="align-middle">
+            遠隔操作無効中です。アプリ操作を有効とする場合は、スマートスイッチ本体操作にて遠隔操作無効状態を解除してください（電源スイッチを5秒以上長押しで遠隔操作の有効/無効を切替）。
+          </td>
+        </tr>
+
+        <tr>
+          <td class="align-middle">
+            <div class="d-flex align-items-center">
+              <div class="me-2">
+                <img src="../assets/img/common/imgDummy30.svg" alt="">
+              </div>
+              <div>2秒間隔で点滅</div>
+            </div>
+          </td>
+          <td class="align-middle">
+            初期通信送受信中です。しばらくしてから操作してください。しばらくしても継続する場合はインターネットとの接続に異常が発生しています。インターネットの接続状態をご確認ください。
+          </td>
+        </tr>
+
+        <tr>
+          <td class="align-middle">
+            <div class="d-flex align-items-center">
+              <div class="me-2">
+                <img src="../assets/img/common/imgDummy30.svg" alt="">
+              </div>
+              <div>5秒間に0.5秒間隔で2回点滅</div>
+            </div>
+          </td>
+          <td class="align-middle">
+            アクセスポイントモード（APモード）で動作しています。
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- End Example Code -->
+  </div>
+</body>
+
+</html>

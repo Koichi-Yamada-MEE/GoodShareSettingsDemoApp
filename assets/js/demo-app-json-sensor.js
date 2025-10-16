@@ -116,7 +116,7 @@ const demoAppJson = {
       alt: "STEP-13",
       tooltipTarget: "tooltipsSen13",
       tooltipDescription: "環境センサーの登録が完了しました。「 アプリを起動する」をタップすると、換気REMOTEアプリが起動します。",
-      footerContent: "換気REMOTEアプリの使い方については、<a href=\"https://www.MitsubishiElectric.co.jp/ldg/ja/air/products/ventilationfan/lossnaycentral/IB/pdf/kankiremote_mymu.pdf\" target=\"_blank\">換気REMOTEアプリの取扱説明書</a>をご確認ください。",
+      footerContent: "換気REMOTEアプリの使い方については、<a href=\"https://www.MitsubishiElectric.co.jp/ldg/ja/air/products/ventilationfan/lossnaycentral/IB/pdf/kankiremote_mymu.pdf\">換気REMOTEアプリの取扱説明書</a>をご確認ください。",
       modal: "modalSen013",
     },
   ],
