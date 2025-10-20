@@ -101,3 +101,9 @@ body {
 li > img:first-child {
   margin-top: 1rem; /* mt-3 相当（Bootstrapのmt-3は1rem） */
 }
+
+.wavy-line {
+  width: 100%;
+  object-fit: cover;    /* 中央を基準にトリミング */
+  object-position: center;
+}

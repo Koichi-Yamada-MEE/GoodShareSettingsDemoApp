@@ -9,7 +9,6 @@ const demoAppJson = {
       tooltipTarget: "targetArea01",
       tooltipDescription: "☰メニューをタップする",
       footerContent: "",
-      modal: "modalRac001",
     },
     {
       index: 1,
@@ -18,7 +17,6 @@ const demoAppJson = {
       tooltipTarget: "targetArea02",
       tooltipDescription: "「＋機器登録を」タップする",
       footerContent: "",
-      modal: "modalRac002",
     },
     {
       index: 2,
@@ -27,7 +25,6 @@ const demoAppJson = {
       tooltipTarget: "targetArea03",
       tooltipDescription: "「エアコン」をタップする",
       footerContent: "",
-      modal: "modalRac003",
     },
     {
       index: 3,
@@ -36,7 +33,6 @@ const demoAppJson = {
       tooltipTarget: "targetArea04",
       tooltipDescription: "「ルームエアコン」をタップする",
       footerContent: "",
-      modal: "modalRac004",
     },
     {
       index: 4,
@@ -44,8 +40,7 @@ const demoAppJson = {
       alt: "STEP-05",
       tooltipTarget: "targetArea05",
       tooltipDescription: "『「長押しで無線無効」の文字がある』をタップする",
-      footerContent: "",
-      modal: "modalRac005",
+      footerContent: "リモコンの停止ボタンの近くに「長押しで無線無効」の文字があるかご確認ください。",
     },
     {
       index: 5,
@@ -54,7 +49,6 @@ const demoAppJson = {
       tooltipTarget: "targetArea06",
       tooltipDescription: "「リモコンにメニューボタンがない」をタップする",
       footerContent: "",
-      modal: "modalRac006",
     },
     {
       index: 6,
@@ -62,8 +56,7 @@ const demoAppJson = {
       alt: "STEP-07",
       tooltipTarget: "targetArea07",
       tooltipDescription: "「アクセスポイントモードでの接続」をタップする",
-      footerContent: "<ul><li>選択した接続方法の説明に進んでください。</li><li>エアコンとルーターを接続済みの場合は「機器とルーターを接続済み」をタップしてください。</li></ul>",
-      modal: "modalRac007",
+      footerContent: "<ul><li>機器とルーターを接続済みの場合は画面下部の「<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalRac007\">機器とルーターを接続済み</a>」をタップしてください。</li></ul>",
     },
     {
       index: 7,
@@ -71,8 +64,7 @@ const demoAppJson = {
       alt: "STEP-08",
       tooltipTarget: "targetArea08",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
-      footerContent: "dummy08",
-      modal: "modalRac008",
+      footerContent: "",
     },
     {
       index: 8,
@@ -80,8 +72,7 @@ const demoAppJson = {
       alt: "STEP-09",
       tooltipTarget: "targetArea09",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
-      footerContent: "<span>事前に以下の準備・確認をしてください。</span><ul><li>接続したいルーターのSSID（2.4GHz）</li><li>ルーターに接続するための暗号化キー（パスワード）</li></ul>",
-      modal: "modalRac009",
+      footerContent: "<ul><li>事前に次を準備してください。<i class=\"bi bi-1-circle\"></i>接続したいルーターのSSID（2.4GHz）、<i class=\"bi bi-2-circle\"></i>ルーターに接続する暗号化キー（パスワード）</li><li>本アプリでルーターのSSIDに使用できる文字は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon002\">半角英数字、半角記号、半角スペース</a>です。</li></ul>",
     },
     {
       index: 9,
@@ -90,7 +81,6 @@ const demoAppJson = {
       tooltipTarget: "targetArea10",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent: "",
-      modal: "modalRac010",
     },
     {
       index: 10,
@@ -98,8 +88,7 @@ const demoAppJson = {
       alt: "STEP-11",
       tooltipTarget: "targetArea11",
       tooltipDescription: "画面の内容を操作し、「次へ」をタップする",
-      footerContent: "<span class=\"footer-link\" onclick=\"showModal('modalRac002')\">エアコンをアクセスポイントモード（APモード）にする</span>",
-      modal: "modalRac011",
+      footerContent: "<ul><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalRac011\">エアコンをアクセスポイントモード（APモード）にする</a></li></ul>",
     },
     {
       index: 11,
@@ -108,7 +97,6 @@ const demoAppJson = {
       tooltipTarget: "targetArea12",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent: "",
-      modal: "modalRac012",
     },
     {
       index: 12,
@@ -116,26 +104,15 @@ const demoAppJson = {
       alt: "STEP-13",
       tooltipTarget: "targetArea13",
       tooltipDescription: "「スマートフォンの設定画面へ」をタップしてスマートフォンの設定画面で設定を行う",
-      footerContent: "dummy13",
-      modal: "modalRac013",
+      footerContent: "<ul><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalRac013\">エアコンとスマートフォンを接続する</a></li></ul>",
     },
-    // {
-    //   index: 13,
-    //   imagePath: "../assets/img/rac/13-02.png",
-    //   alt: "STEP-14",
-    //   tooltipTarget: "targetArea14",
-    //   tooltipDescription: "MyMUアプリの画面に戻って「次へ」をタップする",
-    //   footerContent: "",
-    //   modal: "modalRac014",
-    // },
     {
       index: 13,
       imagePath: "../assets/img/rac/16-01.png",
       alt: "STEP-14",
       tooltipTarget: "targetArea14",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
-      footerContent: "dummy14",
-      modal: "modalRac014",
+      footerContent: "",
     },
     {
       index: 14,
@@ -143,8 +120,7 @@ const demoAppJson = {
       alt: "STEP-15",
       tooltipTarget: "targetArea15",
       tooltipDescription: "「SSID」欄をタップし、表示されるSSID選択画面で接続するルーターのSSIDを選択し、「決定」をタップする",
-      footerContent: "dummy15",
-      modal: "modalRac015",
+      footerContent: "",
     },
     {
       index: 15,
@@ -152,8 +128,7 @@ const demoAppJson = {
       alt: "STEP-16",
       tooltipTarget: "targetArea16",
       tooltipDescription: "「暗号化キー（パスワード）」にルーターの暗号化キーを入力し、「接続する」をタップする",
-      footerContent: "dummy16",
-      modal: "modalRac016",
+      footerContent: "",
     },
     {
       index: 16,
@@ -161,8 +136,7 @@ const demoAppJson = {
       alt: "STEP-17",
       tooltipTarget: "targetArea17",
       tooltipDescription: "エアコンの登録が終わるまでそのまま2〜3分程度待つ",
-      footerContent: "dummy17",
-      modal: "modalRac017",
+      footerContent: "",
     },
     {
       index: 17,
@@ -170,8 +144,7 @@ const demoAppJson = {
       alt: "STEP-18",
       tooltipTarget: "targetArea18",
       tooltipDescription: "登録完了のメッセージが表示されたら、続けて「エアコン初期設定へ」をタップする",
-      footerContent: "dummy18",
-      modal: "modalRac018",
+      footerContent: "",
     },
     {
       index: 18,
@@ -179,8 +152,7 @@ const demoAppJson = {
       alt: "STEP-19",
       tooltipTarget: "targetArea19",
       tooltipDescription: "「宅外操作」のスイッチをONにし「次へ」をタップする",
-      footerContent: "dummy19",
-      modal: "modalRac019",
+      footerContent: "",
     },
     {
       index: 19,
@@ -188,8 +160,7 @@ const demoAppJson = {
       alt: "STEP-20",
       tooltipTarget: "targetArea20",
       tooltipDescription: "エアコンの登録と初期設定が完了しました。「 アプリを起動する」をタップすると、霧ヶ峰アプリが起動します。",
-      footerContent: "dummy20",
-      modal: "modalRac020",
+      footerContent: "",
     },
     {
       index: 20,
@@ -197,8 +168,7 @@ const demoAppJson = {
       alt: "STEP-21",
       tooltipTarget: "targetArea21",
       tooltipDescription: "登録が完了しました。「 ホームに戻る」をタップしてホーム画面に移動します。",
-      footerContent: "dummy21",
-      modal: "modalRac021",
+      footerContent: "",
     },
   ],
 };

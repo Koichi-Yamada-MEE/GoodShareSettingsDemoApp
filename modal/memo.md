@@ -19,3 +19,13 @@
 * スマートフォンの設定画面であることを明示する。スマホでの設定方法が分かるように。吹き出しに直接入れる。caution
 * 換気REMOTEを確認。初期登録　換気扇か送風ファンを選ぶ
 * 初期化の方法を記載（登録が重複してしまう）
+
+## Template
+### 箇条書き
+<ul>
+  <li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon005">SSIDと暗号化キーの表示例</a></li>
+  <li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalSen011-1">「暗号化キーを表示する」</a>を選択すると、前回使用した暗号化キーを自動入力できます。</li>
+  <li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon004">SSIDは手動でも入力できます。</a></li>
+  <li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon004">リモコンの停止ボタン近くに「長押しで無線無効」の文字があるかご確認ください。</a></li>
+</ul>
+リモコンの停止ボタン近くに「長押しで無線無効」の文字があるかご確認ください
