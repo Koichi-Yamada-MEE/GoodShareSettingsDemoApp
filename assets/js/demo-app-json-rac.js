@@ -1,5 +1,5 @@
 const demoAppJson = {
-  jsonName: "GoodShareSettingsDemoApp",
+  jsonName: "GoodShareSettingsDemoAppRac",
   version: "1.0.0",
   slides: [
     {
@@ -40,7 +40,7 @@ const demoAppJson = {
       alt: "STEP-05",
       tooltipTarget: "targetArea05",
       tooltipDescription: "『「長押しで無線無効」の文字がある』をタップする",
-      footerContent: "リモコンの停止ボタンの近くに「長押しで無線無効」の文字があるかご確認ください。",
+      footerContent: "リモコンの停止ボタンの近くに「<span class=\"fw-bold\">長押しで無線無効</span>」の文字があるかご確認ください。",
     },
     {
       index: 5,
@@ -119,31 +119,31 @@ const demoAppJson = {
       imagePath: "../assets/img/rac/17-01.png",
       alt: "STEP-15",
       tooltipTarget: "targetArea15",
-      tooltipDescription: "「SSID」欄をタップし、表示されるSSID選択画面で接続するルーターのSSIDを選択し、「決定」をタップする",
-      footerContent: "",
+      tooltipDescription: "タップして<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon003\">一覧画面</a>を表示、接続するルーターのSSIDを選択する",
+      footerContent: "<ul><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon005\">SSIDと暗号化キーの表示例</a></li><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSen011-1\">「暗号化キーを表示する」</a>を選択すると、前回使用した暗号化キーを自動入力できます。</li><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon004\">SSIDは手動でも入力できます。</a></li></ul>",
     },
     {
       index: 15,
       imagePath: "../assets/img/rac/17-02.png",
       alt: "STEP-16",
       tooltipTarget: "targetArea16",
-      tooltipDescription: "「暗号化キー（パスワード）」にルーターの暗号化キーを入力し、「接続する」をタップする",
-      footerContent: "",
+      tooltipDescription: "ルーターの暗号化キー（パスワード）を入力、「接続する」をタップする",
+      footerContent: "貼り付け位置、前回使用した暗号化キーを入力する、",
     },
     {
       index: 16,
       imagePath: "../assets/img/rac/19-01.png",
       alt: "STEP-17",
       tooltipTarget: "targetArea17",
-      tooltipDescription: "エアコンの登録が終わるまでそのまま2〜3分程度待つ",
-      footerContent: "",
+      tooltipDescription: "機器の登録が終わるまで、2～3分程度待つ",
+      footerContent: "<ul><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch014-1\">機器の登録に失敗した場合</a></li><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch014-2\">「機器の登録確認」が表示された場合</a></li></ul>",
     },
     {
       index: 17,
       imagePath: "../assets/img/rac/21-01.png",
       alt: "STEP-18",
       tooltipTarget: "targetArea18",
-      tooltipDescription: "登録完了のメッセージが表示されたら、続けて「エアコン初期設定へ」をタップする",
+      tooltipDescription: "登録が完了したら、「エアコン初期設定へ」をタップする",
       footerContent: "",
     },
     {
@@ -151,7 +151,7 @@ const demoAppJson = {
       imagePath: "../assets/img/rac/21-02.png",
       alt: "STEP-19",
       tooltipTarget: "targetArea19",
-      tooltipDescription: "「宅外操作」のスイッチをONにし「次へ」をタップする",
+      tooltipDescription: "「宅外操作」を有効、「次へ」をタップする",
       footerContent: "",
     },
     {
@@ -159,29 +159,16 @@ const demoAppJson = {
       imagePath: "../assets/img/rac/22-01.png",
       alt: "STEP-20",
       tooltipTarget: "targetArea20",
-      tooltipDescription: "エアコンの登録と初期設定が完了しました。「 アプリを起動する」をタップすると、霧ヶ峰アプリが起動します。",
-      footerContent: "",
+      tooltipDescription: "「アプリを起動する」をタップ、霧ヶ峰アプリを起動させる",
+      footerContent: "<ul><li>エアコン登録と初期設定が完了しました。霧ヶ峰アプリの使い方については、霧ヶ峰アプリの取扱説明書をご確認ください。</li><li>エコモアイ搭載エアコンの場合、「次へ」が表示されます。タップして操作を続けてください。</li></ul>",
     },
     {
       index: 20,
       imagePath: "../assets/img/rac/22-02.png",
       alt: "STEP-21",
       tooltipTarget: "targetArea21",
-      tooltipDescription: "登録が完了しました。「 ホームに戻る」をタップしてホーム画面に移動します。",
-      footerContent: "",
+      tooltipDescription: "「ホームに戻る」をタップ、ホーム画面に戻る",
+      footerContent: "エアコン名は設置されている部屋名称に変更することをお勧めします（リビングのエアコンなど）。変更方法は、取扱説明書をご確認ください。",
     },
   ],
 };
-
-// function storeJsonData() {
-//   try {
-//     sessionStorage.setItem("demoAppJson", JSON.stringify(demoAppJson));
-//     // リダイレクト先に移動
-//     window.location.href = "./rac/rac-setting-07.html";
-//   } catch (error) {
-//     showAlert("JSONデータの保存に失敗しました。", "error");
-//   }
-// }
-
-// storeJsonData();
-

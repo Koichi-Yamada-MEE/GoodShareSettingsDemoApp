@@ -10,11 +10,12 @@
   <!-- <script src="../assets/js/demo-app-json-sensor.js"></script> -->
   <!-- <script src="../assets/js/demo-app-json-switch.js"></script> -->
   <link rel="stylesheet" href="../assets/css/demo-app.css">
-  <link rel="stylesheet" href="../assets/css/demo-app-elements-position.css">
+  <link rel="stylesheet" href="../assets/css/elements-position-rac.css">
   <link rel="stylesheet" href="../assets/css/drawer-menu.css">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- Swiper CSS/Custom -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="../assets/css/swiper-custom.css">
@@ -42,13 +43,7 @@
       <div class="swiper">
         <!-- Slider wrapper -->
         <div class="swiper-wrapper">
-          <!-- Slides -->
-          <!-- <div class="swiper-slide">
-                <div class="swiper-slide_img_holder">
-                  <img src="../assets/img/05-01.png" alt="STEP-01" />
-                  <div id="targetArea01"></div>
-                </div>
-              </div> -->
+          <!-- Slides(create slides) -->
         </div>
         <!-- pagination -->
         <div class="swiper-pagination"></div>
@@ -66,104 +61,105 @@
         <div id="footerContent" class="d-none"></div>
       </div>
     </footer>
-  </div>
 
-  <!-- modal -->
-  <!-- modalRac007 -->
-  <div class="modal fade" id="modalRac007" tabindex="-1" aria-labelledby="ModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog mx-auto d-block" style="width: 280px">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-6" id="exampleModalLongTitle">機器とルーターが接続済みの場合</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <ul>
-            <li>
-              以下にスマートフォンの接続先情報が表示されます。表示されているSSIDがエアコンを接続したルーターのSSIDと一致していることを確認してください。異なる場合は、エアコンを接続したルーターにスマートフォンを接続してください。接続方法はスマートフォンの取扱説明書をご確認ください。
-              <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/008-S01.png" alt="">
-            </li>
-            <li>
-              iOS14以降を搭載のスマートフォンでは、初回登録時に「次へ」をタップすると以下のメッセージが表示されますので、「OK」をタップしてください。「OK」をタップしないと次の手順で機器が表示されません。「許可しない」をタップした場合は、iOSのローカルネットワークの設定で通信を許可するよう変更してください。
-              <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/008-S02.png" alt="">
-            </li>
-          </ul>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <!-- modal -->
+    <!-- modalRac007 -->
+    <div class="modal fade" id="modalRac007" tabindex="-1" aria-labelledby="ModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog mx-auto d-block" style="width: 280px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-6" id="exampleModalLongTitle">機器とルーターが接続済みの場合</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>
+                以下にスマートフォンの接続先情報が表示されます。表示されているSSIDがエアコンを接続したルーターのSSIDと一致していることを確認してください。異なる場合は、エアコンを接続したルーターにスマートフォンを接続してください。接続方法はスマートフォンの取扱説明書をご確認ください。
+                <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/008-S01.png" alt="">
+              </li>
+              <li>
+                iOS14以降を搭載のスマートフォンでは、初回登録時に「次へ」をタップすると以下のメッセージが表示されますので、「OK」をタップしてください。「OK」をタップしないと次の手順で機器が表示されません。「許可しない」をタップした場合は、iOSのローカルネットワークの設定で通信を許可するよう変更してください。
+                <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/008-S02.png" alt="">
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- modalRac011 -->
-  <div class="modal fade" id="modalRac011" tabindex="-1" aria-labelledby="ModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog mx-auto d-block" style="width: 280px">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-6" id="exampleModalLongTitle">エアコンをアクセスポイントモード（APモード）にする</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <ol>
-            <li>リモコンの「停止」ボタンを押して運転を停止します。</li>
-            <li>「温度▲」ボタンを「ー0」が表示されるまで５秒以上長押しします。</li>
-            <li>「温度▲」ボタンまたは「温度▼」ボタンで「ー1」を選択して、エアコンに向けて「停止」ボタンを押すと、エアコンが「APモード」に設定されます。
-              <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/11-S01.png" alt="">
-              <ul>
-                <li>再度「WPSモード」を設定、または「APモード」を続けて設定すると“ピピピッ”と音が鳴り、操作を受け付けないことがあります。</li>
-                <li>詳しくは各エアコンの取扱説明書をご確認ください。</li>
-              </ul>
-            </li>
-            <li>室内機のランプが約5秒間隔で1回点滅しながら“ピッ”と音が鳴ることを確認してください。
-              <img class="d-block mb-4" src="../assets/img/rac/11-S02.png" alt="">
-              <ul>
-                <li>ランプは以下の状態を繰り返します。</li>
-                <img class="d-block mb-4" src="../assets/img/rac/11-S03.png" alt="">
-                <li>この状態は10分で終了します。10分以上経過した場合は「1」からやり直してください。</li>
-              </ul>
-          </ol>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <!-- modalRac011 -->
+    <div class="modal fade" id="modalRac011" tabindex="-1" aria-labelledby="ModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog mx-auto d-block" style="width: 280px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-6" id="exampleModalLongTitle">エアコンをアクセスポイントモード（APモード）にする</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ol>
+              <li>リモコンの「停止」ボタンを押して運転を停止します。</li>
+              <li>「温度▲」ボタンを「ー0」が表示されるまで５秒以上長押しします。</li>
+              <li>「温度▲」ボタンまたは「温度▼」ボタンで「ー1」を選択して、エアコンに向けて「停止」ボタンを押すと、エアコンが「APモード」に設定されます。
+                <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/11-S01.png" alt="">
+                <ul>
+                  <li>再度「WPSモード」を設定、または「APモード」を続けて設定すると“ピピピッ”と音が鳴り、操作を受け付けないことがあります。</li>
+                  <li>詳しくは各エアコンの取扱説明書をご確認ください。</li>
+                </ul>
+              </li>
+              <li>室内機のランプが約5秒間隔で1回点滅しながら“ピッ”と音が鳴ることを確認してください。
+                <img class="d-block mb-4" src="../assets/img/rac/11-S02.png" alt="">
+                <ul>
+                  <li>ランプは以下の状態を繰り返します。</li>
+                  <img class="d-block mb-4" src="../assets/img/rac/11-S03.png" alt="">
+                  <li>この状態は10分で終了します。10分以上経過した場合は「1」からやり直してください。</li>
+                </ul>
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- modalRac013 -->
-  <div class="modal fade" id="modalRac013" tabindex="-1" aria-labelledby="ModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog mx-auto d-block" style="width: 280px">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-6" id="exampleModalLongTitle">エアコンとスマートフォンを接続する</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <ul>
-            <li>スマートフォンの「設定」の「Wi-Fi」で、エアコンのSSIDである「 ME-**********」（*の部分は10桁の英数字）のSSIDを選択します。
-              <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/13-S01.png" alt="">
-            </li>
-            <li>リモコンにメニューボタンが無い機種では、パスワード入力は必要ありません。パスワード入力を求められた場合は、機種選択を誤っていますので、機種選択からやり直してください。</li>
-            <li>iOS搭載のスマートフォンでは以下の画面が表示されます。「＜設定」をタップしてスマートフォンの「設定」画面に進み、「Wi-Fi」をタップして上の「Wi-Fi」画面に進んでください。
-              <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/13-S02.png" alt="">
-              <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/13-S03.png" alt="">
-            </li>
-            <li>MyMUアプリの画面に戻って「次へ」をタップする
-              <ul>
-                <li>エアコンとスマートフォンが接続できていることを確認してから、「次へ」ボタンをタップしてください。
-                  <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/13-S04.png" alt="">
-                </li>
-                <li>「 次へ」をタップすると位置情報の使用許可を求めるメッセージが表示されます。「1度だけ許可」「Appの使用中は許可」あるいは「アプリの使用時のみ」「今回のみ」をタップしてください。「許可しない」をタップすると接続に失敗します。
-                  <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/13-S05.png" alt="">
-                  <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/13-S06.png" alt="">
-                </li>
-                <li>接続に失敗した場合は右のメッセージが表示されます。「閉じる」をタップしてメッセージを閉じ、スマートフォンの設定画面でエアコンとスマートフォンの接続をやり直してください。ME-**********」が見つからない場合はアクセスポイントモードの設定からやり直してください。
-                  <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/13-S07.png" alt="">
-                </li>
-              </ul>
-            </li>
-          </ul>
+    <!-- modalRac013 -->
+    <div class="modal fade" id="modalRac013" tabindex="-1" aria-labelledby="ModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog mx-auto d-block" style="width: 280px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-6" id="exampleModalLongTitle">エアコンとスマートフォンを接続する</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>スマートフォンの「設定」の「Wi-Fi」で、エアコンのSSIDである「 ME-**********」（*の部分は10桁の英数字）のSSIDを選択します。
+                <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/13-S01.png" alt="">
+              </li>
+              <li>リモコンにメニューボタンが無い機種では、パスワード入力は必要ありません。パスワード入力を求められた場合は、機種選択を誤っていますので、機種選択からやり直してください。</li>
+              <li>iOS搭載のスマートフォンでは以下の画面が表示されます。「＜設定」をタップしてスマートフォンの「設定」画面に進み、「Wi-Fi」をタップして上の「Wi-Fi」画面に進んでください。
+                <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/13-S02.png" alt="">
+                <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/13-S03.png" alt="">
+              </li>
+              <li>MyMUアプリの画面に戻って「次へ」をタップする
+                <ul>
+                  <li>エアコンとスマートフォンが接続できていることを確認してから、「次へ」ボタンをタップしてください。
+                    <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/13-S04.png" alt="">
+                  </li>
+                  <li>「
+                    次へ」をタップすると位置情報の使用許可を求めるメッセージが表示されます。「1度だけ許可」「Appの使用中は許可」あるいは「アプリの使用時のみ」「今回のみ」をタップしてください。「許可しない」をタップすると接続に失敗します。
+                    <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/13-S05.png" alt="">
+                    <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/13-S06.png" alt="">
+                  </li>
+                  <li>
+                    接続に失敗した場合は右のメッセージが表示されます。「閉じる」をタップしてメッセージを閉じ、スマートフォンの設定画面でエアコンとスマートフォンの接続をやり直してください。ME-**********」が見つからない場合はアクセスポイントモードの設定からやり直してください。
+                    <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/13-S07.png" alt="">
+                  </li>
+                </ul>
+              </li>
+            </ul>
             <!-- おしらせ -->
             <div class="alert alert-primary" role="alert">
               <h6 class="alert-heading"><i class="bi bi-info-circle-fill pe-2 align-top"></i>おしらせ</h6>
@@ -171,22 +167,22 @@
                 オートメーション機能で位置情報を使用する場合は、位置情報の許可を求める画面で「Appの使用中は許可」「アプリの使用時のみ」をタップし、「正確な位置情報」を「オン」にしてください。オートメーション機能については取扱説明書をご確認ください。
               </p>
             </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
 
 
 
 
-  <!-- create common modal -->
-  <div class="common-modal"></div>
-  <!-- create drawer menu -->
-  <div class="drawer-menu"></div>
+    <!-- create common modal -->
+    <div class="common-modal"></div>
+    <!-- create drawer menu -->
+    <div class="drawer-menu"></div>
   </div>
 
   <!-- Bootstrap -->
@@ -253,8 +249,11 @@
         .flatMap(({ tooltipTarget, tooltipDescription }) =>
           tippy(`#${tooltipTarget}`, {
             content: tooltipDescription,
+            allowHTML: true,
             trigger: 'manual',
+            placement: 'bottom',
             hideOnClick: false,
+            interactive: true,
             theme: 'gradient',
             appendTo: () => document.querySelector('.swiper'),
           })

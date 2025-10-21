@@ -96,7 +96,7 @@ const demoAppJson = {
       imagePath: "../assets/img/sen/465-02.png",
       alt: "STEP-12",
       tooltipTarget: "tooltipsSwitch12",
-      tooltipDescription: "タップして<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon003\">画面を表示させ、<i class=\"bi bi-link-45deg\"></i></a>接続するSSIDを選択する",
+      tooltipDescription: "タップして<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon003\">一覧画面</a>を表示、接続するルーターのSSIDを選択する",
       footerContent: "SSID欄をタップすると<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSen010\">SSID選択画面</a>が表示されます。",
     },
     {
