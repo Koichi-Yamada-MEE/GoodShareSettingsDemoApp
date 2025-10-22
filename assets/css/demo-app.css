@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  color:#333;
+  color: #333;
   /* font-family: "メイリオ", "ヒラギノ角ゴ Pro W3", "Lucida Grande", "Hiragino Kaku Gothic Pro", Osaka, Verdana, "ＭＳ Ｐゴシック", sans-serif */
 }
 
@@ -88,9 +88,12 @@ body {
 }
 
 .modal-body img {
-  max-width: 100%;  /* 親の幅を超えない */
-  height: auto;     /* 縦横比を維持 */
-  display: block;   /* 必要に応じて余白調整 */
+  max-width: 100%;
+  /* 親の幅を超えない */
+  height: auto;
+  /* 縦横比を維持 */
+  display: block;
+  /* 必要に応じて余白調整 */
 }
 
 .img-border-rounded {
@@ -98,12 +101,76 @@ body {
   border-radius: 0.625rem;
 }
 
-li > img:first-child {
-  margin-top: 1rem; /* mt-3 相当（Bootstrapのmt-3は1rem） */
+li>img:first-child {
+  margin-top: 1rem;
+  /* mt-3 相当（Bootstrapのmt-3は1rem） */
 }
 
 .wavy-line {
   width: 100%;
-  object-fit: cover;    /* 中央を基準にトリミング */
+  object-fit: cover;
+  /* 中央を基準にトリミング */
   object-position: center;
+}
+
+
+/* ====================================
+   img要素と省略線
+   ==================================== */
+
+
+/* 親要素 */
+.parent {
+  position: relative;
+  overflow: hidden;
+}
+
+/* アプリ画面－共通 */
+.parent>img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: auto;
+  display: block;
+  pointer-events: none;
+}
+
+/* アプリ画面－下揃え */
+.parent .img-bottom {
+  bottom: 0;
+}
+
+/* アプリ画面－上揃え */
+.parent .img-top {
+  top: 0;
+}
+
+/* 省略線－共通 */
+.parent .wave-top,
+.parent .wave-bottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  pointer-events: none;
+}
+
+/* 省略線（上揃え） */
+.parent .wave-top {
+  top: 0;
+}
+
+/* 省略線（下揃え） */
+.parent .wave-bottom {
+  bottom: 0;
+}
+
+.parent .wave-top img,
+.parent .wave-bottom img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

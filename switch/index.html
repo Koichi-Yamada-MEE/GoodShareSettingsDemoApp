@@ -204,17 +204,6 @@
       </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
     <!-- create common modal -->
     <div class="common-modal"></div>
     <!-- create drawer menu -->
@@ -264,8 +253,13 @@
           wrapper.appendChild(slide);
         }
       };
+
       // Create slides elements
       createSlides();
+
+      // URLパラメータからスライドインデックスを取得
+      const params = new URLSearchParams(window.location.search);
+      const slideIndex = parseInt(params.get('slide')) || 0; // 指定がなければ0番目
 
       // Initialize Swiper
       const swiper = new Swiper('.swiper', {
@@ -294,7 +288,8 @@
             appendTo: () => document.querySelector('.swiper'),
           })
         );
-      // show first tooltip
+
+        // show first tooltip
       tooltipsInstances[0]?.show();
       const footerContent = document.getElementById('footerContent');
       footerContent.classList.remove('d-none');
@@ -330,7 +325,6 @@
       });
     });
   </script>
-
 </body>
 
 </html>

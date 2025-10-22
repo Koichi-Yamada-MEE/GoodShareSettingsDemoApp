@@ -288,6 +288,10 @@
       // Create slides elements
       createSlides();
 
+      // URLパラメータからスライドインデックスを取得
+      const params = new URLSearchParams(window.location.search);
+      const slideIndex = parseInt(params.get('slide')) || 0; // 指定がなければ0番目
+
       // Initialize Swiper
       const swiper = new Swiper('.swiper', {
         pagination: {
@@ -310,11 +314,13 @@
             trigger: 'manual',
             placement: 'bottom',
             hideOnClick: false,
+            interactive: true,
             theme: 'gradient',
             appendTo: () => document.querySelector('.swiper'),
           })
         );
-      // show first tooltip
+
+        // show first tooltip
       tooltipsInstances[0]?.show();
       const footerContent = document.getElementById('footerContent');
       footerContent.classList.remove('d-none');

@@ -136,7 +136,7 @@ const demoAppJson = {
       alt: "STEP-17",
       tooltipTarget: "targetArea17",
       tooltipDescription: "機器の登録が終わるまで、2～3分程度待つ",
-      footerContent: "<ul><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch014-1\">機器の登録に失敗した場合</a></li><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch014-2\">「機器の登録確認」が表示された場合</a></li></ul>",
+      footerContent: "<ul><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalRac017-1\">機器の登録に失敗した場合</a></li><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalRac017-2\">「機器の登録確認」が表示された場合</a></li></ul>",
     },
     {
       index: 17,
@@ -152,7 +152,7 @@ const demoAppJson = {
       alt: "STEP-19",
       tooltipTarget: "targetArea19",
       tooltipDescription: "「宅外操作」を有効、「次へ」をタップする",
-      footerContent: "",
+      footerContent: "MyMUアプリでエアコンを操作するためには、宅外操作を必ず有効（<i class=\"bi bi-toggle-on\"></i>）に設定してください。",
     },
     {
       index: 19,
@@ -160,7 +160,7 @@ const demoAppJson = {
       alt: "STEP-20",
       tooltipTarget: "targetArea20",
       tooltipDescription: "「アプリを起動する」をタップ、霧ヶ峰アプリを起動させる",
-      footerContent: "<ul><li>エアコン登録と初期設定が完了しました。霧ヶ峰アプリの使い方については、霧ヶ峰アプリの取扱説明書をご確認ください。</li><li>エコモアイ搭載エアコンの場合、「次へ」が表示されます。タップして操作を続けてください。</li></ul>",
+      footerContent: "<ul><li>エアコン登録と初期設定が完了しました。霧ヶ峰アプリの使い方については、霧ヶ峰アプリの取扱説明書をご確認ください。</li><li>エコモアイ搭載エアコンの場合、<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalRac020\">「次へ」</a>が表示されます。タップして操作を続けてください。</li></ul>",
     },
     {
       index: 20,
@@ -168,7 +168,7 @@ const demoAppJson = {
       alt: "STEP-21",
       tooltipTarget: "targetArea21",
       tooltipDescription: "「ホームに戻る」をタップ、ホーム画面に戻る",
-      footerContent: "エアコン名は設置されている部屋名称に変更することをお勧めします（リビングのエアコンなど）。変更方法は、取扱説明書をご確認ください。",
+      footerContent: "<ul><li>エモコアイ搭載エアコンの登録が完了しました。</li><li>エアコン名は設置されている部屋名称に変更することをお勧めします（リビングのエアコンなど）。変更方法は、取扱説明書をご確認ください。</li></ul>",
     },
   ],
 };

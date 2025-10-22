@@ -10,44 +10,81 @@
   <title>waveline</title>
   <style>
     .parent {
-      position: relative; /* 基準要素にする */
-      max-width: 300px;
-      height: 300px;      /* インラインで指定していた高さをここに移動 */
-      margin: auto 0;
-      overflow: hidden;   /* overflow-y だけでなく全体を隠す */
+      position: relative;
+      overflow: hidden;
     }
 
-    .parent img.main {
-      width: 100%;
+    /* アプリ画面－共通 */
+    .parent>img {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 300px;
       height: auto;
       display: block;
+      pointer-events: none;
     }
 
-    .child {
-      position: absolute; /* ← fixed ではなく absolute に */
+    /* アプリ画面－下揃え */
+    .parent .img-bottom {
+      bottom: 0;
+    }
+
+    /* アプリ画面－上揃え */
+    .parent .img-top {
+      top: 0;
+    }
+
+    /* 省略線－共通 */
+ .parent .wave-top,
+ .parent .wave-bottom {
+      position: absolute;
       left: 0;
-      right: 0;           /* 横幅を親いっぱいにする場合 */
-      bottom: 0;          /* 親の底に揃える */
+      width: 100%;
       display: flex;
-      justify-content: center; /* 中央寄せにしたい場合 */
-      pointer-events: none;    /* 必要ならクリックを透過 */
+      justify-content: center;
+      align-items: flex-start;
+      pointer-events: none;
+}
+
+    /* 省略線（上揃え） */
+    .parent .wave-top {
+      top: 0;
     }
 
-    .child img {
-      width: 100%;
-      max-width: 300px;   /* 必要ならサイズ制限 */
-      height: auto;
+    /* 省略線（下揃え） */
+    .parent .wave-bottom {
+      bottom: 0;
+    }
+
+    .parent .wave-top img,
+    .parent .wave-bottom img {
       display: block;
+      max-width: 100%;
+      height: auto;
     }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body class="">
+  <!-- 上を省略する -->
   <div class="mx-auto d-block">
-    <div class="parent" style="height: 300px;">
-      <img src="../assets/img/rac/08-01.png" alt="" style="width: 300px; height: auto;">
-      <div class="child">
+    <div class="parent" style="height: 150px;">
+      <img class="img-bottom" src="../assets/img/rac/22-S01.png" alt="">
+      <div class="wave-top">
+        <img src="../assets/img/common/waveline.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- 下を省略する -->
+  <div class="mx-auto d-block">
+    <div class="parent" style="height: 150px;">
+      <img class="img-top" src="../assets/img/rac/22-S01.png" alt="">
+      <div class="wave-bottom">
         <img src="../assets/img/common/waveline.svg" alt="">
       </div>
     </div>
