@@ -8,19 +8,15 @@ body {
 }
 
 .demo-app-wrap {
-  position: relative;
-  width: 100%;
   max-width: 375px;
   height: 667px;
-  margin: 0 auto;
-  overflow: hidden;
 }
 
-.demo-app-wrap--main {
+/* .demo-app-wrap--main {
   position: absolute;
   width: 100%;
   height: 100%;
-}
+} */
 
 .demo-app-wrap--footer {
   position: absolute;
