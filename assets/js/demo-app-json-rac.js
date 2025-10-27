@@ -118,7 +118,7 @@ const demoAppJson = {
       alt: "STEP-14",
       tooltipTarget: "targetArea14",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
-      footerContent: "",
+      footerContent: "<ul><li>ルーターのSSID（2.4GHz）と暗号化キー（パスワード）をお手元に準備してください。次の操作で使用します。</li></ul>",
     },
     {
       index: 14,
@@ -193,7 +193,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea22",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent:
-        '',
+        'ここからは、無線LAN内蔵エアコン（メニューボタンなし）を登録する（WPS）について説明します。',
     },
     {
       index: 22,
