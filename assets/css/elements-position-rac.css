@@ -31,7 +31,11 @@
 #targetArea29,
 #targetArea30,
 #targetArea31,
-#targetArea32
+#targetArea32,
+#targetArea4501,
+#targetArea4901,
+#targetArea5102,
+#targetArea5301
 {
   position: absolute;
   /* box-sizing: border-box; */
@@ -265,3 +269,34 @@
   width: 300px;
   height: 39px;
 }
+#targetArea4501 {
+  top: 96px;
+  left: 0;
+  width: 300px;
+  height: 127px;
+}
+#targetArea4901 {
+  top: 922px;
+  left: 0;
+  width: 300px;
+  height: 39px;
+}
+#targetArea5101 {
+  top: 449px;
+  left: 0;
+  width: 300px;
+  height: 39px;
+}
+#targetArea5102 {
+  top: 449px;
+  left: 0;
+  width: 300px;
+  height: 39px;
+}
+#targetArea5301 {
+  top: 463px;
+  left: 0;
+  width: 300px;
+  height: 39px;
+}
+
