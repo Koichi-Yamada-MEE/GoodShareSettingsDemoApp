@@ -83,7 +83,7 @@ body {
   margin-left: revert;
 }
 
-.modal-body img {
+.modal-body li>img {
   max-width: 100%;
   /* 親の幅を超えない */
   height: auto;
