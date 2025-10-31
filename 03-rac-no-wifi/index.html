@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <title>エアコン設定（無線LAN別売）｜三菱電機ホームソリューション ［マルチエリア空調］ Good Share！（グッシェア）｜三菱電機</title>
+  <meta name="viewport" content="width=375, user-scalable=no">
+  <!-- demoApp JSON -->
+  <!-- <script src="../assets/js/01-json-rac-wifi-no-menu.js"></script> -->
+  <!-- <script src="../assets/js/02-json-rac-wifi-men.js"></script> -->
+  <script src="../assets/js/03-json-rac-no-wifi.js"></script>
+  <!-- <script src="../assets/js/04-json-rac-housing.js"></script> -->
+  <!-- <script src="../assets/js/05-json-rac-housing-floor.js"></script> -->
+
+  <!-- demoApp CSS -->
+  <link rel="stylesheet" href="../assets/css/demo-app.css">
+  <link rel="stylesheet" href="../assets/css/drawer-menu.css">
+
+  <!-- demoApp Position -->
+  <!-- <link rel="stylesheet" href="../assets/css/01-elements-position-rac-wifi-no-menu.css"> -->
+  <!-- <link rel="stylesheet" href="../assets/css/02-elements-position-rac-wifi-menu.css"> -->
+  <link rel="stylesheet" href="../assets/css/03-elements-position-rac-no-wifi.css">
+  <!-- <link rel="stylesheet" href="../assets/css/04-elements-position-rac-housing.css"> -->
+  <!-- <link rel="stylesheet" href="../assets/css/05-elements-position-rac-housing-floor.css"> -->
+
+  <!-- Bootstrap CSS/ICON -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Swiper CSS/Custom -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../assets/css/swiper-custom.css">
+  <!-- Tippy -->
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+  <link rel="stylesheet" href="../assets/css/tippy-custom.css" />
+</head>
+
+<body>
+  <div class="position-relative w-100 mx-auto overflow-hidden demo-app-wrap">
+    <!-- Drawer menu icon -->
+    <button type="button" class="floating-menu-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDrawerMenu"
+      aria-controls="offcanvasDrawerMenu" aria-label="メニューを開く">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-bar-right"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5" />
+      </svg>
+    </button>
+    <!-- Drawer menu -->
+    <div class="drawer-menu"></div>
+
+    <main class="position-absolute w-100 h-100">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Slider wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides(create slides) -->
+        </div>
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="demo-app-wrap--footer border border-success-subtle">
+      <div class="description">
+        <!-- <strong class="note">NOTE</strong><br> -->
+        <!-- create footer content -->
+        <div id="footerContent" class="d-none"></div>
+      </div>
+    </footer>
+
+    <!-- modal -->
+    <!-- modalTest01 -->
+    <div class="modal fade" id="modalTest01" tabindex="-1">
+      <div class="modal-dialog mx-auto d-block" style="width: 280px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-6">エアコンをアクセスポイントモード（APモード）にする</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <h6>エアコンをアクセスポイントモード（APモード）に設定する</h6>
+            <ol>
+              <li>無線LANアダプターのUNITランプが5秒間に1回点滅していることを確認します。
+                <img src="../assets/img/rac/080-S1.png" alt="">
+                <div class="table-responsive">
+                  <table class="table table-sm table-bordered text-center">
+                    <thead class="table-secondary">
+                      <tr>
+                        <th scope="col">ERR</th>
+                        <th scope="col">NET</th>
+                        <th scope="col">MODE</th>
+                        <th scope="col">UNIT</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />5秒間隔で<br />1回点滅</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul>
+                  <li>
+                    この状態にならない場合は、エアコンの無線設定をリセットしてください。「エアコンの無線設定のリセット方法」をタップすると下のリセット方法を説明する画面が表示されますので、内容を確認して、エアコンの無線設定をリセットしてください。
+                    <img class="mb-4" src="../assets/img/rac/080-S03.png" alt="">
+                    <img class="mb-4 img-border-rounded" src="../assets/img/rac/080-S02.png" alt="">
+                  </li>
+                </ul>
+              </li>
+              <li>無線LANアダプターの「MODE」ボタンをMODEランプが点灯状態になるまで（約7秒間）先の細いもので押して離します。
+                <img src="../assets/img/rac/080-S1.png" alt="">
+                <div class="table-responsive">
+                  <table class="table table-sm table-bordered text-center">
+                    <thead class="table-secondary">
+                      <tr>
+                        <th scope="col">ERR</th>
+                        <th scope="col">NET</th>
+                        <th scope="col">MODE</th>
+                        <th scope="col">UNIT</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />5秒間隔で<br />1回点滅</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul>
+                  <li>無線LANアダプターが再起動され、しばらくすると、MODEランプとUNITランプが点滅（5秒間隔で1回点滅）を開始します。</li>
+                </ul>
+              </li>
+            </ol>
+            <h6>アクセスポイントモード（APモード）になったことを確認する</h6>
+            <ol>
+              <li>無線LANアダプターのMODEランプ（オレンジ）とUNITランプ（緑）が5秒間隔で1回点滅します。
+                <img src="../assets/img/rac/080-S1.png" alt="">
+                <div class="table-responsive">
+                  <table class="table table-sm table-bordered text-center">
+                    <thead class="table-secondary">
+                      <tr>
+                        <th scope="col">ERR</th>
+                        <th scope="col">NET</th>
+                        <th scope="col">MODE</th>
+                        <th scope="col">UNIT</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />5秒間隔で<br />1回点滅</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul>
+                  <li>この状態は10分で終了します。10分以上経過した場合は「1」からやり直してください。</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modalTest02 -->
+    <div class="modal fade" id="modalTest02" tabindex="-1">
+      <div class="modal-dialog mx-auto d-block" style="width: 280px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-6">エアコンをWPSモードにする</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+
+            <h6>エアコンをWPSモードにする</h6>
+            <ol>
+              <li>無線LANアダプターのUNITランプが5秒間に1回点滅していることを確認します。
+                <img src="../assets/img/rac/080-S1.png" alt="">
+                <div class="table-responsive">
+                  <table class="table table-sm table-bordered text-center">
+                    <thead class="table-secondary">
+                      <tr>
+                        <th scope="col">ERR</th>
+                        <th scope="col">NET</th>
+                        <th scope="col">MODE</th>
+                        <th scope="col">UNIT</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />5秒間隔で<br />1回点滅</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul>
+                  <li>
+                    この状態にならない場合は、エアコンの無線設定をリセットしてください。「エアコンの無線設定のリセット方法」をタップすると下のリセット方法を説明する画面が表示されますので、内容を確認して、エアコンの無線設定をリセットしてください。
+                    <img src="../assets/img/rac/080-S01.png" alt="">
+                    <img src="../assets/img/rac/080-S02.png" alt="">
+
+                  </li>
+                </ul>
+              </li>
+              <li>MODEランプが点滅を開始するまで（約2秒間）、無線LANアダプターの「MODE」ボタンを先の細いもので押して離します。
+                <img src="../assets/img/rac/080-S1.png" alt="">
+                <div class="table-responsive">
+                  <table class="table table-sm table-bordered text-center">
+                    <thead class="table-secondary">
+                      <tr>
+                        <th scope="col">ERR</th>
+                        <th scope="col">NET</th>
+                        <th scope="col">MODE</th>
+                        <th scope="col">UNIT</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />5秒間隔で<br />1回点滅</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul>
+                  <li>「MODE」ボタンを約7秒間押し続けると、APモード（下のランプ状態）に切替わってしまいます。この状態になった場合は、再度「MODE」ボタンを約7秒間押し続けて通常モードに戻してから、再度手順2を行ってください。
+                <div class="table-responsive">
+                  <table class="table table-sm table-bordered text-center">
+                    <thead class="table-secondary">
+                      <tr>
+                        <th scope="col">ERR</th>
+                        <th scope="col">NET</th>
+                        <th scope="col">MODE</th>
+                        <th scope="col">UNIT</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />5秒間隔で<br />1回点滅</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />5秒間隔で<br />1回点滅</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <h6>接続モードになったことを確認する</h6>
+            <h6>エアコンをアクセスポイントモード（APモード）に設定する</h6>
+
+
+
+
+
+
+
+
+
+            <h6>エアコンをアクセスポイントモード（APモード）に設定する</h6>
+            <ol>
+              <li>無線LANアダプターのUNITランプが5秒間に1回点滅していることを確認します。
+                <img src="../assets/img/rac/080-S1.png" alt="">
+                <div class="table-responsive">
+                  <table class="table table-sm table-bordered text-center">
+                    <thead class="table-secondary">
+                      <tr>
+                        <th scope="col">ERR</th>
+                        <th scope="col">NET</th>
+                        <th scope="col">MODE</th>
+                        <th scope="col">UNIT</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />5秒間隔で<br />1回点滅</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul>
+                  <li>
+                    この状態にならない場合は、エアコンの無線設定をリセットしてください。「エアコンの無線設定のリセット方法」をタップすると下のリセット方法を説明する画面が表示されますので、内容を確認して、エアコンの無線設定をリセットしてください。
+                  </li>
+                </ul>
+              </li>
+              <li>無線LANアダプターの「MODE」ボタンをMODEランプが点灯状態になるまで（約7秒間）先の細いもので押して離します。
+                <img src="../assets/img/rac/080-S1.png" alt="">
+                <div class="table-responsive">
+                  <table class="table table-sm table-bordered text-center">
+                    <thead class="table-secondary">
+                      <tr>
+                        <th scope="col">ERR</th>
+                        <th scope="col">NET</th>
+                        <th scope="col">MODE</th>
+                        <th scope="col">UNIT</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />5秒間隔で<br />1回点滅</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul>
+                  <li>無線LANアダプターが再起動され、しばらくすると、MODEランプとUNITランプが点滅（5秒間隔で1回点滅）を開始します。</li>
+                </ul>
+              </li>
+            </ol>
+            <h6>アクセスポイントモード（APモード）になったことを確認する</h6>
+            <ol>
+              <li>無線LANアダプターのMODEランプ（オレンジ）とUNITランプ（緑）が5秒間隔で1回点滅します。
+                <img src="../assets/img/rac/080-S1.png" alt="">
+                <div class="table-responsive">
+                  <table class="table table-sm table-bordered text-center">
+                    <thead class="table-secondary">
+                      <tr>
+                        <th scope="col">ERR</th>
+                        <th scope="col">NET</th>
+                        <th scope="col">MODE</th>
+                        <th scope="col">UNIT</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />消灯</td>
+                        <td><img src="../assets/img/rac/080-S4.png" alt=""><br />5秒間隔で<br />1回点滅</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul>
+                  <li>この状態は10分で終了します。10分以上経過した場合は「1」からやり直してください。</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- create common modal -->
+    <div class="common-modal"></div>
+    <!-- create drawer menu -->
+    <div class="drawer-menu"></div>
+  </div>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script>
+    /* global bootstrap: false */
+    (() => {
+      'use strict'
+      const tooltipTriggerList = Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      tooltipTriggerList.forEach(tooltipTriggerEl => {
+        new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    })()
+  </script>
+  <!-- demoApp -->
+  <script src="../assets/js/demo-app.js"></script>
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Tippy -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Create slides based on JSON data
+      const createSlides = () => {
+        const slideCount = demoAppJson.slides.length;
+        const wrapper = document.getElementsByClassName('swiper-wrapper')[0];
+        for (let i = 0; i < slideCount; i++) {
+          const slide = document.createElement('div');
+          slide.className = 'swiper-slide';
+          slide.innerHTML = `
+        <div class="swiper-slide_img_holder">
+          <img src="${demoAppJson.slides[i].imagePath}" alt="${demoAppJson.slides[i].alt}" />
+          <div id="${demoAppJson.slides[i].tooltipTarget}"></div>
+        </div>
+      `;
+          wrapper.appendChild(slide);
+        }
+      };
+
+      // Create slides elements
+      createSlides();
+
+      // URLパラメータからスライドインデックスを取得
+      const params = new URLSearchParams(window.location.search);
+      const slideIndex = parseInt(params.get('slide')) || 0;
+
+      // Initialize Swiper
+      const swiper = new Swiper('.swiper', {
+        initialSlide: slideIndex,
+        pagination: {
+          el: '.swiper-pagination',
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+      // create tippy instances
+      const tooltipsInstances = demoAppJson.slides
+        .filter(slide => slide.tooltipTarget && slide.tooltipDescription)
+        .flatMap(({ tooltipTarget, tooltipDescription }) =>
+          tippy(`#${tooltipTarget}`, {
+            content: tooltipDescription,
+            allowHTML: true,
+            trigger: 'manual',
+            placement: 'bottom',
+            hideOnClick: false,
+            interactive: true,
+            theme: 'gradient',
+            appendTo: () => document.querySelector('.swiper'),
+          })
+        );
+
+      // 初期スライドのツールチップを強制表示
+      const initialTooltip = tooltipsInstances[slideIndex];
+      initialTooltip?.show();
+
+      // フッターも初期表示
+      const footerContent = document.getElementById('footerContent');
+      footerContent.classList.remove('d-none');
+      footerContent.innerHTML = demoAppJson.slides[slideIndex].footerContent || '';
+
+      // スライド切り替え時の処理
+      swiper.on('slideChangeTransitionEnd', () => {
+        // hide all tooltips
+        tooltipsInstances.forEach(instance => instance.hide());
+
+        // show current tooltip
+        const activeTooltip = tooltipsInstances[swiper.activeIndex];
+        activeTooltip?.show();
+
+        // automatic scroll for specific slides
+        const targetIndexes = [5, 8, 11, 12, 21, 22, 24];
+        if (targetIndexes.includes(swiper.activeIndex)) {
+          const activeSlide = swiper.slides[swiper.activeIndex];
+          const scrollableContent = activeSlide.querySelector('.swiper-slide_img_holder');
+          scrollableContent.scrollTo({
+            top: scrollableContent.scrollHeight,
+            behavior: 'smooth'
+          });
+        }
+
+        // フッター更新
+        const footerContent = document.getElementById('footerContent');
+        footerContent.classList.remove('d-none');
+        footerContent.innerHTML = demoAppJson.slides[swiper.activeIndex].footerContent || '';
+      });
+    });
+  </script>
+</body>
+
+</html>

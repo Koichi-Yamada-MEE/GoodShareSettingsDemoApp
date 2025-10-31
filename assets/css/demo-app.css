@@ -97,6 +97,15 @@ body {
   border-radius: 0.625rem;
 }
 
+.img-border-rounded-wave {
+  border-top: 1px solid #dee2e6;
+  border-top-left-radius: 1px solid #dee2e6;
+  border-top-right-radius: 1px solid #dee2e6;
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+}
+
+
 li>img:first-child {
   margin-top: 1rem;
   /* mt-3 相当（Bootstrapのmt-3は1rem） */
