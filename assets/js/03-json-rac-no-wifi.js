@@ -60,7 +60,7 @@ const demoAppJson = {
       index: 6,
       imagePath: "../assets/img/rac/07701.png",
       alt: "STEP-07",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea07701",
       tooltipDescription: '',
       footerContent:
         '',
@@ -69,7 +69,7 @@ const demoAppJson = {
       index: 7,
       imagePath: "../assets/img/rac/07702.png",
       alt: "STEP-08",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea07702",
       tooltipDescription: '',
       footerContent:
         '',
@@ -78,7 +78,7 @@ const demoAppJson = {
       index: 8,
       imagePath: "../assets/img/rac/07801.png",
       alt: "STEP-09",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea07801",
       tooltipDescription: '',
       footerContent:
         '',
@@ -87,7 +87,7 @@ const demoAppJson = {
       index: 9,
       imagePath: "../assets/img/rac/07901.png",
       alt: "STEP-10",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea07901",
       tooltipDescription: '',
       footerContent:
         '',
@@ -96,7 +96,7 @@ const demoAppJson = {
       index: 10,
       imagePath: "../assets/img/rac/08201.png",
       alt: "STEP-11",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea08201",
       tooltipDescription: '',
       footerContent:
         '',
@@ -105,7 +105,7 @@ const demoAppJson = {
       index: 11,
       imagePath: "../assets/img/rac/08202.png",
       alt: "STEP-12",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea08202",
       tooltipDescription: '',
       footerContent:
         '',
@@ -114,7 +114,7 @@ const demoAppJson = {
       index: 12,
       imagePath: "../assets/img/rac/08301.png",
       alt: "STEP-13",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea08301",
       tooltipDescription: '',
       footerContent:
         '',
@@ -123,7 +123,7 @@ const demoAppJson = {
       index: 13,
       imagePath: "../assets/img/rac/08601.png",
       alt: "STEP-14",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea08601",
       tooltipDescription: '',
       footerContent:
         '',
@@ -132,7 +132,7 @@ const demoAppJson = {
       index: 14,
       imagePath: "../assets/img/rac/11701.png",
       alt: "STEP-15",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea08701",
       tooltipDescription: '',
       footerContent:
         '',
@@ -141,7 +141,7 @@ const demoAppJson = {
       index: 15,
       imagePath: "../assets/img/rac/11702.png",
       alt: "STEP-16",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea08702",
       tooltipDescription: '',
       footerContent:
         '',
@@ -150,7 +150,7 @@ const demoAppJson = {
       index: 16,
       imagePath: "../assets/img/rac/11901.png",
       alt: "STEP-17",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea08901",
       tooltipDescription: '',
       footerContent:
         '',
@@ -159,7 +159,7 @@ const demoAppJson = {
       index: 17,
       imagePath: "../assets/img/rac/12101.png",
       alt: "STEP-18",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea09101",
       tooltipDescription: '',
       footerContent:
         '',
@@ -168,7 +168,7 @@ const demoAppJson = {
       index: 18,
       imagePath: "../assets/img/rac/12102.png",
       alt: "STEP-19",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea09102",
       tooltipDescription: '',
       footerContent:
         '',
@@ -177,7 +177,7 @@ const demoAppJson = {
       index: 19,
       imagePath: "../assets/img/rac/12201.png",
       alt: "STEP-20",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea09201",
       tooltipDescription: '',
       footerContent:
         '',
@@ -186,7 +186,7 @@ const demoAppJson = {
       index: 20,
       imagePath: "../assets/img/rac/09301.png",
       alt: "STEP-21",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea09301",
       tooltipDescription: '',
       footerContent:
         '',
@@ -195,7 +195,7 @@ const demoAppJson = {
       index: 21,
       imagePath: "../assets/img/rac/09302.png",
       alt: "STEP-22",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea09302",
       tooltipDescription: '',
       footerContent:
         '',
@@ -204,7 +204,7 @@ const demoAppJson = {
       index: 22,
       imagePath: "../assets/img/rac/09401.png",
       alt: "STEP-23",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea09401",
       tooltipDescription: '',
       footerContent:
         '',
@@ -213,7 +213,7 @@ const demoAppJson = {
       index: 23,
       imagePath: "../assets/img/rac/09701.png",
       alt: "STEP-24",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea09701",
       tooltipDescription: '',
       footerContent:
         '',
@@ -222,7 +222,7 @@ const demoAppJson = {
       index: 24,
       imagePath: "../assets/img/rac/09801.png",
       alt: "STEP-25",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea09801",
       tooltipDescription: '',
       footerContent:
         '',
@@ -231,7 +231,7 @@ const demoAppJson = {
       index: 25,
       imagePath: "../assets/img/rac/10101.png",
       alt: "STEP-26",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea10101",
       tooltipDescription: '',
       footerContent:
         '',
@@ -240,7 +240,7 @@ const demoAppJson = {
       index: 26,
       imagePath: "../assets/img/rac/10201.png",
       alt: "STEP-27",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea10201",
       tooltipDescription: '',
       footerContent:
         '',
@@ -249,7 +249,7 @@ const demoAppJson = {
       index: 27,
       imagePath: "../assets/img/rac/12101.png",
       alt: "STEP-28",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea10301",
       tooltipDescription: '',
       footerContent:
         '',
@@ -258,7 +258,7 @@ const demoAppJson = {
       index: 28,
       imagePath: "../assets/img/rac/12102.png",
       alt: "STEP-29",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea10302",
       tooltipDescription: '',
       footerContent:
         '',
@@ -267,7 +267,7 @@ const demoAppJson = {
       index: 29,
       imagePath: "../assets/img/rac/12201.png",
       alt: "STEP-30",
-      tooltipTarget: "",
+      tooltipTarget: "targetArea10401",
       tooltipDescription: '',
       footerContent:
         '',

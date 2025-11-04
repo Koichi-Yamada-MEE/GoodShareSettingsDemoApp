@@ -15,7 +15,7 @@ const demoAppJson = {
       imagePath: "../assets/img/rac/05-02.png",
       alt: "STEP-02",
       tooltipTarget: "tooltipsSwitch02",
-      // tooltipDescription: "「＋機器登録を」タップする<br /><a href=\"https://www.google.com/\" class=\"btn btn-danger btn-sm mt-2\">スマートスイッチの各部名称を表示する</a>",
+      // tooltipDescription: "「＋機器登録を」タップする<br><a href=\"https://www.google.com/\" class=\"btn btn-danger btn-sm mt-2\">スマートスイッチの各部名称を表示する</a>",
       tooltipDescription: "「＋機器登録を」タップする",
       footerContent: "",
     },
@@ -72,7 +72,7 @@ const demoAppJson = {
       imagePath: "../assets/img/switch/401-01.png",
       alt: "STEP-09",
       tooltipTarget: "tooltipsSwitch09",
-      tooltipDescription: "<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch009\">設定方法をみる<i class=\"bi bi-link-45deg\"></i></a>をタップし<br />機器をアクセスポイントモードに設定する",
+      tooltipDescription: "<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch009\">設定方法をみる<i class=\"bi bi-link-45deg\"></i></a>をタップし<br>機器をアクセスポイントモードに設定する",
       footerContent: "<ul><li>スマートスイッチの各部名称は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon008\">こちら。</a></li><li>スマートスイッチのWi-Fiランプ状態の説明は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon007\">こちら。</a></li><li>アクセスポイントモードは約10分で終了します、それまでに設定してください。詳しくはルーターの取扱説明書をご確認ください。</li></ul>",
     },
     {

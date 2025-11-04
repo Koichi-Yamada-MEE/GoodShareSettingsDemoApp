@@ -39,7 +39,7 @@ const demoAppJson = {
       imagePath: "../assets/img/rac/10701.png",
       alt: "STEP-05",
       tooltipTarget: "targetArea10701",
-      tooltipDescription: "機器とルーターの接続方法を選択します。<br /><button type=\"button\" class=\"btn btn-outline-primary mt-2 d-block mx-auto\" data-bs-toggle=\"modal\" data-bs-target=\"#modalRac10701\">選択メニューを表示</button>",
+      tooltipDescription: "機器とルーターの接続方法を選択します。<br><button type=\"button\" class=\"btn btn-outline-primary mt-2 d-block mx-auto\" data-bs-toggle=\"modal\" data-bs-target=\"#modalRac10701\">選択メニューを表示</button>",
       footerContent: "",
     },
     {
