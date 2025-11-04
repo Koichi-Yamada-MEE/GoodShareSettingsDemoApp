@@ -75,7 +75,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea09",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent:
-        '<ul><li>事前に以下の準備・確認をしてください。<i class="bi bi-1-circle"></i>接続したいルーターのSSID(2.4GHz)、<i class="bi bi-2-circle"></i>ルーターに接続する暗号化キー(パスワード)</li><li>本アプリでルーターのSSIDに使用できる文字は<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon002">半角英数字、半角記号、半角スペース</a>です。</li></ul>',
+        '<ul><li>事前に以下の準備をしてください。<i class="bi bi-1-circle"></i>接続したいルーターのSSID(2.4GHz)、<i class="bi bi-2-circle"></i>ルーターに接続する暗号化キー(パスワード)</li><li>本アプリでルーターのSSIDに使用できる文字は<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon002">半角英数字、半角記号、半角スペース</a>です。</li></ul>',
     },
     {
       index: 9,
@@ -199,7 +199,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea23",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent:
-        '<ul><li>事前に以下の準備・確認をしてください。<i class="bi bi-1-circle"></i>接続したいルーターのSSID(2.4GHz)、<i class="bi bi-2-circle"></i>ルーターに接続する暗号化キー(パスワード)</li><li>ルーターのWPS実施方法は機器により異なります。詳しくはルーターの取扱説明書をご確認ください。</li></ul>',
+        '<ul><li>事前に以下の準備をしてください。<i class="bi bi-1-circle"></i>接続したいルーターのSSID(2.4GHz)、<i class="bi bi-2-circle"></i>ルーターに接続する暗号化キー(パスワード)</li><li>ルーターのWPS実施方法は機器により異なります。詳しくはルーターの取扱説明書をご確認ください。</li></ul>',
     },
     {
       index: 23,
