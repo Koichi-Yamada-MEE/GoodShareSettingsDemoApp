@@ -1,5 +1,5 @@
 const demoAppJson = {
-  jsonName: "GoodShareSettingsDemoAppRac",
+  jsonName: "03-GoodShareSettingsDemoAppRac",
   version: "1.0.0",
   slides: [
     {

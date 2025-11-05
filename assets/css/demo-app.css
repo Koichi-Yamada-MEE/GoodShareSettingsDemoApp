@@ -12,12 +12,6 @@ body {
   height: 667px;
 }
 
-/* .demo-app-wrap--main {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-} */
-
 .demo-app-wrap--footer {
   position: absolute;
   z-index: 1000;
@@ -28,9 +22,6 @@ body {
   height: 20%;
   min-height: 133.4px;
   padding: 0.5em;
-  /* box-sizing: border-box;
-  border: 1px solid #1FA28D;
-  background-color: #fff; */
 }
 
 /* floating-menu-icon */
@@ -94,7 +85,9 @@ body {
 
 .img-border-rounded {
   border: 1px solid #dee2e6;
-  border-radius: 0.625rem;
+  border-radius: 0.5rem;
+  /* border-radius: 0.625rem; */
+
 }
 
 .img-border-rounded-wave {
@@ -178,4 +171,13 @@ li>img:first-child {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+/* ネガティブマージン */
+.ms-n3 {
+  margin-left: -1rem !important;
+}
+
+.ms-n4 {
+  margin-left: -2rem !important;
 }

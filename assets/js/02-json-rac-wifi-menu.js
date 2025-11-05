@@ -1,5 +1,5 @@
 const demoAppJson = {
-  jsonName: "GoodShareSettingsDemoAppRac",
+  jsonName: "02-GoodShareSettingsDemoAppRac",
   version: "1.0.0",
   slides: [
     {
@@ -92,7 +92,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea4901",
       tooltipDescription: "画面の内容を操作し、「次へ」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac5001">リモコンを使ってエアコンを接続モードにする</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac5001">エアコンをアクセスポイント（APモード）にする</a></li></ul>',
     },
     {
       index: 11,
@@ -120,7 +120,7 @@ const demoAppJson = {
       tooltipDescription:
         "「スマートフォンの設定画面へ」をタップしてスマートフォンの設定画面で設定を行う",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac5401">エアコンとスマートフォンを接続する</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac054">エアコンとスマートフォンを接続する</a></li></ul>',
     },
 
     {
