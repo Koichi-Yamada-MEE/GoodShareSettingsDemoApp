@@ -149,7 +149,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea02801",
       tooltipDescription: "機器の登録が終わるまで、2～3分程度待つ",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac017-1">機器の登録に失敗した場合</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac017-2">「機器の登録確認」が表示された場合</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac02801">機器の登録に失敗した場合</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac02802">「機器の登録確認」が表示された場合</a></li></ul>',
     },
     {
       index: 17,
@@ -177,7 +177,7 @@ const demoAppJson = {
       tooltipDescription:
         "「アプリを起動する」をタップ、霧ヶ峰アプリを起動させる",
       footerContent:
-        '<ul><li>エアコン登録と初期設定が完了しました。霧ヶ峰アプリの使い方については、霧ヶ峰アプリの取扱説明書をご確認ください。</li><li>エモコアイ搭載エアコンの場合、<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac020">「次へ」</a>が表示されます。タップして操作を続けてください。</li></ul>',
+        '<ul><li>エアコン登録と初期設定が完了しました。霧ヶ峰アプリの使い方については、霧ヶ峰アプリの取扱説明書をご確認ください。</li><li>エモコアイ搭載エアコンの場合、<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac031">「次へ」</a>が表示されます。タップして操作を続けてください。</li></ul>',
     },
     {
       index: 20,
