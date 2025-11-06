@@ -76,7 +76,7 @@
     <!-- modal -->
     <!-- modalRac007 -->
     <div class="modal fade" id="modalRac007" tabindex="-1">
-      <div class="modal-dialog mx-auto d-block" style="width: 300px">
+      <div class="modal-dialog mx-auto d-block">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-6">機器とルーターが接続済みの場合</h1>
@@ -101,9 +101,9 @@
       </div>
     </div>
 
-    <!-- modalRac021 -->
-    <div class="modal fade" id="modalRac021" tabindex="-1">
-      <div class="modal-dialog mx-auto d-block" style="width: 300px">
+    <!-- modalRac02101 -->
+    <div class="modal fade" id="modalRac02101" tabindex="-1">
+      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-6">リモコンを使ってエアコンを接続モードにする</h1>
@@ -113,40 +113,42 @@
             <h6>エアコンをアクセスポイントモード（APモード）にする</h6>
             <ol>
               <li>リモコンの「停止」ボタンを押して運転を停止します。</li>
-              <li>「温度▲」ボタンを「<sup>ー</sup>0」が表示されるまで５秒以上長押しします。</li>
+              <li>「温度▲」ボタンを「<sup>ー</sup>0」が表示されるまで5秒以上長押しします。</li>
               <li>「温度▲」ボタンまたは「温度▼」ボタンで「<sup>ー</sup>1」を選択して、エアコンに向けて「停止」ボタンを押すと、エアコンが「APモード」に設定されます。
-                <div class="d-flex justify-content-center">
-                <figure class="figure">
-                  <img class="d-block mx-auto my-3 img-border-rounded figure-img" src="../assets/img/rac/11-S01.png" style="width: 180px">
-                  <figcaption class="figure-caption">リモコンは機種により異なります。</figcaption>
-                </figure>
+                <div class="d-flex justify-content-center my-3">
+                  <figure class="figure my-0">
+                    <img class="cs-modal-img-width-sm" src="../assets/img/rac/021S01.png">
+                    <figcaption class="figure-caption">リモコンは機種により異なります。</figcaption>
+                  </figure>
                 </div>
-                <ul>
-                  <li>再度「APモード」を設定、または「WPSモード」を続けて設定すると“ピピピッ”と音が鳴り、操作を受け付けないことがあります。</li>
-                  <li>詳しくは各エアコンの取扱説明書をご確認ください。</li>
-                </ul>
               </li>
             </ol>
+            <ul>
+              <li>再度「APモード」を設定、または「WPSモード」を続けて設定すると“ピピピッ”と音が鳴り、操作を受け付けないことがあります。</li>
+              <li>詳しくは各エアコンの取扱説明書をご確認ください。</li>
+            </ul>
             <h6>アクセスポイントモードに設定されているか、室内機で確認する</h6>
             <ol start="4">
               <li>室内機のランプが約5秒間隔で1回点滅しながら“ピッ”と音が鳴ることを確認してください。
                 <div class="d-flex justify-content-center">
-                  <figure class="figure">
-                    <img class="my-3" src="../assets/img/rac/11-S02.png" style="width: 180px">
+                  <figure class="figure my-0">
+                    <img class="my-3 cs-modal-img-width-sm" src="../assets/img/rac/021S02.png">
                     <figcaption class="figure-caption">ランプはエアコンにより異なります。</figcaption>
                   </figure>
                 </div>
-                <ul>
-                  <li>ランプは以下の状態を繰り返します。</li>
-                  <div class="d-flex justify-content-center">
-                    <figure class="figure">
-                      <img class="d-block mx-auto my-3 figure-img" src="../assets/img/rac/11-S03.png" alt="">
-                      <figcaption class="figure-caption"></figcaption>
-                    </figure>
-                  </div>
-                  <li>この状態は10分で終了します。10分以上経過した場合は「1」からやり直してください。</li>
-                </ul>
+              </li>
             </ol>
+            <ul>
+              <li>ランプは以下の状態を繰り返します。
+                <div class="d-flex justify-content-center">
+                  <figure class="figure my-0">
+                    <img class="my-3 img-fluid" src="../assets/img/rac/021S03.png" alt="">
+                    <figcaption class="figure-caption"></figcaption>
+                  </figure>
+                </div>
+              </li>
+              <li>この状態は10分で終了します。10分以上経過した場合は「1」からやり直してください。</li>
+            </ul>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -155,35 +157,35 @@
       </div>
     </div>
 
-    <!-- modalRac013 -->
-    <div class="modal fade" id="modalRac013" tabindex="-1">
-      <div class="modal-dialog mx-auto" style="width: 300px">
+    <!-- modalRac02301 -->
+    <div class="modal fade" id="modalRac02301" tabindex="-1">
+      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-6">エアコンとスマートフォンを接続する</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
-            <ul class="">
+            <ul>
               <li>スマートフォンの「設定」の「Wi-Fi」で、エアコンのSSIDである「 ME-**********」（*の部分は10桁の英数字）のSSIDを選択します。
-                <div class="d-flex justify-content-center mt-3 ms-n3">
-                  <figure class="figure">
-                    <img class="figure-img d-block mx-auto" src="../assets/img/rac/23-S01.png" style="width: 180px">
+                <div class="d-flex justify-content-center my-3 ms-n3">
+                  <figure class="figure my-0">
+                    <img class="img-fluid d-block mx-auto cs-modal-img-width-sm" src="../assets/img/rac/23-S01.png">
                     <figcaption class="figure-caption">スマートフォンの機種やOSバージョンにより、画面の内容は異なります。</figcaption>
                   </figure>
                 </div>
               </li>
               <li>リモコンにメニューボタンが無い機種では、パスワード入力は必要ありません。パスワード入力を求められた場合は、機種選択を誤っていますので、機種選択からやり直してください。</li>
               <li>iOS搭載のスマートフォンでは以下の画面が表示されます。「＜設定」をタップしてスマートフォンの「設定」画面に進み、「Wi-Fi」をタップして上の「Wi-Fi」画面に進んでください。
-                <div class="d-flex justify-content-center mt-3 ms-n3">
-                  <figure class="figure">
-                    <img class="d-block mx-auto" src="../assets/img/rac/23-S02.png" style="width: 180px;">
+                <div class="d-flex justify-content-center my-3 ms-n3">
+                  <figure class="figure my-0">
+                    <img class="img-fluid d-block mx-auto cs-modal-img-width-sm" src="../assets/img/rac/23-S02.png">
                     <figcaption class="figure-caption"></figcaption>
                   </figure>
                 </div>
-                <div class="d-flex justify-content-center mt-3 ms-n3">
-                  <figure class="figure">
-                    <img class="d-block mx-auto" src="../assets/img/rac/23-S03.png" style="width: 180px;">
+                <div class="d-flex justify-content-center my-3 ms-n3">
+                  <figure class="figure my-0">
+                    <img class="img-fluid d-block mx-auto cs-modal-img-width-sm" src="../assets/img/rac/23-S03.png">
                     <figcaption class="figure-caption"></figcaption>
                   </figure>
                 </div>
@@ -191,35 +193,32 @@
               <li>MyMUアプリの画面に戻って「次へ」をタップする
                 <ul class="">
                   <li>エアコンとスマートフォンが接続できていることを確認してから、「次へ」ボタンをタップしてください。
-                    <div class="d-flex justify-content-center mt-3 ms-n4">
-                      <figure class="figure">
-                        <img class="d-block" src="../assets/img/rac/24-S01.png" style="width: 180px;">
+                    <div class="d-flex justify-content-center my-3 ms-n4">
+                      <figure class="figure my-0">
+                        <img class="img-fluid d-block mx-auto cs-modal-img-width-sm" src="../assets/img/rac/24-S01.png">
                         <figcaption class="figure-caption"></figcaption>
                       </figure>
                     </div>
                   </li>
                   <li>「次へ」をタップすると位置情報の使用許可を求めるメッセージが表示されます。「1度だけ許可」「Appの使用中は許可」あるいは「アプリの使用時のみ」「今回のみ」をタップしてください。「許可しない」をタップすると接続に失敗します。
-                    <div class="d-flex justify-content-center mt-3 ms-n4">
-                      <figure class="figure">
-                        <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/24-S02.png"
-                          style="width: 180px">
+                    <div class="d-flex justify-content-center my-3 ms-n4">
+                      <figure class="figure my-0">
+                        <img class="img-fluid d-block mx-auto cs-modal-img-width-sm img-border-rounded" src="../assets/img/rac/24-S02.png">
                         <figcaption class="figure-caption"></figcaption>
                       </figure>
                     </div>
-                    <div class="d-flex justify-content-center ms-n4">
+                    <div class="d-flex justify-content-center my-3 ms-n4">
                       <figure class="figure">
-                        <img class="d-block img-border-rounded" src="../assets/img/rac/24-S03.svg"
-                          style="width: 180px">
+                        <img class="img-fluid d-block mx-auto cs-modal-img-width-sm img-border-rounded" src="../assets/img/rac/24-S03.svg">
                         <figcaption class="figure-caption"></figcaption>
                       </figure>
                     </div>
                   </li>
                   <li>
                     接続に失敗した場合は右のメッセージが表示されます。「閉じる」をタップしてメッセージを閉じ、スマートフォンの設定画面でエアコンとスマートフォンの接続をやり直してください。ME-**********」が見つからない場合はアクセスポイントモードの設定からやり直してください。
-                    <div class="d-flex justify-content-center mt-3 ms-n4">
-                      <figure class="figure">
-                        <img class="d-block img-border-rounded" src="../assets/img/rac/25-S01.svg"
-                          style="width: 180px">
+                    <div class="d-flex justify-content-center my-3 ms-n4">
+                      <figure class="figure my-0">
+                        <img class="img-fluid d-block mx-auto cs-modal-img-width-sm img-border-rounded" src="../assets/img/rac/25-S01.svg">
                         <figcaption class="figure-caption"></figcaption>
                       </figure>
                     </div>
@@ -244,7 +243,7 @@
 
     <!-- modalRac017-1 -->
     <div class="modal fade" id="modalRac017-1" tabindex="-1">
-      <div class="modal-dialog mx-auto d-block" style="width: 300px">
+      <div class="modal-dialog mx-auto d-block">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-6">機器登録に失敗した場合</h1>
@@ -271,7 +270,7 @@
 
     <!-- modalRac017-2 -->
     <div class="modal fade" id="modalRac017-2" tabindex="-1">
-      <div class="modal-dialog mx-auto d-block" style="width: 300px">
+      <div class="modal-dialog mx-auto d-block">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-6">「機器の登録確認」が表示された場合</h1>
@@ -290,42 +289,40 @@
       </div>
     </div>
 
-    <!-- modalRac000-->
-    <div class="modal fade" id="modalRac000" tabindex="-1">
-      <div class="modal-dialog" style="width: 300px">
-        <div class="modal-content">
+    <!-- modalRac01701-->
+    <div class="modal fade" id="modalRac01701" tabindex="-1">
+      <div class="modal-dialog">
+        <div class=" modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-6">接続方法の選択</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
-            <div class="mt-3">
-              <p style="font-size: 0.9375rem;">機器とルーターの接続方法を選択してください。説明ページへ移動します。</p>
-            </div>
+            <p style="font-size: 0.9375rem;">機器とルーターの接続方法を選択してください。</p>
     
-            <a href="./?slide=7" class="text-decoration-none text-reset">
-              <div class="card text-center mb-2 mx-auto d-block" style="width: 234px; height: 100%;">
+            <a href="./?slide=7" class="text-decoration-none">
+              <div class="card text-center mb-2 mx-auto">
                 <div class="card-header">アクセスポイントモードでの接続</div>
-                <div class="card-body">
-                  <p class="mb-0" style="font-size: 0.8125rem;">機器のアクセスポイントモードを使って<br>機器とルーターを接続します。</p>
+                <div class="card-body fs-7">
+                  機器のアクセスポイントモードを使って<br>機器とルーターを接続します。
                 </div>
               </div>
             </a>
     
-            <a href=" ./?slide=21" class="text-decoration-none text-reset">
-              <div class="card text-center mb-2 mx-auto d-block" style="width: 234px; height: 100%;">
+            <a href=" ./?slide=21" class="text-decoration-none">
+              <div class="card text-center mb-2 mx-auto">
                 <div class="card-header">WPS機能での接続</div>
-                <div class="card-body">
-                  <p class="mb-0" style="font-size: 0.8125rem;">ルーターの「WPS」ボタンを使って<br>機器とルーターを接続します。</p>
+                <div class="card-body fs-7">
+                  ルーターの「WPS」ボタンを使って<br>機器とルーターを接続します。
                 </div>
               </div>
             </a>
     
-            <a href="./?slide=26" class="text-decoration-none text-reset">
-              <div class="card text-center mx-auto d-block" style="width: 234px; height: 100%;">
+            <a href="./?slide=26" class="text-decoration-none">
+              <div class="card text-center mx-auto">
                 <div class="card-header">機器とルーターを接続済み</div>
-                <div class="card-body">
-                  <p class="mb-0" style="font-size: 0.8125rem;">すでに機器とルーターを接続済み<br>の場合はこちらを選択してください。</p>
+                <div class="card-body fs-7">
+                  すでに機器とルーターを接続済み<br>の場合はこちらを選択してください。
                 </div>
               </div>
             </a>
@@ -339,7 +336,7 @@
 
     <!-- modalRac024 -->
     <div class="modal fade" id="modalRac024" tabindex="-1">
-      <div class="modal-dialog mx-auto d-block" style="width: 300px">
+      <div class="modal-dialog mx-auto d-block">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-6">リモコンを使ってエアコンを接続モードにする</h1>
@@ -376,7 +373,7 @@
 
     <!-- modalRac025 -->
     <div class="modal fade" id="modalRac025" tabindex="-1">
-      <div class="modal-dialog mx-auto d-block" style="width: 300px">
+      <div class="modal-dialog mx-auto d-block">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-6">ルーターをWPSモードにする</h1>
@@ -403,7 +400,7 @@
 
     <!-- modalRac026 -->
     <div class="modal fade" id="modalRac026" tabindex="-1">
-      <div class="modal-dialog mx-auto d-block" style="width: 300px">
+      <div class="modal-dialog mx-auto d-block">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-6">エアコンとルーターの接続完了を確認する</h1>
@@ -450,7 +447,7 @@
 
     <!-- modalRac020 -->
     <div class="modal fade" id="modalRac020" tabindex="-1">
-      <div class="modal-dialog" style="width: 300px">
+      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-6">「次へ」の画面表示</h1>

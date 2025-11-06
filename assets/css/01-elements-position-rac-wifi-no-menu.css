@@ -1,302 +1,264 @@
 @charset "UTF-8";
 
-#targetArea01,
-#targetArea02,
-#targetArea03,
-#targetArea04,
-#targetArea05,
-#targetArea06,
-#targetArea07,
-#targetArea08,
-#targetArea09,
-#targetArea10,
-#targetArea11,
-#targetArea12,
-#targetArea13,
-#targetArea14,
-#targetArea15,
-#targetArea16,
-#targetArea17,
-#targetArea18,
-#targetArea19,
-#targetArea20,
-#targetArea21,
-#targetArea22,
-#targetArea23,
-#targetArea24,
-#targetArea25,
-#targetArea26,
-#targetArea27,
-#targetArea28,
-#targetArea29,
-#targetArea30,
-#targetArea31,
-#targetArea32,
-#targetArea4501,
-#targetArea4901,
-#targetArea5102,
-#targetArea5301
-{
+#targetArea01401,
+#targetArea01402,
+#targetArea01403,
+#targetArea01501,
+#targetArea01502,
+#targetArea01601,
+#targetArea01701,
+#targetArea01801,
+#targetArea01802,
+#targetArea01901,
+#targetArea02001,
+#targetArea02201,
+#targetArea02202,
+#targetArea02501,
+#targetArea02601,
+#targetArea02602,
+#targetArea02801,
+#targetArea03001,
+#targetArea03002,
+#targetArea03101,
+#targetArea03102,
+#targetArea03201,
+#targetArea03202,
+#targetArea03301,
+#targetArea03501,
+#targetArea03601,
+#targetArea03901,
+#targetArea04001,
+#targetArea04101,
+#targetArea04102,
+#targetArea04201,
+#targetArea04202 {
   position: absolute;
   /* box-sizing: border-box; */
   background-color: #ED701E;
   opacity: 0.2;
   border-radius: 5px;
-  /* z-index: 110; */
 }
 
-#targetArea01 {
-  top: 0; 
+#targetArea01401{
+  top: 0px;
   left: 0;
-  width: 10.7%;
-  height: 10.5%;
+  width: 60px;
+  height: 55px;
 }
 
-#targetArea02 {
-  top: 15.6%;
+#targetArea01402{
+  top: 82px;
   left: 0;
-  width: 100%;
-  height: 7.0%;
+  width: 300px;
+  height: 39px;
 }
 
-#targetArea03 {
-  top: 32.8%;
+#targetArea01403{
+  top: 175px;
   left: 0;
-  width:100%;
-  height: 11.7%;
+  width: 300px;
+  height: 64px;
 }
-
-#targetArea04 {
-  top: 96.8px;
-  left: 50%;
-  width: 276px;
-  height: 124.8px;
-  transform: translateX(-50%);
-}
-
-#targetArea05 {
-  top: 21.4%;
+#targetArea01501{
+  top: 96px;
   left: 0;
-  width: 100%;
-  height: 32.8%;
+  width: 300px;
+  height: 126px;
 }
 
-#targetArea06 {
-  top: 45.1%;
+#targetArea01502{
+  top: 100px;
   left: 0;
-  width: 100%;
-  height: 23.4%;
+  width: 300px;
+  height: 177px;
 }
 
-#targetArea07 {
+#targetArea01601{
+  top: 240px;
+  left: 0;
+  width: 300px;
+  height: 127px;
+}
+
+#targetArea01701{
   top: 227px;
   left: 0;
   width: 300px;
   height: 592px;
 }
 
-#targetArea08 {
-  top: 92.8%;
+#targetArea01801{
+  top: 494px;
   left: 0;
-  width: 100%;
-  height: 7.2%;
+  width: 300px;
+  height: 40px;
 }
 
-#targetArea09 {
-  top: 86.8%;
+#targetArea01802{
+  top: 462px;
   left: 0;
-  width: 100%;
-  height: 7.2%;
+  width: 300px;
+  height: 40px;
 }
 
-#targetArea10 {
-  top: 86.8%;
+#targetArea01901{
+  top: 449px;
   left: 0;
-  width: 100%;
-  height: 7.2%;
+  width: 300px;
+  height: 40px;
 }
 
-#targetArea11 {
-  top: 150.7%;
+#targetArea02001{
+  top: 790px;
   left: 0;
-  width: 100%;
-  height: 7.2%;
+  width: 300px;
+  height: 40px;
 }
 
-#targetArea12 {
-  top: 86.8%;
-  left: 0%;
-  width: 100%;
-  height: 7.2%;
+#targetArea02201{
+  top: 449px;
+  left: 0;
+  width: 300px;
+  height: 40px;
 }
 
-#targetArea13 {
+#targetArea02202{
   top: 563px;
   left: 0;
   width: 300px;
   height: 39px;
 }
 
-#targetArea14 {
-  top: 111.7%;
-  left: 0%;
-  width: 100%;
-  height: 7.2%;
-}
-
-#targetArea15 {
-  top: 48.4%;
-  left: 0%;
-  width: 100%;
-  height: 6.6%;
-}
-
-#targetArea16 {
-  top: 86.8%;
-  left: 0%;
-  width: 100%;
-  height: 7.2%;
-}
-
-#targetArea17 {
-  top: 24.6%;
-  left: 0%;
-  width: 100%;
-  height: 7.2%;
-}
-
-#targetArea18 {
-  top: 86.4%;
-  left: 0%;
-  width: 100%;
-  height: 7.2%;
-}
-
-#targetArea19 {
-  top: 80.7%;
-  left: 0%;
-  width: 100%;
-  height: 7.2%;
-}
-
-#targetArea20 {
-  top: 86.4%;
-  left: 0%;
-  width: 100%;
-  height: 7.2%;
-}
-
-#targetArea21 {
-  top: 83.1%;
-  left: 0%;
-  width: 100%;
-  height: 7.2%;
-}
-
-#targetArea22 {
-  top: 463px;
+#targetArea02501{
+  top: 582px;
   left: 0;
   width: 300px;
-  height: 39px;
+  height: 40px;
 }
 
-#targetArea23 {
+#targetArea02601{
+  top: 244px;
+  left: 0;
+  width: 300px;
+  height: 35px;
+}
+
+#targetArea02602{
   top: 448px;
   left: 0;
   width: 300px;
-  height: 39px;
+  height: 40px;
 }
 
-#targetArea24 {
-  top: 789px;
+#targetArea02801{
+  top: 130px;
+  left: 0;
+  width: 300px;
+  height: 40px;
+}
+
+#targetArea03001{
+  top: 443px;
   left: 0;
   width: 300px;
   height: 39px;
 }
 
-#targetArea25 {
+#targetArea03002{
+  top: 409px;
+  left: 0;
+  width: 300px;
+  height: 40px;
+}
+
+#targetArea03101{
+  top: 443px;
+  left: 0;
+  width: 300px;
+  height: 39px;
+}
+
+#targetArea03102{
+  top: 443px;
+  left: 0;
+  width: 300px;
+  height: 40px;
+}
+
+#targetArea03201{
+  top: 463px;
+  left: 0;
+  width: 300px;
+  height: 40px;
+}
+
+#targetArea03202{
+  top: 447px;
+  left: 0;
+  width: 300px;
+  height: 40px;
+}
+
+#targetArea03301{
+  top: 790px;
+  left: 0;
+  width: 300px;
+  height: 40px;
+}
+
+#targetArea03501{
   top: 482px;
   left: 0;
   width: 300px;
-  height: 39px;
+  height: 40px;
 }
 
-#targetArea26 {
+#targetArea03601{
   top: 449px;
   left: 0;
   width: 300px;
-  height: 39px;
+  height: 40px;
 }
 
-#targetArea27 {
+#targetArea03901{
   top: 559px;
   left: 0;
   width: 300px;
-  height: 39px;
+  height: 40px;
 }
 
-#targetArea28 {
+#targetArea04001{
   top: 177px;
   left: 0;
   width: 300px;
   height: 73px;
 }
 
-#targetArea29 {
-  top: 461px;
-  left: 0;
-  width: 300px;
-  height: 39px;
-}
-
-#targetArea30 {
-  top: 431px;
-  left: 0;
-  width: 300px;
-  height: 39px;
-}
-
-#targetArea31 {
-  top: 461px;
-  left: 0;
-  width: 300px;
-  height: 39px;
-}
-
-#targetArea32 {
+#targetArea04101{
   top: 443px;
   left: 0;
   width: 300px;
   height: 39px;
 }
-#targetArea4501 {
-  top: 96px;
+
+#targetArea04102{
+  top: 409px;
   left: 0;
   width: 300px;
-  height: 127px;
+  height: 40px;
 }
-#targetArea4901 {
-  top: 922px;
+
+#targetArea04201{
+  top: 443px;
   left: 0;
   width: 300px;
   height: 39px;
 }
-#targetArea5101 {
-  top: 449px;
+
+#targetArea04202{
+  top: 443px;
   left: 0;
   width: 300px;
-  height: 39px;
-}
-#targetArea5102 {
-  top: 449px;
-  left: 0;
-  width: 300px;
-  height: 39px;
-}
-#targetArea5301 {
-  top: 463px;
-  left: 0;
-  width: 300px;
-  height: 39px;
+  height: 40px;
 }
 

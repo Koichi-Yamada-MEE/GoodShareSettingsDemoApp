@@ -1,10 +1,31 @@
 @charset "UTF-8";
 
+:root {
+  --cs-modal-width: 300px;
+  --cs-modal-img-width-sm: 180px;
+  /* --cs-modal-img-width-md: 260px;
+  --cs-modal-img-width-lg: 280px; */
+  --cs-text-14: 0.875rem;
+
+}
+
+.modal .modal-dialog {
+  max-width: var(--cs-modal-width) !important;
+  margin: 0 auto;
+}
+
+.modal .cs-modal-img-width-sm {
+  width: var(--cs-modal-img-width-sm) ;
+}
+
+.fs-7 {
+  font-size: var(--cs-text-14) ;
+}
+
+
 body {
-  margin: 0;
-  padding: 0;
   color: #333;
-  /* font-family: "メイリオ", "ヒラギノ角ゴ Pro W3", "Lucida Grande", "Hiragino Kaku Gothic Pro", Osaka, Verdana, "ＭＳ Ｐゴシック", sans-serif */
+  font-family: "メイリオ", "ヒラギノ角ゴ Pro W3", "Lucida Grande", "Hiragino Kaku Gothic Pro", Osaka, Verdana, "ＭＳ Ｐゴシック", sans-serif
 }
 
 .demo-app-wrap {
@@ -90,88 +111,11 @@ body {
 
 }
 
-.img-border-rounded-wave {
-  border-top: 1px solid #dee2e6;
-  border-top-left-radius: 1px solid #dee2e6;
-  border-top-right-radius: 1px solid #dee2e6;
-  border-left: 1px solid #dee2e6;
-  border-right: 1px solid #dee2e6;
-}
-
-
 li>img:first-child {
   margin-top: 1rem;
   /* mt-3 相当（Bootstrapのmt-3は1rem） */
 }
 
-.wavy-line {
-  width: 100%;
-  object-fit: cover;
-  /* 中央を基準にトリミング */
-  object-position: center;
-}
-
-
-/* ====================================
-   img要素と省略線
-   ==================================== */
-
-
-/* 親要素 */
-.parent {
-  position: relative;
-  overflow: hidden;
-}
-
-/* アプリ画面－共通 */
-.parent>img {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 300px;
-  height: auto;
-  display: block;
-  pointer-events: none;
-}
-
-/* アプリ画面－下揃え */
-.parent .img-bottom {
-  bottom: 0;
-}
-
-/* アプリ画面－上揃え */
-.parent .img-top {
-  top: 0;
-}
-
-/* 省略線－共通 */
-.parent .wave-top,
-.parent .wave-bottom {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  pointer-events: none;
-}
-
-/* 省略線（上揃え） */
-.parent .wave-top {
-  top: 0;
-}
-
-/* 省略線（下揃え） */
-.parent .wave-bottom {
-  bottom: 0;
-}
-
-.parent .wave-top img,
-.parent .wave-bottom img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 
 /* ネガティブマージン */
 .ms-n3 {
