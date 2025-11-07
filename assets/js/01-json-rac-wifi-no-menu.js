@@ -195,7 +195,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea03201",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent:
-        "ここからは、無線LAN内蔵エアコン（メニューボタンなし）を登録する（WPS）について説明します。",
+        "ここからは、WPS機能で接続する手順を説明します。",
     },
     {
       index: 22,
@@ -204,7 +204,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea03202",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent:
-        '<ul><li>事前に以下の準備をしてください。<i class="bi bi-1-circle"></i>接続したいルーターのSSID(2.4GHz)、<i class="bi bi-2-circle"></i>ルーターに接続する暗号化キー(パスワード)</li><li>ルーターのWPS実施方法は機器により異なります。詳しくはルーターの取扱説明書をご確認ください。</li></ul>',
+        '<ul><li>事前に以下の準備をしてください。<i class="bi bi-1-circle"></i>接続したいルーターの場所、<i class="bi bi-2-circle"></i>ルーターのWPS実施方法</li><li>ルーターのWPS実施方法は機器により異なります。詳しくはルーターの取扱説明書をご確認ください。</li></ul>',
     },
     {
       index: 23,
@@ -213,7 +213,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea03301",
       tooltipDescription: "画面の内容を操作し、「次へ」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac024">リモコンを使ってエアコンを接続モードにする</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac034">リモコンを使ってエアコンを接続モードにする</a></li></ul>',
     },
     {
       index: 24,
@@ -222,7 +222,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea03501",
       tooltipDescription: "画面の内容を操作し、「次へ」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac025">ルーターをWPSモードにする</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac035">ルーターをWPSモードにする</a></li></ul>',
     },
     {
       index: 25,
@@ -231,7 +231,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea03601",
       tooltipDescription: "画面の内容を操作し、「次へ」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac026">エアコンとルーターの接続が完了したことを確認する</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac036">エアコンとルーターの接続が完了したことを確認する</a></li></ul>',
     },
     {
       index: 26,
@@ -240,7 +240,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea03901",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent:
-        "<ul><li>画面上にスマートフォンの接続先情報が表示されます。表示されているSSIDがエアコンを接続したルーターのSSIDと一致していることを確認してください。異なる場合は、エアコンを接続したルーターにスマートフォンを接続してください。接続方法はスマートフォンの取扱説明書をご確認ください。</li><li>iOS14以降を搭載のスマートフォンでは、初回登録時に「次へ」をタップすると下記のメッセージが表示されますので、「OK」をタップしてください。「OK」をタップしないと機器が表示されません。「許可しない」をタップした場合は、iOSのローカルネットワークの設定で通信を許可するよう変更してください。</li></ul>",
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac03901">スマートフォンの接続先を確認する</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac03902">「"MyMU"がローカルネットワーク上のデバイスの検索および接続を求めています」</a>と表示されたら</li></ul>',
     },
     {
       index: 27,
@@ -249,7 +249,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea04001",
       tooltipDescription: "登録するエアコンをタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac000">Click me !</a></li></ul>',
+        '<ul><li>複数の機器が表示された場合、<img class="mt-0 align-text-bottom" src="../assets/img/rac/buzzer.svg">ブザー鳴動ボタンをタップし、登録するエアコンからブザー音が鳴ることを確認してください。</li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon012">エアコンが別のユーザーに登録されている場合</a></li></ul>',
     },
     {
       index: 28,
@@ -259,7 +259,7 @@ const demoAppJson = {
       tooltipDescription:
         "登録が完了したら、「エアコン初期設定へ」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac000">Click me !</a></li></ul>',
+        '',
     },
     {
       index: 29,
@@ -278,7 +278,7 @@ const demoAppJson = {
       tooltipDescription:
         "「アプリを起動する」をタップ、霧ヶ峰アプリを起動させる",
       footerContent:
-        '<ul><li>エアコン登録と初期設定が完了しました。霧ヶ峰アプリの使い方については、霧ヶ峰アプリの取扱説明書をご確認ください。</li><li>エモコアイ搭載エアコンの場合、<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac020">「次へ」</a>が表示されます。タップして操作を続けてください。</li></ul>',
+        '<ul><li>エアコン登録と初期設定が完了しました。霧ヶ峰アプリの使い方については、霧ヶ峰アプリの取扱説明書をご確認ください。</li><li>エモコアイ搭載エアコンの場合、<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac031">「次へ」</a>が表示されます。タップして操作を続けてください。</li></ul>',
     },
     {
       index: 31,
