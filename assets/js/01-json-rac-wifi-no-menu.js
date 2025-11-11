@@ -122,6 +122,9 @@ const demoAppJson = {
       footerContent:
         "<ul><li>ルーターのSSID（2.4GHz）と暗号化キー（パスワード）をお手元に準備してください。次の操作で使用します。</li></ul>",
     },
+
+
+
     {
       index: 14,
       imagePath: "../assets/img/rac/02601.png",
@@ -149,7 +152,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea02801",
       tooltipDescription: "機器の登録が終わるまで、2～3分程度待つ",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac02801">機器の登録に失敗した場合</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac02802">「機器の登録確認」が表示された場合</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon013">機器の登録に失敗した場合</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon014">「機器の登録確認」が表示された場合</a></li></ul>',
     },
     {
       index: 17,
@@ -222,7 +225,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea03501",
       tooltipDescription: "画面の内容を操作し、「次へ」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac035">ルーターをWPSモードにする</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon015">ルーターをWPSモードにする</a></li></ul>',
     },
     {
       index: 25,
@@ -231,7 +234,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea03601",
       tooltipDescription: "画面の内容を操作し、「次へ」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac036">エアコンとルーターの接続が完了したことを確認する</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon016">エアコンとルーターの接続が完了したことを確認する</a></li></ul>',
     },
     {
       index: 26,
@@ -240,7 +243,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea03901",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac03901">スマートフォンの接続先を確認する</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac03902">「"MyMU"がローカルネットワーク上のデバイスの検索および接続を求めています」</a>と表示されたら</li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon017">スマートフォンの接続先を確認する</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon018">「"MyMU"がローカルネットワーク上のデバイスの検索および接続を求めています」</a>と表示されたら</li></ul>',
     },
     {
       index: 27,
