@@ -1,5 +1,18 @@
 @charset "UTF-8";
 
+#targetArea01401,
+#targetArea01402,
+#targetArea01403,
+#targetArea01501,
+#targetArea01502,
+#targetArea01701,
+#targetArea01802,
+
+
+
+
+
+
 #targetArea07401,
 #targetArea07402,
 #targetArea07403,
@@ -39,6 +52,69 @@
   opacity: 0.2;
   border-radius: 5px;
 }
+
+#targetArea01401{
+  top: 0px;
+  left: 0;
+  width: 60px;
+  height: 55px;
+}
+
+#targetArea01402{
+  top: 82px;
+  left: 0;
+  width: 300px;
+  height: 39px;
+}
+
+#targetArea01403{
+  top: 175px;
+  left: 0;
+  width: 300px;
+  height: 64px;
+}
+#targetArea01501{
+  top: 96px;
+  left: 0;
+  width: 300px;
+  height: 126px;
+}
+
+#targetArea01502{
+  top: 294px;
+  left: 0;
+  width: 300px;
+  height: 177px;
+}
+
+#targetArea01701{
+  top: 227px;
+  left: 0;
+  width: 300px;
+  height: 592px;
+}
+
+#targetArea01802{
+  top: 462px;
+  left: 0;
+  width: 300px;
+  height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #targetArea07401 {
   top: 0px; 

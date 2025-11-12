@@ -47,7 +47,7 @@ const demoAppJson = {
       index: 5,
       imagePath: "../assets/img/rac/01601.png",
       alt: "STEP-06",
-      tooltipTarget: "targetArea01601",
+      tooltipTarget: "targetArea04501",
       tooltipDescription: "「リモコンにメニューボタンがある」をタップする",
       footerContent:
         "<ul><li>リモコンにメニューボタンがない場合はやり直してください。</li></ul>",
@@ -107,7 +107,7 @@ const demoAppJson = {
       index: 12,
       imagePath: "../assets/img/rac/05102.png",
       alt: "STEP-13",
-      tooltipTarget: "targetArea5102",
+      tooltipTarget: "targetArea05102",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent:
         '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac051">情報シールを確認する</a></li></ul>',
@@ -120,7 +120,7 @@ const demoAppJson = {
       tooltipDescription:
         "「スマートフォンの設定画面へ」をタップしてスマートフォンの設定画面で設定を行う",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac054">エアコンとスマートフォンを接続する</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon019">エアコンとスマートフォンを接続する</a></li></ul>',
     },
     {
       index: 14,
@@ -181,7 +181,7 @@ const demoAppJson = {
       index: 20,
       imagePath: "../assets/img/rac/03101.png",
       alt: "STEP-21",
-      tooltipTarget: "targetArea03101",
+      tooltipTarget: "targetArea06201",
       tooltipDescription:
         "「アプリを起動する」をタップ、霧ヶ峰アプリを起動させる",
       footerContent:
