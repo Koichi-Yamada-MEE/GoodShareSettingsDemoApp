@@ -169,99 +169,111 @@ const demoAppJson = {
       footerContent:
         '<ul><li>エアコン登録と初期設定が完了しました。霧ヶ峰アプリの使い方については、霧ヶ峰アプリの取扱説明書をご確認ください。</li><li>エアコン名は設置されている部屋名称に変更することをお勧めします(リビングのエアコンなど)。変更方法は、取扱説明書をご確認ください。</li></ul>',
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     {
       index: 19,
-      imagePath: "../assets/img/rac/12301.png",
+      imagePath: "../assets/img/rac/03201.png",
       alt: "STEP-20",
-      tooltipTarget: "targetArea12301",
+      tooltipTarget: "targetArea03201",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
-      footerContent: "",
+      footerContent:
+        "ここからは、WPS機能で接続する手順を説明します。",
     },
     {
       index: 20,
-      imagePath: "../assets/img/rac/12302.png",
+      imagePath: "../assets/img/rac/03202.png",
       alt: "STEP-21",
-      tooltipTarget: "targetArea12302",
-      tooltipDescription: '「アプリを起動する」をタップ、霧ヶ峰アプリを起動させる',
-      footerContent: "",
+      tooltipTarget: "targetArea03202",
+      tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
+      footerContent:
+        '<ul><li>事前に以下の準備をしてください。<i class="bi bi-1-circle"></i>接続したいルーターの場所、<i class="bi bi-2-circle"></i>ルーターのWPS実施方法</li><li>ルーターのWPS実施方法は機器により異なります。詳しくはルーターの取扱説明書をご確認ください。</li></ul>',
     },
     {
       index: 21,
-      imagePath: "../assets/img/rac/12401.png",
+      imagePath: "../assets/img/rac/03301.png",
       alt: "STEP-22",
-      tooltipTarget: "targetArea12401",
-      tooltipDescription: "画面に表示されている操作を行い、「次へ」をタップする",
-      footerContent: "",
+      tooltipTarget: "targetArea03301",
+      tooltipDescription: "画面の内容を操作し、「次へ」をタップする",
+      footerContent:
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon022">リモコンを使ってエアコンを接続モードにする</a></li></ul>',
     },
     {
       index: 22,
-      imagePath: "../assets/img/rac/12601.png",
+      imagePath: "../assets/img/rac/03501.png",
       alt: "STEP-23",
-      tooltipTarget: "targetArea12601",
-      tooltipDescription: "画面に表示されている操作を行い、「次へ」をタップする",
-      footerContent: "",
+      tooltipTarget: "targetArea03501",
+      tooltipDescription: "画面の内容を操作し、「次へ」をタップする",
+      footerContent:
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon015">ルーターをWPSモードにする</a></li></ul>',
     },
     {
       index: 23,
-      imagePath: "../assets/img/rac/12701.png",
+      imagePath: "../assets/img/rac/03601.png",
       alt: "STEP-24",
-      tooltipTarget: "targetArea12701",
-      tooltipDescription: "画面に表示されている操作を行い、「次へ」をタップする",
-      footerContent: "",
+      tooltipTarget: "targetArea03601",
+      tooltipDescription: "画面の内容を操作し、「次へ」をタップする",
+      footerContent:
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon016">エアコンとルーターの接続が完了したことを確認する</a></li></ul>',
     },
+
     {
       index: 24,
-      imagePath: "../assets/img/rac/13001.png",
+      imagePath: "../assets/img/rac/03901.png",
       alt: "STEP-25",
-      tooltipTarget: "targetArea13001",
+      tooltipTarget: "targetArea03901",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
-      footerContent: "",
+      footerContent:
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon017">スマートフォンの接続先を確認する</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon018">「"MyMU"がローカルネットワーク上のデバイスの検索および接続を求めています」</a>と表示されたら</li></ul>',
     },
     {
       index: 25,
-      imagePath: "../assets/img/rac/13101.png",
+      imagePath: "../assets/img/rac/04001.png",
       alt: "STEP-26",
-      tooltipTarget: "targetArea13101",
+      tooltipTarget: "targetArea04001",
       tooltipDescription: "登録するエアコンをタップする",
-      footerContent: "",
+      footerContent:
+        '<ul><li>複数の機器が表示された場合、<img class="mt-0 align-text-bottom" src="../assets/img/rac/buzzer.svg">ブザー鳴動ボタンをタップし、登録するエアコンからブザー音が鳴ることを確認してください。</li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon012">エアコンが別のユーザーに登録されている場合</a></li></ul>',
     },
     {
       index: 26,
-      imagePath: "../assets/img/rac/12101.png",
+      imagePath: "../assets/img/rac/03001.png",
       alt: "STEP-27",
-      tooltipTarget: "targetArea13201",
-      tooltipDescription: "登録が完了したら、「エアコン初期設定へ」をタップする",
-      footerContent: "",
+      tooltipTarget: "targetArea03001-01",
+      tooltipDescription:
+        "登録が完了したら、「エアコン初期設定へ」をタップする",
+      footerContent:
+        '',
     },
     {
       index: 27,
-      imagePath: "../assets/img/rac/12102.png",
+      imagePath: "../assets/img/rac/03002.png",
       alt: "STEP-28",
-      tooltipTarget: "targetArea13202",
+      tooltipTarget: "targetArea03002-01",
       tooltipDescription: "「宅外操作」を有効、「次へ」をタップする",
-      footerContent: 'MyMUアプリでエアコンを操作するためには、宅外操作を必ず有効(<i class="bi bi-toggle-on"></i>)に設定してください。',
+      footerContent:
+        'MyMUアプリでエアコンを操作するためには、宅外操作を必ず有効(<i class="bi bi-toggle-on"></i>)に設定してください。',
     },
     {
       index: 28,
       imagePath: "../assets/img/rac/12201.png",
       alt: "STEP-29",
-      tooltipTarget: "targetArea13301",
-      tooltipDescription: '「アプリを起動する」をタップ、霧ヶ峰アプリを起動させる',
-      footerContent: "",
+      tooltipTarget: "targetArea06201-01",
+      tooltipDescription:
+        "「アプリを起動する」をタップ、霧ヶ峰アプリを起動させる",
+      footerContent:
+        '<ul><li>エアコン登録と初期設定が完了しました。霧ヶ峰アプリの使い方については、霧ヶ峰アプリの取扱説明書をご確認ください。</li><li>エアコン名は設置されている部屋名称に変更することをお勧めします(リビングのエアコンなど)。変更方法は、取扱説明書をご確認ください。</li></ul>',
     },
   ],
 };
+
+
+
+
+
+
+
+
+
+
+
+
+

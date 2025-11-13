@@ -254,7 +254,7 @@ const demoAppJson = {
       index: 28,
       imagePath: "../assets/img/rac/03001.png",
       alt: "STEP-29",
-      tooltipTarget: "targetArea04101",
+      tooltipTarget: "targetArea03001-01",
       tooltipDescription:
         "登録が完了したら、「エアコン初期設定へ」をタップする",
       footerContent:
@@ -264,7 +264,7 @@ const demoAppJson = {
       index: 29,
       imagePath: "../assets/img/rac/03002.png",
       alt: "STEP-30",
-      tooltipTarget: "targetArea04102",
+      tooltipTarget: "targetArea03002-01",
       tooltipDescription: "「宅外操作」を有効、「次へ」をタップする",
       footerContent:
         'MyMUアプリでエアコンを操作するためには、宅外操作を必ず有効(<i class="bi bi-toggle-on"></i>)に設定してください。',
@@ -273,7 +273,7 @@ const demoAppJson = {
       index: 30,
       imagePath: "../assets/img/rac/03101.png",
       alt: "STEP-31",
-      tooltipTarget: "targetArea04201",
+      tooltipTarget: "targetArea06201-01",
       tooltipDescription:
         "「アプリを起動する」をタップ、霧ヶ峰アプリを起動させる",
       footerContent:

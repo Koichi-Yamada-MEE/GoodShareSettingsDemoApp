@@ -153,7 +153,7 @@ const demoAppJson = {
     },
     {
       index: 17,
-      imagePath: "../assets/img/rac/03001.png",
+      imagePath: "../assets/img/rac/04101.png",
       alt: "STEP-18",
       tooltipTarget: "targetArea03001",
       tooltipDescription:
@@ -162,7 +162,7 @@ const demoAppJson = {
     },
     {
       index: 18,
-      imagePath: "../assets/img/rac/03002.png",
+      imagePath: "../assets/img/rac/04102.png",
       alt: "STEP-19",
       tooltipTarget: "targetArea03002",
       tooltipDescription: "「宅外操作」を有効、「次へ」をタップする",
@@ -213,7 +213,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea03301",
       tooltipDescription: "画面の内容を操作し、「次へ」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac034">リモコンを使ってエアコンを接続モードにする</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon022">リモコンを使ってエアコンを接続モードにする</a></li></ul>',
     },
     {
       index: 24,
@@ -253,7 +253,7 @@ const demoAppJson = {
     },
     {
       index: 28,
-      imagePath: "../assets/img/rac/03001.png",
+      imagePath: "../assets/img/rac/04101.png",
       alt: "STEP-29",
       tooltipTarget: "targetArea04101",
       tooltipDescription:
@@ -263,7 +263,7 @@ const demoAppJson = {
     },
     {
       index: 29,
-      imagePath: "../assets/img/rac/03002.png",
+      imagePath: "../assets/img/rac/04102.png",
       alt: "STEP-30",
       tooltipTarget: "targetArea04102",
       tooltipDescription: "「宅外操作」を有効、「次へ」をタップする",

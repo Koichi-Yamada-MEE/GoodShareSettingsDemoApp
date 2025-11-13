@@ -50,7 +50,10 @@
 #targetArea10401,
 #targetArea10601,
 #targetArea10701,
-#targetArea11202
+#targetArea11202,
+#targetArea03001-01,
+#targetArea03002-01,
+#targetArea06201-01
 
  {
   position: absolute;
@@ -200,14 +203,16 @@
   height: 40px;
 }
 
-#targetArea03001{
+#targetArea03001,
+#targetArea03001-01 {
   top: 443px;
   left: 0;
   width: 300px;
   height: 39px;
 }
 
-#targetArea03002{
+#targetArea03002,
+#targetArea03002-01 {
   top: 409px;
   left: 0;
   width: 300px;
@@ -361,7 +366,8 @@
   height: 39px;
 }
 
-#targetArea06201{
+#targetArea06201,
+#targetArea06201-01 {
   top: 443px;
   left: 0;
   width: 300px;
