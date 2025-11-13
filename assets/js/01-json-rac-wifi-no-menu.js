@@ -93,7 +93,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea02001",
       tooltipDescription: "画面の内容を操作し、「次へ」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac02101">エアコンをアクセスポイント（APモード）にする</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon021">エアコンをアクセスポイント（APモード）にする</a></li></ul>',
     },
     {
       index: 11,
@@ -122,9 +122,6 @@ const demoAppJson = {
       footerContent:
         "<ul><li>ルーターのSSID（2.4GHz）と暗号化キー（パスワード）をお手元に準備してください。次の操作で使用します。</li></ul>",
     },
-
-
-
     {
       index: 14,
       imagePath: "../assets/img/rac/02601.png",

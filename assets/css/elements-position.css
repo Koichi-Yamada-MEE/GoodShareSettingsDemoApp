@@ -47,7 +47,10 @@
 #targetArea09401,
 #targetArea09801,
 #targetArea10101,
-#targetArea10401
+#targetArea10401,
+#targetArea10601,
+#targetArea10701,
+#targetArea11202
 
  {
   position: absolute;
@@ -389,6 +392,27 @@
 #targetArea10401 {
   top: 443px;
   left: 0;
+  width: 300px;
+  height: 39px;
+}
+
+#targetArea10601 {
+  top: 240px;
+  left: 0;
+  width: 300px;
+  height: 198px;
+}
+
+#targetArea10701 {
+  top: 227px;
+  left: 0;
+  width: 300px;
+  height: 592px;
+}
+
+#targetArea11202 {
+  top: 449px; 
+  left: 0px;
   width: 300px;
   height: 39px;
 }

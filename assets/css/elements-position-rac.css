@@ -35,14 +35,14 @@
 #targetArea4501,
 #targetArea4901,
 #targetArea5102,
-#targetArea5301
+#targetArea5301,
+#targetArea11202
 {
   position: absolute;
   /* box-sizing: border-box; */
   background-color: #ED701E;
   opacity: 0.2;
   border-radius: 5px;
-  /* z-index: 110; */
 }
 
 #targetArea01 {
@@ -299,4 +299,9 @@
   width: 300px;
   height: 39px;
 }
-
+#targetArea11202 {
+  top: 449px; 
+  left: 0px;
+  width: 300px;
+  height: 39px;
+}

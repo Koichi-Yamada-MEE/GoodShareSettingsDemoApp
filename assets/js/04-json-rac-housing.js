@@ -4,36 +4,37 @@ const demoAppJson = {
   slides: [
     {
       index: 0,
-      imagePath: "../assets/img/rac/10501.png",
+      imagePath: "../assets/img/rac/01401.png",
       alt: "STEP-01",
-      tooltipTarget: "targetArea10501",
+      tooltipTarget: "targetArea01401",
       tooltipDescription: "☰メニューをタップする",
       footerContent: "",
     },
     {
       index: 1,
-      imagePath: "../assets/img/rac/10502.png",
+      imagePath: "../assets/img/rac/01402.png",
       alt: "STEP-02",
-      tooltipTarget: "targetArea10502",
+      tooltipTarget: "targetArea01402",
       tooltipDescription: "「＋機器登録を」タップする",
       footerContent: "",
     },
     {
       index: 2,
-      imagePath: "../assets/img/rac/10503.png",
+      imagePath: "../assets/img/rac/01403.png",
       alt: "STEP-03",
-      tooltipTarget: "targetArea10503",
+      tooltipTarget: "targetArea01403",
       tooltipDescription: "「エアコン」をタップする",
       footerContent: "",
     },
     {
       index: 3,
-      imagePath: "../assets/img/rac/10601.png",
+      imagePath: "../assets/img/rac/01501.png",
       alt: "STEP-04",
       tooltipTarget: "targetArea10601",
       tooltipDescription: "「ハウジングエアコン」をタップする",
       footerContent: "",
     },
+
     {
       index: 4,
       imagePath: "../assets/img/rac/10701.png",
@@ -44,43 +45,43 @@ const demoAppJson = {
     },
     {
       index: 5,
-      imagePath: "../assets/img/rac/10801.png",
+      imagePath: "../assets/img/rac/01801.png",
       alt: "STEP-06",
-      tooltipTarget: "targetArea10801",
+      tooltipTarget: "targetArea01801",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent: "",
     },
     {
       index: 6,
-      imagePath: "../assets/img/rac/10802.png",
+      imagePath: "../assets/img/rac/01802.png",
       alt: "STEP-07",
-      tooltipTarget: "targetArea10802",
+      tooltipTarget: "targetArea01802",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent:
         '<ul><li>事前に以下の準備をしてください。<i class="bi bi-1-circle"></i>接続したいルーターのSSID(2.4GHz)、<i class="bi bi-2-circle"></i>ルーターに接続する暗号化キー(パスワード)</li><li>本アプリでルーターのSSIDに使用できる文字は<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon002">半角英数字、半角記号、半角スペース</a>です。</li></ul>',
     },
     {
       index: 7,
-      imagePath: "../assets/img/rac/10901.png",
+      imagePath: "../assets/img/rac/01901.png",
       alt: "STEP-08",
-      tooltipTarget: "targetArea10901",
+      tooltipTarget: "targetArea01901",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent: "",
     },
     {
       index: 8,
-      imagePath: "../assets/img/rac/11001.png",
+      imagePath: "../assets/img/rac/02001.png",
       alt: "STEP-09",
-      tooltipTarget: "targetArea11001",
-      tooltipDescription: "画面に表示されている操作を行い、「次へ」をタップする",
+      tooltipTarget: "targetArea02001",
+      tooltipDescription: "画面の内容を操作し、「次へ」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac11101">リモコンを使ってエアコンを接続モードにする</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon021">エアコンをアクセスポイント（APモード）にする</a></li></ul>',
     },
     {
       index: 9,
-      imagePath: "../assets/img/rac/11201.png",
+      imagePath: "../assets/img/rac/02201.png",
       alt: "STEP-10",
-      tooltipTarget: "targetArea11201",
+      tooltipTarget: "targetArea02201",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent: "",
     },
@@ -95,69 +96,93 @@ const demoAppJson = {
     },
     {
       index: 11,
-      imagePath: "../assets/img/rac/11301.png",
+      imagePath: "../assets/img/rac/02202.png",
       alt: "STEP-12",
-      tooltipTarget: "targetArea11301",
+      tooltipTarget: "targetArea02202",
       tooltipDescription: "「スマートフォンの設定画面へ」をタップして設定する",
       footerContent:
-        '<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon010">「スマートフォンの設定画面へ」で行う作業</a>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon019">エアコンとスマートフォンを接続する</a></li></ul>',
     },
     {
       index: 12,
-      imagePath: "../assets/img/rac/11601.png",
+      imagePath: "../assets/img/rac/02501.png",
       alt: "STEP-13",
-      tooltipTarget: "targetArea11601",
+      tooltipTarget: "targetArea02501",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
-      footerContent: "",
+      footerContent:
+        "<ul><li>ルーターのSSID（2.4GHz）と暗号化キー（パスワード）をお手元に準備してください。次の操作で使用します。</li></ul>",
     },
     {
       index: 13,
-      imagePath: "../assets/img/rac/11701.png",
+      imagePath: "../assets/img/rac/02601.png",
       alt: "STEP-14",
-      tooltipTarget: "targetArea11701",
-      tooltipDescription: 'タップして<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon003">一覧画面</a>を表示、接続するルーターのSSIDを選択する',
-      footerContent: "",
+      tooltipTarget: "targetArea02601",
+      tooltipDescription:
+        'タップして<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon003">一覧画面</a>を表示、接続するルーターのSSIDを選択する',
+      footerContent:
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon005">SSIDと暗号化キーの表示例</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon004">SSIDは手動でも入力できます。</a></li></ul>',
     },
     {
       index: 14,
-      imagePath: "../assets/img/rac/11702.png",
+      imagePath: "../assets/img/rac/02602.png",
       alt: "STEP-15",
-      tooltipTarget: "targetArea11702",
-      tooltipDescription: "ルーターの暗号化キー(パスワード)を入力、「接続する」をタップする",
-      footerContent: "",
+      tooltipTarget: "targetArea02602",
+      tooltipDescription:
+        "ルーターの暗号化キー(パスワード)を入力、「接続する」をタップする",
+      footerContent:
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon009">「暗号化キーを表示する」</a>を選択すると、前回使用した暗号化キーを自動入力できます。</li></ul>',
     },
     {
       index: 15,
-      imagePath: "../assets/img/rac/11901.png",
+      imagePath: "../assets/img/rac/02801.png",
       alt: "STEP-16",
-      tooltipTarget: "targetArea11901",
+      tooltipTarget: "targetArea02801",
       tooltipDescription: "機器の登録が終わるまで、2～3分程度待つ",
-      footerContent: "",
+      footerContent:
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon013">機器の登録に失敗した場合</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon014">「機器の登録確認」が表示された場合</a></li></ul>',
     },
     {
       index: 16,
-      imagePath: "../assets/img/rac/12101.png",
+      imagePath: "../assets/img/rac/03001.png",
       alt: "STEP-17",
-      tooltipTarget: "targetArea12101",
-      tooltipDescription: "登録が完了したら、「エアコン初期設定へ」をタップする",
+      tooltipTarget: "targetArea03001",
+      tooltipDescription:
+        "登録が完了したら、「エアコン初期設定へ」をタップする",
       footerContent: "",
     },
     {
       index: 17,
-      imagePath: "../assets/img/rac/12102.png",
+      imagePath: "../assets/img/rac/03002.png",
       alt: "STEP-18",
-      tooltipTarget: 'targetArea12102',
-      tooltipDescription: '「宅外操作」を有効、「次へ」をタップする',
-      footerContent: 'MyMUアプリでエアコンを操作するためには、宅外操作を必ず有効(<i class="bi bi-toggle-on"></i>)に設定してください。',
+      tooltipTarget: "targetArea03002",
+      tooltipDescription: "「宅外操作」を有効、「次へ」をタップする",
+      footerContent:
+        'MyMUアプリでエアコンを操作するためには、宅外操作を必ず有効(<i class="bi bi-toggle-on"></i>)に設定してください。',
     },
     {
       index: 18,
-      imagePath: "../assets/img/rac/12201.png",
+      imagePath: "../assets/img/rac/03101.png",
       alt: "STEP-19",
-      tooltipTarget: "targetArea12201",
-      tooltipDescription: '「アプリを起動する」をタップ、霧ヶ峰アプリを起動させる',
-      footerContent: "",
+      tooltipTarget: "targetArea06201",
+      tooltipDescription:
+        "「アプリを起動する」をタップ、霧ヶ峰アプリを起動させる",
+      footerContent:
+        '<ul><li>エアコン登録と初期設定が完了しました。霧ヶ峰アプリの使い方については、霧ヶ峰アプリの取扱説明書をご確認ください。</li><li>エアコン名は設置されている部屋名称に変更することをお勧めします(リビングのエアコンなど)。変更方法は、取扱説明書をご確認ください。</li></ul>',
     },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     {
       index: 19,
       imagePath: "../assets/img/rac/12301.png",
