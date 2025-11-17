@@ -53,7 +53,27 @@
 #targetArea11202,
 #targetArea03001-01,
 #targetArea03002-01,
-#targetArea06201-01
+#targetArea06201-01,
+#targetArea39701,
+#targetArea39801,
+#targetArea39901,
+#targetArea39902,
+#targetArea40001-01,
+#targetArea40001-02
+#targetArea40001-01,
+#targetArea40001-02,
+#targetArea40101,
+#targetArea40501,
+#targetArea40701,
+#targetArea40702,
+#targetArea40801,
+#targetArea41001,
+#targetArea41101,
+#targetArea41201,
+#targetArea41801,
+#targetArea41901,
+#targetArea42001,
+#targetArea41001-1
 
  {
   position: absolute;
@@ -419,6 +439,146 @@
 #targetArea11202 {
   top: 449px; 
   left: 0px;
+  width: 300px;
+  height: 39px;
+}
+
+#targetArea39701 {
+  top: 366px; 
+  left: 0px;
+  width: 300px;
+  height: 65px;
+}
+
+#targetArea39801{
+  top: 214px;
+  left: 0;
+  width: 300px;
+  height: 592px;
+}
+  
+#targetArea39901{
+  top: 463px;
+  left: 0;
+  width: 300px;
+  height: 40px;
+}
+
+#targetArea39902{
+  top: 449px;
+  left: 0;
+  width: 300px;
+  height: 40px;
+}
+
+#targetArea40001-01 {
+  top: 449px;
+  left: 0;
+  width: 300px;
+  height: 40px;
+}
+
+#targetArea40001-02{
+  top: 449px;
+  left: 0;
+  width: 300px;
+  height: 40px;
+}
+
+#targetArea40001-01 {
+  top: 433px;
+  left: 0;
+  width: 300px;
+  height: 38px;
+}
+
+#targetArea40001-02 {
+  top: 647px;
+  left: 0;
+  width: 300px;
+  height: 39px;
+}
+
+#targetArea40101 {
+  top: 178px;
+  left: 0;
+  width: 300px;
+  height: 39px;
+}
+
+#targetArea40501 {
+  top: 520px;
+  left: 0;
+  width: 300px;
+  height: 39px;
+}
+
+#targetArea40701 {
+  top: 546px;
+  left: 0;
+  width: 300px;
+  height: 39px;
+}
+
+#targetArea40702{
+  top: 244px;
+  left: 0;
+  width: 300px;
+  height: 35px;
+}
+
+#targetArea40801{
+  top: 448px;
+  left: 0;
+  width: 300px;
+  height: 40px;
+}
+
+#targetArea41001{
+  top: 448px;
+  left: 0;
+  width: 300px;
+  height: 39px;
+}
+
+#targetArea41101{
+  top: 448px;
+  left: 0;
+  width: 300px;
+  height: 39px;
+}
+
+#targetArea41201{
+  top: 161px;
+  left: 0;
+  width: 300px;
+  height: 39px;
+}
+
+#targetArea41801 {
+  top: 492px;
+  left: 0;
+  width: 300px;
+  height: 39px;
+}
+
+#targetArea41901 {
+  top: 542px;
+  left: 0;
+  width: 300px;
+  height: 39px;
+}
+
+#targetArea42001 {
+  top: 177px;
+  left: 0;
+  width: 300px;
+  height: 73px;
+}
+
+#targetArea41001-1{
+  top: 448px;
+  left: 0;
   width: 300px;
   height: 39px;
 }

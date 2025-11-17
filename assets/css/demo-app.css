@@ -3,10 +3,12 @@
 :root {
   --cs-modal-width: 300px;
   --cs-modal-img-width-sm: 180px;
+  --cs-modal-img-width-xs: 120px;
+  --cs-modal-img-1: 2rem;
+  --cs-modal-img-2: 4rem;
   /* --cs-modal-img-width-md: 260px;
   --cs-modal-img-width-lg: 280px; */
   --cs-text-14: 0.875rem;
-
 }
 
 .modal .modal-dialog {
@@ -18,10 +20,13 @@
   width: var(--cs-modal-img-width-sm) ;
 }
 
+.modal .cs-modal-img-width-xs {
+  width: var(--cs-modal-img-width-xs) ;
+}
+
 .fs-7 {
   font-size: var(--cs-text-14) ;
 }
-
 
 body {
   color: #333;
@@ -111,10 +116,9 @@ body {
 
 }
 
-li>img:first-child {
+/* li>img:first-child {
   margin-top: 1rem;
-  /* mt-3 相当（Bootstrapのmt-3は1rem） */
-}
+} */
 
 
 /* ネガティブマージン */
