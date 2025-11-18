@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>エアコン設定（床置形以外のハウジングエアコン）｜三菱電機ホームソリューション ［マルチエリア空調］ Good Share！（グッシェア）｜三菱電機</title>
+  <title>環境センサー設定｜三菱電機ホームソリューション ［マルチエリア空調］ Good Share！（グッシェア）｜三菱電機</title>
   <meta name="viewport" content="width=375, user-scalable=no">
   <!-- demoApp JSON -->
-  <script src="../assets/js/04-json-rac-housing.js"></script>
+  <script src="../assets/js/07-json-sensor.js"></script>
 
   <!-- demoApp CSS -->
   <link rel="stylesheet" href="../assets/css/demo-app.css">
@@ -57,7 +57,7 @@
     </main>
 
     <!-- footer -->
-    <footer class="demo-app-wrap--footer border border-success-subtle">
+    <footer class="demo-app-wrap--footer border  border-success-subtle">
       <div class="description">
         <!-- <strong class="note">NOTE</strong><br> -->
         <!-- create footer content -->
@@ -66,45 +66,60 @@
     </footer>
 
     <!-- modal -->
-    <!-- modalRac10701-->
-    <div class="modal fade" id="modalRac10701" tabindex="-1">
-      <div class="modal-dialog" style="width: 300px">
+    <!-- modalSen006 -->
+    <div class="modal fade" id="modalSen006" tabindex="-1">
+      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-6">接続方法の選択</h1>
+            <h1 class="modal-title fs-6">メッセージ画面例</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
-            <div class="mt-3">
-              <p style="font-size: 0.9375rem;">機器とルーターの接続方法を選択してください。説明ページへ移動します。</p>
+            <img class="img-fluid d-block mx-auto border rounded-2 cs-modal-img-width-md" src="../assets/img/sen/461S01.svg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modalSen008 -->
+    <div class="modal fade" id="modalSen008" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-6">環境センサーの初期化</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <ol>
+              <li>初期化方法は「環境センサーの初期化方法」の画面で確認できます。
+                <img class="img-fluid d-block mx-auto border rounded-2 my-3 cs-modal-img-width-sm" src="../assets/img/sen/462S01.png" alt="">
+              </li>
+              <li>以下のメッセージが表示されたら「接続」をタップしてください。「キャンセル」をタップすると接続に失敗します。
+                <img class="img-fluid d-block mx-auto border rounded-2 my-3 cs-modal-img-width-sm" src="../assets/img/sen/463S01.png" alt="">
+                <img class="img-fluid d-block mx-auto border rounded-2 my-3 cs-modal-img-width-sm" src="../assets/img/sen/463S02.png" alt="">
+              </li>
+              <li>
+                しばらくすると位置情報の使用許可を求めるメッセージが表示されます。「1度だけ許可」「Appの使用中は許可」あるいは「アプリの使用時のみ」「今回のみ」をタップしてください。「許可しない」をタップすると接続に失敗します。
+                <img class="img-fluid d-block mx-auto border rounded-2 my-3 cs-modal-img-width-sm" src="../assets/img/sen/463S03.png" alt="">
+                <img class="img-fluid d-block mx-auto border rounded-2 my-3 cs-modal-img-width-sm" src="../assets/img/sen/463S04.png" alt="">
+              </li>
+              <li>
+                iOS搭載のスマートフォンでは、次のメッセージが表示されることがあります。その場合は「OK」をタップしてください。「OK」をタップしないと接続に失敗します。「許可しない」をタップした場合は、iOSのローカルネットワークの設定を変更してください。
+                <img class="img-fluid d-block mx-auto border rounded-2 my-3 cs-modal-img-width-sm" src="../assets/img/sen/464S01.png" alt="">
+              </li>
+              <li>接続に失敗した場合は次のメッセージが表示されます。「閉じる」をタップして最初からやり直してください。
+                <img class="img-fluid d-block mx-auto border rounded-2 my-3 cs-modal-img-width-sm" src="../assets/img/sen/464S02.png" alt="">
+              </li>
+            </ol>
+            <div class="alert alert-primary" role="alert">
+              <h6 class="alert-heading"><i class="bi bi-info-circle-fill pe-2 align-top"></i>おしらせ</h6>
+              <p>
+                オートメーション機能で位置情報を使用する場合は、位置情報の許可を求める画面で「Appの使用中は許可」「アプリの使用時のみ」をタップし、「正確な位置情報」を「オン」にしてください。オートメーション機能については取扱説明書をご確認ください。
+              </p>
             </div>
-    
-            <a href="./?slide=7" class="text-decoration-none text-reset">
-              <div class="card text-center mb-2 mx-auto d-block" style="width: 234px; height: 100%;">
-                <div class="card-header">アクセスポイントモードでの接続</div>
-                <div class="card-body">
-                  <p class="mb-0" style="font-size: 0.8125rem;">機器のアクセスポイントモードを使って<br>機器とルーターを接続します。</p>
-                </div>
-              </div>
-            </a>
-    
-            <a href=" ./?slide=21" class="text-decoration-none text-reset">
-              <div class="card text-center mb-2 mx-auto d-block" style="width: 234px; height: 100%;">
-                <div class="card-header">WPS機能での接続</div>
-                <div class="card-body">
-                  <p class="mb-0" style="font-size: 0.8125rem;">ルーターの「WPS」ボタンを使って<br>機器とルーターを接続します。</p>
-                </div>
-              </div>
-            </a>
-    
-            <a href="./?slide=26" class="text-decoration-none text-reset">
-              <div class="card text-center mx-auto d-block" style="width: 234px; height: 100%;">
-                <div class="card-header">機器とルーターを接続済み</div>
-                <div class="card-body">
-                  <p class="mb-0" style="font-size: 0.8125rem;">すでに機器とルーターを接続済み<br>の場合はこちらを選択してください。</p>
-                </div>
-              </div>
-            </a>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -113,36 +128,39 @@
       </div>
     </div>
 
-    <!-- modalRac11101 -->
-    <div class="modal fade" id="modalRac11101" tabindex="-1">
-      <div class="modal-dialog mx-auto d-block" style="width: 300px">
+    <!-- modalSen011-1 -->
+    <div class="modal fade" id="modalSen011-1" tabindex="-1">
+      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-6">リモコンを使ってエアコンを接続モードにする</h1>
+            <h1 class="modal-title fs-6">暗号化キーを表示する</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
-            <h6>エアコンをアクセスポイントモード（APモード）に設定する</h6>
+            <img class="d-block mx-auto mb-4 img-border-rounded" src="../assets/img/sen/466S01.png" alt="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modalSen011-2 -->
+    <div class="modal fade" id="modalSen011-2" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-6">メッセージ画面例</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
             <ol>
-              <li>リモコンの「停止」ボタンまたは「切/入」ボタンで運転を停止します。</li>
-              <li>「 温度▲」ボタンを「ー0」が表示されるまで５秒以上長押しします。</li>
-              <li>「 温度▲」ボタンまたは「温度▼」ボタンで「ー1」を選択して、エアコンに向けて「停止」ボタンまたは「切/入」を押すと、エアコンが「APモード」に設定されます。
-                <img class="d-block mb-4 img-border-rounded" src="../assets/img/rac/11-S01.png" style="width: 234px">
-                <ul>
-                  <li>詳しくは各エアコンの取扱説明書をご確認ください。</li>
-                </ul>
+              <li>「その他（手動設定）」を選択
+                <img class="img-fluid d-block mx-auto border rounded-2 my-3 cs-modal-img-width-sm" src="../assets/img/sen/466S02.png" alt="">
               </li>
-            </ol>
-    
-            <h6>アクセスポイントモードに設定されているか、室内機で確認する</h6>
-            <ol>
-              <li>室内機のランプが約5秒間隔で1回点滅しながら“ピッ”と音が鳴ることを確認してください。
-                <img class="d-block mb-4" src="../assets/img/rac/11-S02.png" alt="">
-                <ul>
-                  <li>ランプは以下の状態を繰り返します。</li>
-                  <img class="d-block mb-4" src="../assets/img/rac/11-S03.png" alt="">
-                  <li>この状態は10分で終了します。10分以上経過した場合は「1」からやり直してください。</li>
-                </ul>
+              <li>SSIDを入力し、「決定」をタップ
+                <img class="img-fluid d-block mx-auto border rounded-2 my-3 cs-modal-img-width-sm" src="../assets/img/sen/466S03.png" alt="">
               </li>
             </ol>
           </div>
@@ -152,46 +170,6 @@
         </div>
       </div>
     </div>
-
-  <!-- modalRac11301 -->
-  <div class="modal fade" id="modalRac11301" tabindex="-1">
-    <div class="modal-dialog mx-auto d-block" style="width: 300px">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-6">設定情報シールを確認する</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <h6>設定情報シールの位置は、無線LAN アダプターの取扱説明書をご確認ください。</h6>
-          <p>無線LAN アダプターを取り付けた際に施工業者またはお客さまが取扱説明書に記載した情報や、貼り付けた設定情報シールで確認してください。</p>
-          <img class="mx-auto d-block mb-4 img-border-rounded" src="../assets/img/rac/113-S01.png" alt="">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- create common modal -->
     <div class="common-modal"></div>
@@ -295,7 +273,7 @@
         activeTooltip?.show();
 
         // automatic scroll for specific slides
-        const targetIndexes = [5, 8, 11, 12, 21, 22, 24];
+        const targetIndexes = [2, 6, 7, 8];
         if (targetIndexes.includes(swiper.activeIndex)) {
           const activeSlide = swiper.slides[swiper.activeIndex];
           const scrollableContent = activeSlide.querySelector('.swiper-slide_img_holder');

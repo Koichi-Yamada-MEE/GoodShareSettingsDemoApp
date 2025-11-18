@@ -73,7 +73,13 @@
 #targetArea41801,
 #targetArea41901,
 #targetArea42001,
-#targetArea41001-1
+#targetArea41001-1,
+#targetArea45901,
+#targetArea46001,
+#targetArea46101,
+#targetArea46102,
+#targetArea46201,
+#targetArea46501
 
  {
   position: absolute;
@@ -578,6 +584,55 @@
 
 #targetArea41001-1{
   top: 448px;
+  left: 0;
+  width: 300px;
+  height: 39px;
+}
+
+#targetArea45901{
+  top: 772px;
+  left: 0;
+  width: 300px;
+  height: 64px;
+}
+
+#targetArea45901{
+  top: 772px;
+  left: 0;
+  width: 300px;
+  height: 64px;
+}
+
+#targetArea46001{
+  top: 449px;
+  left: 0;
+  width: 300px;
+  height: 39px;
+}
+
+#targetArea46101 {
+  top: 398px;
+  left: 0;
+  width: 300px;
+  height: 39px;
+}
+
+#targetArea46102 {
+  top: 476px;
+  left: 0;
+  width: 300px;
+  height: 35px;
+}
+
+#targetArea46201 {
+  top: 725px;
+  left: 0;
+  width: 300px;
+  height: 40px;
+}
+
+#targetArea46501 {
+  top: 546px;
   left: 0;
   width: 300px;
   height: 39px;

@@ -162,7 +162,7 @@ const demoAppJson = {
     },
     {
       index: 18,
-      imagePath: "../assets/img/rac/04102.png",
+      imagePath: "../assets/img/rac/03002.png",
       alt: "STEP-19",
       tooltipTarget: "targetArea03002",
       tooltipDescription: "「宅外操作」を有効、「次へ」をタップする",
@@ -263,7 +263,7 @@ const demoAppJson = {
     },
     {
       index: 29,
-      imagePath: "../assets/img/rac/04102.png",
+      imagePath: "../assets/img/rac/03002.png",
       alt: "STEP-30",
       tooltipTarget: "targetArea04102",
       tooltipDescription: "「宅外操作」を有効、「次へ」をタップする",

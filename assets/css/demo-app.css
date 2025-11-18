@@ -2,6 +2,7 @@
 
 :root {
   --cs-modal-width: 300px;
+  --cs-modal-img-width-md: 240px;
   --cs-modal-img-width-sm: 180px;
   --cs-modal-img-width-xs: 120px;
   --cs-modal-img-1: 2rem;
@@ -22,6 +23,10 @@
 
 .modal .cs-modal-img-width-xs {
   width: var(--cs-modal-img-width-xs) ;
+}
+
+.modal .cs-modal-img-width-md {
+  width: var(--cs-modal-img-width-md) ;
 }
 
 .fs-7 {
@@ -128,4 +133,9 @@ body {
 
 .ms-n4 {
   margin-left: -2rem !important;
+}
+
+ol li::marker {
+  font-weight: bold;
+  font-size: 1.125rem;
 }
