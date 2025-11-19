@@ -58,7 +58,7 @@ const demoAppJson = {
       alt: "STEP-07",
       tooltipTarget: "targetArea01701",
       tooltipDescription:
-        '機器とルーターの接続方法を選択します。<br><button type="button" class="btn btn-outline-primary mt-2 d-block mx-auto" data-bs-toggle="modal" data-bs-target="#modalRac01701">選択メニューを表示</button>',
+        '機器とルーターの接続方法を選択します。<br><button type="button" class="btn btn-outline-primary mt-2 d-block mx-auto" data-bs-toggle="modal" data-bs-target="#modalCommon01701">選択メニューを表示</button>',
       footerContent: "",
     },
     {
@@ -111,7 +111,7 @@ const demoAppJson = {
       tooltipDescription:
         "「スマートフォンの設定画面へ」をタップしてスマートフォンの設定画面で設定を行う",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac02301">エアコンとスマートフォンを接続する</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon02301">エアコンとスマートフォンを接続する</a></li></ul>',
     },
     {
       index: 13,
@@ -177,7 +177,7 @@ const demoAppJson = {
       tooltipDescription:
         "「アプリを起動する」をタップ、霧ヶ峰アプリを起動させる",
       footerContent:
-        '<ul><li>エアコン登録と初期設定が完了しました。霧ヶ峰アプリの使い方については、霧ヶ峰アプリの取扱説明書をご確認ください。</li><li>エモコアイ搭載エアコンの場合、<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac031">「次へ」</a>が表示されます。タップして操作を続けてください。</li></ul>',
+        '<ul><li>エアコン登録と初期設定が完了しました。霧ヶ峰アプリの使い方については、霧ヶ峰アプリの取扱説明書をご確認ください。</li><li>エモコアイ搭載エアコンの場合、<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon031">「次へ」</a>が表示されます。タップして操作を続けてください。</li></ul>',
     },
     {
       index: 20,
@@ -278,7 +278,7 @@ const demoAppJson = {
       tooltipDescription:
         "「アプリを起動する」をタップ、霧ヶ峰アプリを起動させる",
       footerContent:
-        '<ul><li>エアコン登録と初期設定が完了しました。霧ヶ峰アプリの使い方については、霧ヶ峰アプリの取扱説明書をご確認ください。</li><li>エモコアイ搭載エアコンの場合、<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac031">「次へ」</a>が表示されます。タップして操作を続けてください。</li></ul>',
+        '<ul><li>エアコン登録と初期設定が完了しました。霧ヶ峰アプリの使い方については、霧ヶ峰アプリの取扱説明書をご確認ください。</li><li>エモコアイ搭載エアコンの場合、<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon031">「次へ」</a>が表示されます。タップして操作を続けてください。</li></ul>',
     },
     {
       index: 31,

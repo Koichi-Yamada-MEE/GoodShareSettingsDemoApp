@@ -7,8 +7,6 @@
   --cs-modal-img-width-xs: 120px;
   --cs-modal-img-1: 2rem;
   --cs-modal-img-2: 4rem;
-  /* --cs-modal-img-width-md: 260px;
-  --cs-modal-img-width-lg: 280px; */
   --cs-text-14: 0.875rem;
 }
 
@@ -21,12 +19,12 @@
   width: var(--cs-modal-img-width-sm) ;
 }
 
-.modal .cs-modal-img-width-xs {
-  width: var(--cs-modal-img-width-xs) ;
-}
-
 .modal .cs-modal-img-width-md {
   width: var(--cs-modal-img-width-md) ;
+}
+
+.modal .cs-modal-img-width-xs {
+  width: var(--cs-modal-img-width-xs) ;
 }
 
 .fs-7 {
@@ -103,16 +101,9 @@ body {
   list-style-type: revert;
   padding-left: 1rem;
   margin-left: revert;
+  text-align: justify;
 }
 
-.modal-body li>img {
-  max-width: 100%;
-  /* 親の幅を超えない */
-  height: auto;
-  /* 縦横比を維持 */
-  display: block;
-  /* 必要に応じて余白調整 */
-}
 
 .img-border-rounded {
   border: 1px solid #dee2e6;
@@ -120,11 +111,6 @@ body {
   /* border-radius: 0.625rem; */
 
 }
-
-/* li>img:first-child {
-  margin-top: 1rem;
-} */
-
 
 /* ネガティブマージン */
 .ms-n3 {
