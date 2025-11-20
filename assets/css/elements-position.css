@@ -21,7 +21,9 @@
 #targetArea02602,
 #targetArea02801,
 #targetArea03001,
+#targetArea03001-01,
 #targetArea03002,
+#targetArea03002-01,
 #targetArea03101,
 #targetArea03102,
 #targetArea03201,
@@ -37,6 +39,7 @@
 #targetArea04201,
 #targetArea04202,
 #targetArea06201,
+#targetArea06201-01,
 #targetArea07502,
 #targetArea07701,
 #targetArea07801,
@@ -51,9 +54,6 @@
 #targetArea10601,
 #targetArea10701,
 #targetArea11202,
-#targetArea03001-01,
-#targetArea03002-01,
-#targetArea06201-01,
 #targetArea39701,
 #targetArea39801,
 #targetArea39901,
@@ -79,7 +79,8 @@
 #targetArea46101,
 #targetArea46102,
 #targetArea46201,
-#targetArea46501
+#targetArea46501,
+#targetArea09301
 
  {
   position: absolute;
@@ -633,6 +634,13 @@
 
 #targetArea46501 {
   top: 546px;
+  left: 0;
+  width: 300px;
+  height: 39px;
+}
+
+#targetArea09301 {
+  top: 463px;
   left: 0;
   width: 300px;
   height: 39px;

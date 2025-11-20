@@ -49,7 +49,7 @@ const demoAppJson = {
       alt: "STEP-06",
       tooltipTarget: "targetArea01701",
       tooltipDescription:
-        '機器とルーターの接続方法を選択します。<br><button type="button" class="btn btn-outline-primary mt-2 d-block mx-auto" data-bs-toggle="modal" data-bs-target="#modalRac01701">選択メニューを表示</button>',
+        '機器とルーターの接続方法を選択します。<br><button type="button" class="btn btn-outline-primary mt-2 d-block mx-auto" data-bs-toggle="modal" data-bs-target="#modalCommon077">選択メニューを表示</button>',
       footerContent: "",
     },
     {
@@ -67,7 +67,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea01802",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent:
-        '<ul><li>事前に以下の準備をしてください。<i class="bi bi-1-circle"></i>接続したいルーターのSSID(2.4GHz)、<i class="bi bi-2-circle"></i>ルーターに接続する暗号化キー(パスワード)</li><li>本アプリでルーターのSSIDに使用できる文字は<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon002">半角英数字、半角記号、半角スペース</a>です。</li></ul>',
+        '<ul><li>事前に以下の準備をしてください。<i class="bi bi-1-circle"></i>接続したいルーターのSSID(2.4GHz)、<i class="bi bi-2-circle"></i>ルーターに接続する暗号化キー(パスワード)</li><li>本アプリでルーターのSSIDに使用できる文字は<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon018">半角英数字、半角記号、半角スペース</a>です。</li></ul>',
     },
     {
       index: 8,
@@ -84,7 +84,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea07901",
       tooltipDescription: "画面に表示されている操作を行い、「次へ」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac080">リモコンを使ってエアコンを接続モードにする</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon080">リモコンを使ってエアコンを接続モードにする</a></li></ul>',
     },
     {
       index: 10,
@@ -101,7 +101,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea08202",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac083">設定情報シールを確認する</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon083">設定情報シールを確認する</a></li></ul>',
     },
     {
       index: 12,
@@ -111,7 +111,7 @@ const demoAppJson = {
       tooltipDescription:
         "「スマートフォンの設定画面へ」をタップしてスマートフォンの設定画面で設定を行う",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon019">エアコンとスマートフォンを接続する</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon054">エアコンとスマートフォンを接続する</a></li></ul>',
     },
     {
       index: 13,
@@ -128,9 +128,9 @@ const demoAppJson = {
       alt: "STEP-15",
       tooltipTarget: "targetArea02601",
       tooltipDescription:
-        'タップして<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon003">一覧画面</a>を表示、接続するルーターのSSIDを選択する',
+        'タップして<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon02601">一覧画面</a>を表示、接続するルーターのSSIDを選択する',
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon005">SSIDと暗号化キーの表示例</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon004">SSIDは手動でも入力できます。</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon02602">SSIDと暗号化キーの表示例</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon027">SSIDは手動でも入力できます。</a></li></ul>',
     },
     {
       index: 15,
@@ -140,7 +140,7 @@ const demoAppJson = {
       tooltipDescription:
         "ルーターの暗号化キー(パスワード)を入力、「接続する」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon009">「暗号化キーを表示する」</a>を選択すると、前回使用した暗号化キーを自動入力できます。</li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon02603">「暗号化キーを表示する」</a>を選択すると、前回使用した暗号化キーを自動入力できます。</li></ul>',
     },
     {
       index: 16,
@@ -149,7 +149,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea02801",
       tooltipDescription: "機器の登録が終わるまで、2～3分程度待つ",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon013">機器の登録に失敗した場合</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon014">「機器の登録確認」が表示された場合</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon02801">機器の登録に失敗した場合</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon02802">「機器の登録確認」が表示された場合</a></li></ul>',
     },
     {
       index: 17,
@@ -203,7 +203,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea09401",
       tooltipDescription: "画面に表示されている操作を行い、「次へ」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac095">リモコンを使ってエアコンを接続モードにする</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon095">リモコンを使ってエアコンを接続モードにする</a></li></ul>',
     },
     {
       index: 23,
@@ -212,7 +212,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea03501",
       tooltipDescription: "画面の内容を操作し、「次へ」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon015">ルーターをWPSモードにする</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon035">ルーターをWPSモードにする</a></li></ul>',
     },
     {
       index: 24,
@@ -221,7 +221,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea09801",
       tooltipDescription: "画面に表示されている操作を行い、「次へ」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalRac098">エアコンとルーターの接続が完了したこと確認する</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon020">WPS接続できないときの対処方法</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon098">エアコンとルーターの接続が完了したこと確認する</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon020">WPS接続できないときの対処方法</a></li></ul>',
     },
     {
       index: 25,
@@ -230,7 +230,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea10101",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon017">スマートフォンの接続先を確認する</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon018">「"MyMU"がローカルネットワーク上のデバイスの検索および接続を求めています」</a>と表示されたら</li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon03901">スマートフォンの接続先を確認する</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon03902">「"MyMU"がローカルネットワーク上のデバイスの検索および接続を求めています」</a>と表示されたら</li></ul>',
     },
     {
       index: 26,

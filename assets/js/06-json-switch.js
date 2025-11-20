@@ -49,7 +49,7 @@ const demoAppJson = {
       alt: "STEP-06",
       tooltipTarget: "targetArea39902",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
-      footerContent: "<ul><li>事前に次を準備してください。<i class=\"bi bi-1-circle\"></i>接続したいルーターのSSID（2.4GHz）、<i class=\"bi bi-2-circle\"></i>ルーターに接続する暗号化キー（パスワード）</li><li>本アプリでルーターのSSIDに使用できる文字は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon002\">半角英数字、半角記号、半角スペース</a>です。</li></ul>",
+      footerContent: "<ul><li>事前に次を準備してください。<i class=\"bi bi-1-circle\"></i>接続したいルーターのSSID（2.4GHz）、<i class=\"bi bi-2-circle\"></i>ルーターに接続する暗号化キー（パスワード）</li><li>本アプリでルーターのSSIDに使用できる文字は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon018\">半角英数字、半角記号、半角スペース</a>です。</li></ul>",
     },
     {
       index: 6,
@@ -100,7 +100,7 @@ const demoAppJson = {
       tooltipDescription:
         'タップして<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon003">一覧画面</a>を表示、接続するルーターのSSIDを選択する',
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon005">SSIDと暗号化キーの表示例</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon004">SSIDは手動でも入力できます。</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon02602">SSIDと暗号化キーの表示例</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon004">SSIDは手動でも入力できます。</a></li></ul>',
     },
     {
       index: 12,
@@ -110,7 +110,7 @@ const demoAppJson = {
       tooltipDescription:
         "ルーターの暗号化キー(パスワード)を入力、「接続する」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon009">「暗号化キーを表示する」</a>を選択すると、前回使用した暗号化キーを自動入力できます。</li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon02603">「暗号化キーを表示する」</a>を選択すると、前回使用した暗号化キーを自動入力できます。</li></ul>',
     },
     {
       index: 13,
@@ -168,7 +168,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea41901",
       tooltipDescription: "WPS機能で機器とルーターを接続後、「次へ」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon017">スマートフォンの接続先を確認する</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon018">「"MyMU"がローカルネットワーク上のデバイスの検索および接続を求めています」</a>と表示されたら</li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon03901">スマートフォンの接続先を確認する</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon03902">「"MyMU"がローカルネットワーク上のデバイスの検索および接続を求めています」</a>と表示されたら</li></ul>',
     },
     {
       index: 20,
@@ -177,7 +177,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea42001",
       tooltipDescription: "登録する機器をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon017">機器が表示されない場合</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon025">アダプター情報を手動で入力する</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon012">機器が別のユーザーに登録されている場合</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon03901">機器が表示されない場合</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon025">アダプター情報を手動で入力する</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon012">機器が別のユーザーに登録されている場合</a></li></ul>',
     },
     {
       index: 21,

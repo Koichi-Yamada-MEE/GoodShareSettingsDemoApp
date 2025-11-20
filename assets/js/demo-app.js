@@ -8,9 +8,18 @@ Promise.all([
 ])
   .then(([drawerHtml, modalHtml]) => {
     document.querySelector(".drawer-menu").innerHTML = drawerHtml;
-    // document.querySelector(".content-footer").innerHTML = modalHtml;
+    // document.querySelector(".content-footer").innerHTML = footerHtml;
     document.querySelector(".content-modal").innerHTML = modalHtml;
   })
   .catch((err) => {
     console.error("Failed to load partials:", err);
   });
+
+/******************************************
+ * JSONからフッターコンテンツを作成
+ ******************************************/
+// document.addEventListener("DOMContentLoaded", () => {
+//   const stage = document.getElementById("footerContent");
+//   const slideCount = demoAppJson.slides.length;
+//   console.log(slideCount);
+// });

@@ -40,7 +40,7 @@ const demoAppJson = {
       alt: "STEP-05",
       tooltipTarget: "targetArea39902",
       tooltipDescription: "画面の内容を確認し、「次へ」をタップする",
-      footerContent: "<ul><li>事前に次を準備してください。<i class=\"bi bi-1-circle\"></i>接続したいルーターのSSID（2.4GHz）、<i class=\"bi bi-2-circle\"></i>ルーターに接続する暗号化キー（パスワード）</li><li>本アプリでルーターのSSIDに使用できる文字は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon002\">半角英数字、半角記号、半角スペース</a>です。</li></ul>",
+      footerContent: "<ul><li>事前に次を準備してください。<i class=\"bi bi-1-circle\"></i>接続したいルーターのSSID（2.4GHz）、<i class=\"bi bi-2-circle\"></i>ルーターに接続する暗号化キー（パスワード）</li><li>本アプリでルーターのSSIDに使用できる文字は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon018\">半角英数字、半角記号、半角スペース</a>です。</li></ul>",
     },
     {
       index: 5,
@@ -82,7 +82,7 @@ const demoAppJson = {
       tooltipDescription:
         'タップして<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon003">一覧画面</a>を表示、接続するルーターのSSIDを選択する',
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon005">SSIDと暗号化キーの表示例</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon004">SSIDは手動でも入力できます。</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon02602">SSIDと暗号化キーの表示例</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon004">SSIDは手動でも入力できます。</a></li></ul>',
     },
     {
       index: 10,
@@ -98,7 +98,7 @@ const demoAppJson = {
       alt: "STEP-12",
       tooltipTarget: "targetArea02801",
       tooltipDescription: "環境センサーの登録が終わるまでそのまま1～2分程度待つ",
-      footerContent: "<ul><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon026\">機器の登録に失敗した場合</a></li><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon014\">「機器の登録確認」が表示された場合</a></li></ul>",
+      footerContent: "<ul><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon02601\">機器の登録に失敗した場合</a></li><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon02802\">「機器の登録確認」が表示された場合</a></li></ul>",
     },
     {
       index: 12,
