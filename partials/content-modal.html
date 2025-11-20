@@ -191,7 +191,7 @@
         <p>スマートスイッチの電源をリセットできます。機器異常の場合にご使用ください。</p>
 
         <h5>Wi-Fiランプ</h5>
-        <p class="mb-3">ランプが示す状態は以下のとおりです。</p>
+        <p>ランプが示す状態は以下のとおりです。</p>
         <ul>
           <li>ランプ点灯：Wi-Fi接続有効</li>
           <li>ランプ1秒点滅：遠隔操作無効</li>
@@ -1746,6 +1746,254 @@
           </li>
           <li>この状態は2分で終了します。2分以上経過した場合は「1」からやり直してください。</li>
         </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modalCommon400 -->
+<div class="modal fade" id="modalCommon400" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-6">設定情報シール貼付位置</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>スマートスイッチを取り付けた際に施工業者が貼り付けた設定情報シールで確認してください。</p>
+        <img class="img-fluid figure-img d-block mx-auto border rounded-2 cs-modal-img-width-sm" src="../assets/img/switch/400S01.png">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modalCommon401 -->
+<div class="modal fade" id="modalCommon401" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-6">アクセスポイントモードにする</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ol>
+          <li>ブレーカーを「ON」にします。
+            <ul>
+              <li class="">すでにブレーカーが「ON」になっている場合は手順2へ進んでください。</li>
+              <li class="">電源をONにしてもスマートスイッチのWi-Fiランプは消灯状態です。</li>
+              <li class="">ブレーカーを入れて約5秒間はスイッチ操作ができません（P-04SWRCの場合、強/弱ランプが点灯）。</li>
+            </ul>
+          </li>
+          <li>スマートスイッチに電源が入っていることを確認します。
+            <img class="img-fluid figure-img d-block mx-auto my-3 cs-modal-img-width-xs" class="border-0" src="../assets/img/switch/402S01.png">
+            <ul>
+              <li class="m-0">電源スイッチを押して、電源スイッチのON/OFFランプが点灯し、ロスナイやファンといった接続負荷機器が動作することを確認してください。</li>
+            </ul>
+          </li>
+          <li>スマートスイッチの「WPS」ボタンをWi-Fiランプの点滅間隔が短くなるまで（約5秒間）先の細いもので押して離します。
+            <img class="img-fluid figure-img d-block mx-auto my-3 cs-modal-img-width-xs" class="border-0" src="../assets/img/switch/402S02.png">
+            <ul>
+              <li class="">Wi-Fiランプが5秒間に2回点滅します。</li>
+              <li class="">この状態は約10分間で終了します。機器登録が完了する前に10分経過したときはWi-Fiランプの状態を確認し、再度APモードにしてください。</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modalCommon405 -->
+<div class="modal fade" id="modalCommon405" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-6">MyMUアプリを機器に接続する</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ol>
+          <li>以下のメッセージが表示されたら「接続」をタップしてください。「キャンセル」をタップすると接続に失敗します。
+            <img class="img-fluid d-block mx-auto border rounded-2 my-3 cs-modal-img-width-sm" src="../assets/img/sen/463S01.png" alt="">
+            <img class="img-fluid d-block mx-auto border rounded-2 my-3 cs-modal-img-width-sm" src="../assets/img/sen/463S02.png" alt="">
+          </li>
+          <li>
+            「次へ」をタップすると位置情報の使用許可を求めるメッセージが表示されます。「1度だけ許可」「Appの使用中は許可」あるいは「アプリの使用時のみ」「今回のみ」をタップしてください。「許可しない」をタップすると接続に失敗します。
+            <img class="img-fluid d-block mx-auto border rounded-2 my-3 cs-modal-img-width-sm" src="../assets/img/sen/463S03.png" alt="">
+            <img class="img-fluid d-block mx-auto border rounded-2 my-3 cs-modal-img-width-sm" src="../assets/img/sen/463S04.png" alt="">
+          </li>
+          <li>接続に失敗した場合は次のメッセージが表示されます。「閉じる」をタップして最初からやり直してください。
+            <img class="img-fluid d-block mx-auto border rounded-2 my-3 cs-modal-img-width-sm" src="../assets/img/switch/406S03.png" alt="">
+          </li>
+        </ol>
+        <!-- おしらせ -->
+        <div class="alert alert-primary" role="alert">
+          <h6 class="alert-heading"><i class="bi bi-info-circle-fill pe-2 align-top"></i>おしらせ</h6>
+          <p>
+            オートメーション機能で位置情報を使用する場合は、位置情報の許可を求める画面で「Appの使用中は許可」「アプリの使用時のみ」をタップし、「正確な位置情報」を「オン」にしてください。オートメーション機能については取扱説明書をご確認ください。
+          </p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modalCommon408 -->
+<div class="modal fade" id="modalCommon408" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-6">前回使用した暗号化キーを入力する</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid mx-auto d-block cs-modal-img-width-sm border rounded-2"
+          src="../assets/img/switch/408S01.png">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modalCommon412 -->
+<div class="modal fade" id="modalCommon412" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-6">スマートスイッチをWPS機能で接続する</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ol>
+          <li>ブレーカーを「ON」にします。
+            <ul>
+              <li class="">すでにブレーカーが「ON」になっている場合は手順2へ進んでください。</li>
+              <li class="">電源をONにしてもスマートスイッチのWi-Fiランプは消灯状態です。</li>
+              <li class="">ブレーカーを入れて約5秒間はスイッチ操作ができません（P-04SWRCの場合、強/弱ランプが点灯)。</li>
+            </ul>
+          </li>
+          <li>スマートスイッチに電源が入っていることを確認します。
+            <img class="img-fluid figure-img d-block mx-auto my-3 cs-modal-img-width-xs" class="border-0" src="../assets/img/switch/402S01.png">
+            <ul>
+              <li class="">電源スイッチを押して、電源スイッチのON/OFFランプが点灯し、ロスナイやファンといった接続負荷機器が動作することを確認してください。</li>
+            </ul>
+          </li>
+          <li>スマートスイッチの「WPS」ボタンを先の細いもので約2秒間押して離します。
+            <img class="img-fluid figure-img d-block mx-auto my-3 cs-modal-img-width-xs" class="border-0" src="../assets/img/switch/402S02.png">
+            <ul>
+              <li class="">5秒以上押さないでください。5秒以上押すとAPモードになります。</li>
+            </ul>
+
+            <div class="table-responsive my-3">
+              <table class="table table-sm table-bordered text-nowrap align-top text-center">
+                <thead class="table-secondary">
+                  <tr>
+                    <th scope="col">Wi-Fiランプ</th>
+                    <th scope="col">状態</th>
+                    <th scope="col">対処方法</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>点滅<br>(0.5秒間隔)</td>
+                    <td>Wi-Fiを探している</td>
+                    <td>正常です。</td>
+                  </tr>
+                  <tr>
+                    <td>消灯</td>
+                    <td>Wi-Fiに接続していない</td>
+                    <td>エラーです。<br>再度手順「3」を実施してください。</td>
+                  </tr>
+                  <tr>
+                    <td>点滅<br>(5秒間に2回点滅)</td>
+                    <td>APモード</td>
+                    <td>APモードになっています。<br>「WPS」ボタンを先の細いもので5秒以上押し、<br>Wi-Fi ランプが消灯しているのを確認してから、<br>再度手順「3」を実施してください。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>ルーターの「WPS」ボタンを数秒間押して離します。
+            <img class="img-fluid figure-img d-block mx-auto my-3 cs-modal-img-width-sm" src="../assets/img/rac/035S01.png">
+          </li>
+          <li>スマートスイッチのWi-Fiランプが5秒間点灯（WPS成功）することを確認します。
+            <img class="img-fluid figure-img d-block mx-auto my-3 cs-modal-img-width-xs" src="../assets/img/switch/414S01.png">
+            <ul>
+              <li class="">接続完了です。</li>
+              <li class="">サーバーとの初期通信が開始されWi-Fiランプが2秒間隔で点滅し、通信が完了すると点灯します。2秒間隔での点滅時間は通信状態により変化します。</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modalCommon418 -->
+<div class="modal fade" id="modalCommon418" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-6">MyMUアプリを機器に接続する</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ol>
+          <li>
+            WPS接続完了後、「次へ」をタップすると位置情報の使用許可を求めるメッセージが表示されます。「1度だけ許可」「Appの使用中は許可」あるいは「アプリの使用時のみ」「今回のみ」をタップしてください。「許可しない」をタップすると、次の画面でスマートフォンの接続先情報が表示されません。
+            <figure class="figure d-block mx-auto">
+              <img class="img-fluid d-block mx-auto border rounded-2 my-3 cs-modal-img-width-sm"
+                src="../assets/img/sen/463S03.png" alt="">
+              <img class="img-fluid d-block mx-auto border rounded-2 my-3 cs-modal-img-width-sm"
+                src="../assets/img/sen/463S04.png" alt="">
+              <figcaption class="figure-caption">スマートフォンの機種やOS バージョンにより、画面の内容は異なります。</figcaption>
+            </figure>
+          </li>
+        </ol>
+        <!-- おしらせ -->
+        <div class="alert alert-primary" role="alert">
+          <h6 class="alert-heading"><i class="bi bi-info-circle-fill pe-2 align-top"></i>おしらせ</h6>
+          <p class="mb-0">
+            オートメーション機能で位置情報を使用する場合は、位置情報の許可を求める画面で「Appの使用中は許可」「アプリの使用時のみ」をタップし、「正確な位置情報」を「オン」にしてください。オートメーション機能については取扱説明書をご確認ください。
+          </p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modalCommon42001 -->
+<div class="modal fade" id="modalCommon42001" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-6">機器が表示されない場合</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>以下のように機器が表示されない場合は、「こんなときは」をご覧ください。</p>
+        <img class="img-fluid d-block mx-auto cs-modal-img-width-sm" src="../assets/img/switch/420S01.png"
+          alt="">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

@@ -57,7 +57,7 @@ const demoAppJson = {
       alt: "STEP-07",
       tooltipTarget: "targetArea40001-01",
       tooltipDescription: "「QRコード&#174;を読み取る」をタップし、スマートフォンのカメラで設定情報シールのQRコードを読み取る",
-      footerContent: "<ul><li>QRコードを読み取るとSSIDとKEYが表示されます。</li><li>スマートスイッチの設定情報シール貼付位置は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch007\">こちら</a></li></ul>",
+      footerContent: "<ul><li>QRコードを読み取るとSSIDとKEYが表示されます。</li><li>スマートスイッチの設定情報シール貼付位置は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon400\">こちら</a></li></ul>",
     },
     {
       index: 7,
@@ -72,7 +72,7 @@ const demoAppJson = {
       imagePath: "../assets/img/switch/40101.png",
       alt: "STEP-09",
       tooltipTarget: "targetArea40101",
-      tooltipDescription: "<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch009\">設定方法をみる<i class=\"bi bi-link-45deg\"></i></a>をタップし<br>機器をアクセスポイントモードに設定する",
+      tooltipDescription: "<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon401\">設定方法をみる<i class=\"bi bi-link-45deg\"></i></a>をタップし<br>機器をアクセスポイントモードに設定する",
       footerContent: "<ul><li>スマートスイッチの各部名称は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon008\">こちら。</a></li><li>スマートスイッチのWi-Fiランプ状態の説明は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon007\">こちら。</a></li><li>アクセスポイントモードは約10分で終了します、それまでに設定してください。詳しくはルーターの取扱説明書をご確認ください。</li></ul>",
     },
     {
@@ -81,7 +81,7 @@ const demoAppJson = {
       alt: "STEP-10",
       tooltipTarget: "targetArea40501",
       tooltipDescription: "アクセスポイントモードに設定後、「次へ」をタップする",
-      footerContent: "「次へ」をタップした後の操作は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch010\">こちら</a>",
+      footerContent: "「次へ」をタップした後の操作は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon405\">こちら</a>",
     },
     {
       index: 10,
@@ -98,9 +98,9 @@ const demoAppJson = {
       alt: "STEP-12",
       tooltipTarget: "targetArea40702",
       tooltipDescription:
-        'タップして<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon003">一覧画面</a>を表示、接続するルーターのSSIDを選択する',
+        'タップして<a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon02601">一覧画面</a>を表示、接続するルーターのSSIDを選択する',
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon02602">SSIDと暗号化キーの表示例</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon004">SSIDは手動でも入力できます。</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon02602">SSIDと暗号化キーの表示例</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon027">SSIDは手動でも入力できます。</a></li></ul>',
     },
     {
       index: 12,
@@ -110,7 +110,7 @@ const demoAppJson = {
       tooltipDescription:
         "ルーターの暗号化キー(パスワード)を入力、「接続する」をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon02603">「暗号化キーを表示する」</a>を選択すると、前回使用した暗号化キーを自動入力できます。</li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon408">「暗号化キーを表示する」</a>を選択すると、前回使用した暗号化キーを自動入力できます。</li></ul>',
     },
     {
       index: 13,
@@ -150,7 +150,7 @@ const demoAppJson = {
       imagePath: "../assets/img/switch/41201.png",
       alt: "STEP-18",
       tooltipTarget: "targetArea41201",
-      tooltipDescription: "<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalSwitch412\">設定方法をみる<i class=\"bi bi-link-45deg\"></i></a>をタップし<br>機器をアクセスポイントモードに設定する",
+      tooltipDescription: "<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon412\">設定方法をみる<i class=\"bi bi-link-45deg\"></i></a>をタップし<br>機器をアクセスポイントモードに設定する",
       footerContent: "<ul><li>スマートスイッチの各部名称は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon008\">こちら。</a></li><li>スマートスイッチのWi-Fiランプ状態の説明は<a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon007\">こちら。</a></li></li><li><a class=\"footer-link\" data-bs-toggle=\"modal\" data-bs-target=\"#modalCommon024\">WPS接続できないときの対処方法。</a></li></ul>",
     },
     {
@@ -159,7 +159,7 @@ const demoAppJson = {
       alt: "STEP-19",
       tooltipTarget: "targetArea41801",
       tooltipDescription: "WPS機能で機器とルーターを接続後、「次へ」をタップする",
-      footerContent: '',
+      footerContent: '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon418">位置情報の使用許可を求めるメッセージが表示されたら</a></li></ul>',
     },
     {
       index: 19,
@@ -177,7 +177,7 @@ const demoAppJson = {
       tooltipTarget: "targetArea42001",
       tooltipDescription: "登録する機器をタップする",
       footerContent:
-        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon03901">機器が表示されない場合</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon025">アダプター情報を手動で入力する</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon012">機器が別のユーザーに登録されている場合</a></li></ul>',
+        '<ul><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon42001">機器が表示されない場合</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon025">アダプター情報を手動で入力する</a></li><li><a class="footer-link" data-bs-toggle="modal" data-bs-target="#modalCommon012">機器が別のユーザーに登録されている場合</a></li></ul>',
     },
     {
       index: 21,
