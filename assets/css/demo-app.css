@@ -99,14 +99,14 @@ body {
 .modal-body ul,
 .modal-body ol {
   list-style-type: revert;
-  /* padding-left: 1rem; */
+  padding-left: 1.5rem;
   margin-left: revert;
   text-align: justify;
   word-break: break-all;
 }
 
-.modal-body ul>li,
-.modal-body ol>li {
+.modal-body ul li,
+.modal-body ol li {
   margin-left: 0 !important;
 }
 
