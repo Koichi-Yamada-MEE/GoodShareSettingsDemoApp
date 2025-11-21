@@ -110,14 +110,6 @@ body {
   margin-left: 0 !important;
 }
 
-
-.img-border-rounded {
-  border: 1px solid #dee2e6;
-  border-radius: 0.5rem;
-  /* border-radius: 0.625rem; */
-
-}
-
 /* ネガティブマージン */
 .ms-n3 {
   margin-left: -1rem !important;
